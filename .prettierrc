@@ -1,0 +1,26 @@
+{
+  "semi": true,
+  "singleQuote": true,
+  "importOrder": [
+    "^@angular/(.*)$",
+    "^rxjs(?:/[^/]+)*$",
+    "<THIRD_PARTY_MODULES>",
+    "^@app/(.*)$",
+    "^[./]"
+  ],
+  "importOrderSeparation": true,
+  "importOrderSortSpecifiers": true,
+  "importOrderParserPlugins": ["typescript", "decorators-legacy"],
+  "overrides": [
+    {
+      "files": "*.html",
+      "options": {
+        "parser": "angular"
+      }
+    }
+  ],
+  "plugins": [
+    "prettier-plugin-tailwindcss",
+    "@trivago/prettier-plugin-sort-imports"
+  ]
+}

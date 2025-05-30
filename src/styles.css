@@ -1,0 +1,11 @@
+@import 'tailwindcss';
+@plugin '@tailwindcss/forms';
+
+@theme {
+  --font-sans: 'Funnel Sans', sans-serif;
+  --font-serif: 'Vollkorn', serif;
+
+  --color-bright: #fffcf9;
+  --color-shade: #f8f2ec;
+  --color-dark: #37332f;
+}
