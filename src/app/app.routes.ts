@@ -4,7 +4,9 @@ export const routes: Routes = [
   {
     path: 'home',
     loadComponent: () =>
-      import('./pages/home/home.component').then((m) => m.HomePageComponent),
+      import('./global/pages/home/home.component').then(
+        (m) => m.HomePageComponent,
+      ),
   },
   {
     path: '',
@@ -14,13 +16,15 @@ export const routes: Routes = [
   {
     path: '404',
     loadComponent: () =>
-      import('./pages/error/error.component').then((m) => m.ErrorPageComponent),
+      import('./global/pages/error/error.component').then(
+        (m) => m.ErrorPageComponent,
+      ),
     data: {
       errorType: 'NotFound',
     },
   },
   {
     path: '**',
-    redirectTo: '/404', // TODO: Create a 404 page
+    redirectTo: '/404',
   },
 ];
