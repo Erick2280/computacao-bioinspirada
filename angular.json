@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "bioinspirada-projects": {
+    "computacao-bioinspirada": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -76,10 +76,10 @@
           "builder": "@angular/build:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "bioinspirada-projects:build:production"
+              "buildTarget": "computacao-bioinspirada:build:production"
             },
             "development": {
-              "buildTarget": "bioinspirada-projects:build:development"
+              "buildTarget": "computacao-bioinspirada:build:development"
             }
           },
           "defaultConfiguration": "development"
