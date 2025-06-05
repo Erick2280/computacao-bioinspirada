@@ -9,3 +9,9 @@
   --color-shade: #f8f2ec;
   --color-dark: #37332f;
 }
+
+@layer components {
+  .reduced-page-container {
+    @apply mx-auto max-w-screen-xl;
+  }
+}

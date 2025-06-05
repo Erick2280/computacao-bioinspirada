@@ -14,6 +14,13 @@ export const routes: Routes = [
     pathMatch: 'full',
   },
   {
+    path: 'eight-queens',
+    loadComponent: () =>
+      import('./projects/eight-queens/eight-queens.component').then(
+        (m) => m.EightQueensPageComponent,
+      ),
+  },
+  {
     path: '404',
     loadComponent: () =>
       import('./global/pages/error/error.component').then(
