@@ -1,4 +1,4 @@
-## ![Computação Bioinspirada](/public/logo.svg)
+## ![Computação Bioinspirada](/public/assets/elements/logo.svg)
 
 **Tópicos Avançados em Inteligência Artificial (IF706)**  
 **Universidade Federal de Pernambuco**  
