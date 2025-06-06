@@ -15,3 +15,57 @@
     @apply mx-auto max-w-screen-xl;
   }
 }
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+}
+
+@keyframes fade-out {
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes blur {
+  from {
+    filter: blur(0);
+  }
+
+  to {
+    filter: blur(10px);
+  }
+}
+
+@keyframes deblur {
+  from {
+    filter: blur(10px);
+  }
+
+  to {
+    filter: blur(0);
+  }
+}
+
+::view-transition-old(root) {
+  animation:
+    fade-out 0.3s ease-in-out forwards,
+    blur 0.3s ease-in-out forwards;
+}
+
+::view-transition-new(root) {
+  animation:
+    fade-in 0.3s ease-in-out forwards,
+    deblur 0.3s ease-in-out forwards;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  ::view-transition-old(root) {
+    @apply animate-none;
+  }
+
+  ::view-transition-new(root) {
+    @apply animate-none;
+  }
+}
