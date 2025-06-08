@@ -107,7 +107,11 @@ export class EightQueensSolver {
 
   private checkForCompletion() {
     if (this.boards[0].fitness === 0) {
-      this.#state = SolverState.Completed;
+      this.#state = SolverState.Solved;
+    }
+
+    if (this.#currentIteration! + 1 >= this.parameters.maxIterations) {
+      this.#state = SolverState.ReachedMaxIterations;
     }
   }
 }
@@ -115,5 +119,6 @@ export class EightQueensSolver {
 export enum SolverState {
   NotInitialized = 'NotInitialized',
   InProgress = 'InProgress',
-  Completed = 'Completed',
+  Solved = 'Solved',
+  ReachedMaxIterations = 'ReachedMaxIterations',
 }
