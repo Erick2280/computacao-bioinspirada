@@ -65,6 +65,7 @@ export class ExecutionService {
   }
 
   clear() {
+    this.pauseContinuousRun();
     this.#runningSolver = null;
     this.updateObservable();
   }
