@@ -44,7 +44,6 @@ export class ExecutionService {
 
     const runNextIteration = () => {
       this.step();
-      console.log(this.#runningSolver);
       this.updateObservable();
 
       if (

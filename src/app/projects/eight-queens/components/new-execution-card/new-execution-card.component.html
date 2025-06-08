@@ -1,0 +1,162 @@
+<section class="bg-shade rounded-lg">
+  <div class="p-4 md:p-6">
+    <h2 class="mb-4 font-serif text-xl font-bold md:text-2xl">Nova execução</h2>
+
+    <div class="flex flex-col gap-2">
+      <label
+        class="flex cursor-pointer items-center justify-between gap-x-3"
+        for="population-size-input"
+      >
+        <div class="flex items-center gap-2">
+          <ng-icon
+            name="remixHashtag"
+            class="min-w-fit text-base md:text-lg"
+            aria-hidden="true"
+          ></ng-icon>
+          <span>Tamanho da população</span>
+        </div>
+        <input
+          [(ngModel)]="populationSize"
+          (ngModelChange)="checkParentCandidatesAmount()"
+          type="number"
+          id="population-size-input"
+          class="bg-bright text-dark block w-42 rounded-lg border border-stone-300 px-0.5 py-1.75 text-right transition focus:border-teal-600 focus:ring-teal-600 focus:outline-none"
+          min="2"
+          required
+        />
+      </label>
+
+      <label
+        class="flex cursor-pointer items-center justify-between gap-x-3"
+        for="max-iterations-input"
+      >
+        <div class="flex items-center gap-2">
+          <ng-icon
+            name="remixHand"
+            class="min-w-fit text-base md:text-lg"
+            aria-hidden="true"
+          ></ng-icon>
+          <span>Máximo de iterações</span>
+        </div>
+        <input
+          [(ngModel)]="maxIterations"
+          type="number"
+          id="max-iterations-input"
+          class="bg-bright text-dark block w-42 rounded-lg border border-stone-300 px-0.5 py-1.75 text-right transition focus:border-teal-600 focus:ring-teal-600 focus:outline-none"
+          min="1"
+          required
+        />
+      </label>
+
+      <label
+        class="flex cursor-pointer items-center justify-between gap-x-3"
+        for="parent-candidates-amount-input"
+      >
+        <div class="flex items-center gap-2">
+          <ng-icon
+            name="remixParentLine"
+            class="min-w-fit text-base md:text-lg"
+            aria-hidden="true"
+          ></ng-icon>
+          <span>Candidatos a pais</span>
+        </div>
+        <input
+          [(ngModel)]="parentCandidatesAmount"
+          type="number"
+          id="parent-candidates-amount-input"
+          class="bg-bright text-dark block w-42 rounded-lg border border-stone-300 px-0.5 py-1.75 text-right transition focus:border-teal-600 focus:ring-teal-600 focus:outline-none"
+          min="2"
+          [max]="populationSize()"
+          required
+        />
+      </label>
+
+      <label
+        class="flex cursor-pointer items-center justify-between gap-x-3"
+        for="recombination-probability-input"
+      >
+        <div class="flex items-center gap-2">
+          <ng-icon
+            name="remixAlignBottom"
+            class="min-w-fit text-base md:text-lg"
+            aria-hidden="true"
+          ></ng-icon>
+          <span>Probabilidade de recombinação</span>
+        </div>
+        <div class="my-2 flex flex-row items-center gap-2">
+          <input
+            [(ngModel)]="recombinationProbability"
+            id="recombination-probability-input"
+            type="range"
+            min="0"
+            step="0.01"
+            max="1"
+            class="bg-bright focus:ring-offset-shade h-2 max-w-30 cursor-pointer rounded-lg accent-teal-600 transition focus:ring-2 focus:ring-teal-600 focus:ring-offset-6 focus:outline-none"
+          />
+          <span class="w-10 text-right">{{
+            recombinationProbability() | percent
+          }}</span>
+        </div>
+      </label>
+
+      <label
+        class="flex cursor-pointer items-center justify-between gap-x-3"
+        for="mutation-probability-input"
+      >
+        <div class="flex items-center gap-2">
+          <ng-icon
+            name="remixDnaLine"
+            class="min-w-fit text-base md:text-lg"
+            aria-hidden="true"
+          ></ng-icon>
+          <span>Probabilidade de mutação</span>
+        </div>
+        <div class="my-2 flex flex-row items-center gap-2">
+          <input
+            [(ngModel)]="mutationProbability"
+            id="mutation-probability-input"
+            type="range"
+            min="0"
+            step="0.01"
+            max="1"
+            class="bg-bright focus:ring-offset-shade h-2 max-w-30 cursor-pointer rounded-lg accent-teal-600 transition focus:ring-2 focus:ring-teal-600 focus:ring-offset-6 focus:outline-none"
+          />
+          <span class="w-10 text-right">{{
+            mutationProbability() | percent
+          }}</span>
+        </div>
+      </label>
+
+      <div class="my-1 border-t border-solid border-stone-300"></div>
+
+      <label
+        class="flex cursor-pointer items-center justify-between gap-x-3"
+        for="continuous-execution-toggle"
+      >
+        <div class="flex items-center gap-2">
+          <ng-icon
+            name="remixExpandRightLine"
+            class="min-w-fit text-base md:text-lg"
+            aria-hidden="true"
+          ></ng-icon>
+          <span>Executar continuamente</span>
+        </div>
+        <input
+          [(ngModel)]="runContinuously"
+          id="continuous-execution-toggle"
+          type="checkbox"
+          class="focus:ring-offset-shade my-3 h-4 w-4 rounded-sm text-teal-600 transition hover:bg-stone-200 hover:checked:bg-teal-700 focus:ring-4 focus:ring-teal-600 focus:ring-offset-4 focus:outline-none active:bg-teal-800"
+        />
+      </label>
+    </div>
+  </div>
+
+  <button
+    type="button"
+    (click)="startNewExecution()"
+    class="focus:ring-offset-bright flex w-full cursor-pointer flex-row items-center justify-between gap-4 rounded-b-lg bg-teal-600 p-4 text-xl font-bold text-white shadow transition hover:bg-teal-700 hover:shadow-lg focus:ring-4 focus:ring-teal-600 focus:ring-offset-4 focus:outline-none active:bg-teal-800 md:px-6 md:text-2xl"
+  >
+    Iniciar
+    <ng-icon name="remixPlayCircleFill" aria-hidden="true"></ng-icon>
+  </button>
+</section>

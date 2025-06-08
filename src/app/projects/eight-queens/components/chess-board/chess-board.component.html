@@ -1,0 +1,37 @@
+<div
+  class="bg-bright grid aspect-square h-48 w-48 grid-cols-8 grid-rows-8 rounded-lg border-4 border-solid border-stone-500 shadow-lg"
+  aria-hidden="true"
+>
+  @for (row of bidimensionalPositions(); let rowIndex = $index; track $index) {
+    @for (hasQueen of row; track $index) {
+      <div
+        class="grid h-full w-full place-items-center"
+        [ngClass]="{
+          'even:bg-dark even:text-bright': rowIndex % 2 === 0,
+          'odd:bg-dark odd:text-bright': rowIndex % 2 !== 0,
+        }"
+      >
+        @if (hasQueen) {
+          <ng-icon name="remixVipCrown2Fill"></ng-icon>
+        }
+      </div>
+    }
+  }
+</div>
+
+<div class="sr-only">
+  <p>Tabuleiro com rainhas nas seguintes posições:</p>
+  <ul>
+    @for (
+      row of bidimensionalPositions();
+      let rowIndex = $index;
+      track $index
+    ) {
+      @for (hasQueen of row; let columnIndex = $index; track $index) {
+        @if (hasQueen) {
+          <li>Linha {{ rowIndex + 1 }}, {{ columnIndex + 1 }}</li>
+        }
+      }
+    }
+  </ul>
+</div>

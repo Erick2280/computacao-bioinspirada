@@ -1,0 +1,28 @@
+<section
+  class="border-dark col-span-full row-span-full h-full rounded-xl border-1 border-solid bg-white p-4 shadow-xl md:rounded-3xl md:p-8"
+>
+  @let solver = executionService.runningSolver$ | async;
+
+  @if (solver) {
+    <div class="grid grid-cols-3 gap-y-8">
+      @for (board of solver.boards; track $index) {
+        <div class="flex flex-row items-center gap-2">
+          <app-chess-board [positions]="board.positions"></app-chess-board>
+          <div class="flex flex-col items-start">
+            <span class="font-serif font-bold italic">Fitness</span>
+            <span class="text-lg md:text-xl">{{ board.fitness }}</span>
+          </div>
+        </div>
+      }
+    </div>
+  } @else {
+    <div
+      class="flex min-h-full flex-col items-center justify-center gap-8 py-4 text-center font-serif text-lg italic opacity-50 md:text-xl"
+    >
+      <img src="assets/elements/eight-queens.svg" class="h-32 w-32" alt="" />
+      <p class="w-64 text-balance">
+        Quando a execução for iniciada, os tabuleiros aparecerão aqui.
+      </p>
+    </div>
+  }
+</section>
