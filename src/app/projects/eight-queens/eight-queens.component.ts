@@ -1,5 +1,6 @@
 import { AsyncPipe, NgClass } from '@angular/common';
-import { Component, inject } from '@angular/core';
+import { Component, inject, signal } from '@angular/core';
+import { FormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
 
 import { NgIcon, provideIcons } from '@ng-icons/core';
@@ -16,7 +17,10 @@ import {
 } from '@ng-icons/remixicon';
 
 import { NewExecutionCardComponent } from '@app/projects/eight-queens/components/new-execution-card/new-execution-card.component';
-import { SolvingPanelComponent } from '@app/projects/eight-queens/components/solving-panel/solving-panel.component';
+import {
+  SolvingPanelComponent,
+  ViewingOptions,
+} from '@app/projects/eight-queens/components/solving-panel/solving-panel.component';
 import { SolverState } from '@app/projects/eight-queens/core/solver';
 import { ExecutionService } from '@app/projects/eight-queens/services/execution.service';
 
@@ -29,6 +33,7 @@ import { ExecutionService } from '@app/projects/eight-queens/services/execution.
     AsyncPipe,
     NgClass,
     SolvingPanelComponent,
+    FormsModule,
   ],
   templateUrl: './eight-queens.component.html',
   viewProviders: [
@@ -47,6 +52,10 @@ import { ExecutionService } from '@app/projects/eight-queens/services/execution.
 })
 export class EightQueensPageComponent {
   executionService = inject(ExecutionService);
+  viewingOptions = signal<ViewingOptions>({
+    showChessBoards: true,
+    showGenotypes: true,
+  });
 
   SolverState = SolverState;
 }

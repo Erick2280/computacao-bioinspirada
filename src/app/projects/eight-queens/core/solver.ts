@@ -38,6 +38,7 @@ export class EightQueensSolver {
     this.sortBoardsByFitness();
     this.#currentIteration = 0;
     this.#state = SolverState.InProgress;
+    this.checkForCompletion();
   }
 
   // TODO: How much more data can we expose for the UI?
@@ -60,12 +61,16 @@ export class EightQueensSolver {
       offspring = Board.createTwoFromCutAndCrossfill(
         selectedParents[0],
         selectedParents[1],
+        this.#currentIteration!,
       );
     }
 
     for (const [index, board] of offspring.entries()) {
       if (rollChance(this.parameters.mutationProbability)) {
-        offspring[index] = Board.createFromSwappingRandomPositions(board);
+        offspring[index] = Board.createFromSwappingRandomPositions(
+          board,
+          this.#currentIteration!,
+        );
       }
     }
 

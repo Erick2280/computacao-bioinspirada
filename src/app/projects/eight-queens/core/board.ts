@@ -15,6 +15,7 @@ export class Board {
 
   readonly fitness: number;
   readonly positions: BoardPositions;
+  readonly iterationBorn: number;
 
   static readonly ORDERED_POSITIONS: BoardPositions = [
     [false, false, false],
@@ -27,10 +28,11 @@ export class Board {
     [true, true, true],
   ];
 
-  constructor(positions: BoardPositions) {
+  constructor(positions: BoardPositions, iterationBorn = 0) {
     this.positions = positions;
     Object.freeze(this.positions);
 
+    this.iterationBorn = iterationBorn;
     this.fitness = this.evaluateFitness();
   }
 
@@ -56,7 +58,7 @@ export class Board {
     return collisions / 2; // Each collision is counted twice, so we divide by 2
   }
 
-  static createRandomBoard(): Board {
+  static createRandomBoard(iterationBorn = 0): Board {
     const positions: BoardPositions = [...this.ORDERED_POSITIONS];
 
     for (let i = positions.length - 1; i > 0; i--) {
@@ -64,10 +66,13 @@ export class Board {
       [positions[i], positions[j]] = [positions[j], positions[i]];
     }
 
-    return new Board(positions);
+    return new Board(positions, iterationBorn);
   }
 
-  static createFromSwappingRandomPositions(board: Board): Board {
+  static createFromSwappingRandomPositions(
+    board: Board,
+    iterationBorn = 0,
+  ): Board {
     const mutatedPositions = [...board.positions];
     let indexesToSwap: [number, number] | undefined = undefined;
 
@@ -86,12 +91,13 @@ export class Board {
       mutatedPositions[indexesToSwap[0]],
     ];
 
-    return new Board(mutatedPositions as BoardPositions);
+    return new Board(mutatedPositions as BoardPositions, iterationBorn);
   }
 
   static createTwoFromCutAndCrossfill(
     board1: Board,
     board2: Board,
+    iterationBorn: number,
   ): [Board, Board] {
     const cutPoint = board1.getRandomIndex(board1.positions.length);
 
@@ -108,8 +114,8 @@ export class Board {
     ];
 
     return [
-      new Board(offspring1 as BoardPositions),
-      new Board(offspring2 as BoardPositions),
+      new Board(offspring1 as BoardPositions, iterationBorn),
+      new Board(offspring2 as BoardPositions, iterationBorn),
     ];
   }
 
