@@ -131,7 +131,7 @@
 
       <label
         class="flex cursor-pointer items-center justify-between gap-x-3"
-        for="starter-population-select"
+        for="initial-population-select"
       >
         <div class="flex items-center gap-2">
           <ng-icon
@@ -145,7 +145,7 @@
         <select
           [(ngModel)]="initialPopulation"
           class="bg-bright text-dark w-42 min-w-fit rounded-lg border border-stone-300 py-1.75 ps-4 pe-8 transition-all hover:bg-stone-100 focus:border-teal-600 focus:ring-teal-600 focus:outline-none"
-          id="starter-population"
+          id="initial-population-select"
         >
           @for (option of initialPopulationOptions; track option.value) {
             <option value="{{ option.value }}">{{ option.label }}</option>
