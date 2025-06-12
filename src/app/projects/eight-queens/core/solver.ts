@@ -8,6 +8,8 @@ export interface SolverParameters {
   mutationProbability: number;
   maxIterations: number;
   parentCandidatesAmount: number;
+  initialPopulation: InitialPopulation;
+  completionCondition: SolverCompletionCondition;
 }
 
 export class EightQueensSolver {
@@ -34,7 +36,7 @@ export class EightQueensSolver {
       return;
     }
 
-    this.boards = this.generateInitialPopulation();
+    this.generateInitialPopulation();
     this.sortBoardsByFitness();
     this.#currentIteration = 0;
     this.#state = SolverState.InProgress;
@@ -82,11 +84,19 @@ export class EightQueensSolver {
     this.#currentIteration!++;
   }
 
-  private generateInitialPopulation(): Board[] {
-    const boards = Array.from({ length: this.parameters.populationSize }, () =>
-      Board.createRandomBoard(),
-    );
-    return boards;
+  private generateInitialPopulation() {
+    if (this.parameters.initialPopulation === InitialPopulation.Random) {
+      this.boards = Array.from({ length: this.parameters.populationSize }, () =>
+        Board.createRandomBoard(),
+      );
+    }
+
+    if (this.parameters.initialPopulation === InitialPopulation.WorstBoard) {
+      this.boards = Array.from(
+        { length: this.parameters.populationSize },
+        () => new Board([...Board.ORDERED_POSITIONS]),
+      );
+    }
   }
 
   pickRandomBoards(amount: number): Board[] {
@@ -111,7 +121,19 @@ export class EightQueensSolver {
   }
 
   private checkForCompletion() {
-    if (this.boards[0].fitness === 0) {
+    if (
+      this.parameters.completionCondition ===
+        SolverCompletionCondition.ConvergeOne &&
+      this.boards[0].fitness === 0
+    ) {
+      this.#state = SolverState.Solved;
+    }
+
+    if (
+      this.parameters.completionCondition ===
+        SolverCompletionCondition.ConvergeAll &&
+      this.boards[this.boards.length - 1].fitness === 0
+    ) {
       this.#state = SolverState.Solved;
     }
 
@@ -126,4 +148,14 @@ export enum SolverState {
   InProgress = 'InProgress',
   Solved = 'Solved',
   ReachedMaxIterations = 'ReachedMaxIterations',
+}
+
+export enum SolverCompletionCondition {
+  ConvergeOne = 'ConvergeOne',
+  ConvergeAll = 'ConvergeAll',
+}
+
+export enum InitialPopulation {
+  Random = 'Random',
+  WorstBoard = 'WorstBoard',
 }

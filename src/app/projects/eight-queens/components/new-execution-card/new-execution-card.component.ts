@@ -7,14 +7,18 @@ import {
   remixAlignBottom,
   remixDnaLine,
   remixExpandRightLine,
+  remixFlagLine,
   remixHand,
   remixHashtag,
   remixParentLine,
   remixPlayCircleFill,
+  remixSeedlingLine,
 } from '@ng-icons/remixicon';
 
 import {
   EightQueensSolver,
+  InitialPopulation,
+  SolverCompletionCondition,
   SolverParameters,
 } from '@app/projects/eight-queens/core/solver';
 import { ExecutionService } from '@app/projects/eight-queens/services/execution.service';
@@ -32,6 +36,8 @@ import { ExecutionService } from '@app/projects/eight-queens/services/execution.
       remixHand,
       remixAlignBottom,
       remixExpandRightLine,
+      remixFlagLine,
+      remixSeedlingLine,
     }),
   ],
 })
@@ -41,17 +47,47 @@ export class NewExecutionCardComponent {
   mutationProbability = signal(0.4);
   maxIterations = signal(10000);
   parentCandidatesAmount = signal(5);
+  initialPopulation = signal<InitialPopulation>(InitialPopulation.Random);
+  completionCondition = signal<SolverCompletionCondition>(
+    SolverCompletionCondition.ConvergeOne,
+  );
   runContinuously = signal(true);
 
   executionService = inject(ExecutionService);
 
+  InitialPopulation = InitialPopulation;
+  initialPopulationOptions: SelectOption<InitialPopulation>[] = [
+    {
+      value: InitialPopulation.Random,
+      label: 'Aleatória',
+    },
+    {
+      value: InitialPopulation.WorstBoard,
+      label: 'Pior tabuleiro',
+    },
+  ];
+
+  SolverCompletionCondition = SolverCompletionCondition;
+  completionConditionOptions: SelectOption<SolverCompletionCondition>[] = [
+    {
+      value: SolverCompletionCondition.ConvergeOne,
+      label: 'Convergir um',
+    },
+    {
+      value: SolverCompletionCondition.ConvergeAll,
+      label: 'Convergir todos',
+    },
+  ];
+
   startNewExecution() {
     const parameters: SolverParameters = {
       populationSize: this.populationSize(),
+      initialPopulation: this.initialPopulation(),
       recombinationProbability: this.recombinationProbability(),
       mutationProbability: this.mutationProbability(),
       maxIterations: this.maxIterations(),
       parentCandidatesAmount: this.parentCandidatesAmount(),
+      completionCondition: this.completionCondition(),
     };
 
     const solver = new EightQueensSolver(parameters);
@@ -68,4 +104,9 @@ export class NewExecutionCardComponent {
       this.parentCandidatesAmount.set(this.populationSize());
     }
   }
+}
+
+interface SelectOption<T> {
+  value: T;
+  label: string;
 }
