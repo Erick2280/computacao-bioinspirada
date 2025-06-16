@@ -52,12 +52,16 @@ export class ExecutionService {
       ) {
         // Schedule the next iteration after a short delay
         // This allows the UI to update and prevents blocking the main thread.
-        setTimeout(runNextIteration, 20);
+        setTimeout(runNextIteration, 100);
       }
     };
 
+    if (this.#runningSolver?.state !== SolverState.InProgress) {
+      return;
+    }
+
     // Start the first iteration
-    setTimeout(runNextIteration, 20);
+    setTimeout(runNextIteration, 100);
   }
 
   pauseContinuousRun() {
