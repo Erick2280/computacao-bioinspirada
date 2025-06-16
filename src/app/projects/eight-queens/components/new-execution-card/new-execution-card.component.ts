@@ -117,7 +117,7 @@ export class NewExecutionCardComponent {
     },
     {
       value: InitialPopulation.SequentialBoard,
-      label: 'Tabuleiro sequencial',
+      label: 'Tab. sequencial',
     },
   ];
 
