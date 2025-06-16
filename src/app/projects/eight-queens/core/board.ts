@@ -16,6 +16,7 @@ export class Board {
   readonly fitness: number;
   readonly positions: BoardPositions;
   readonly iterationBorn: number;
+  readonly collisionIndexes: Map<number, number[]>;
 
   static readonly ORDERED_POSITIONS: BoardPositions = [
     [false, false, false],
@@ -33,29 +34,43 @@ export class Board {
     Object.freeze(this.positions);
 
     this.iterationBorn = iterationBorn;
-    this.fitness = this.evaluateFitness();
+    const { collisions, collisionIndexes } = this.findCollisions();
+    this.fitness = collisions;
+    this.collisionIndexes = collisionIndexes;
   }
 
-  private evaluateFitness(): number {
-    // TODO: Is there a better way to calculate the fitness?
+  private findCollisions() {
     let collisions = 0;
-    for (let i = 0; i < this.positions.length; i++) {
-      for (let j = 0; j < this.positions.length; j++) {
-        if (i !== j) {
-          const baseIndex = Board.ORDERED_POSITIONS.indexOf(this.positions[i]);
-          const testingIndex = Board.ORDERED_POSITIONS.indexOf(
-            this.positions[j],
-          );
-          const difference = Math.abs(i - j);
+    const collisionIndexes = new Map<number, number[]>(
+      this.positions.map((_, index) => [index, []]),
+    );
 
-          if (Math.abs(baseIndex - testingIndex) === difference) {
-            collisions++;
-          }
+    const queenRows = this.positions.map((pos) =>
+      Board.ORDERED_POSITIONS.indexOf(pos),
+    );
+
+    for (let i = 0; i < queenRows.length - 1; i++) {
+      const row1 = queenRows[i];
+
+      for (let j = i + 1; j < queenRows.length; j++) {
+        const row2 = queenRows[j];
+        const columnsDifference = j - i;
+
+        // Check if queens are on the same diagonal
+        // Two queens are on the same diagonal if the difference in their rows
+        // equals the difference in their columns
+        if (Math.abs(row1 - row2) === columnsDifference) {
+          collisions++;
+          collisionIndexes.get(i)!.push(j);
+          collisionIndexes.get(j)!.push(i);
         }
       }
     }
 
-    return collisions / 2; // Each collision is counted twice, so we divide by 2
+    return {
+      collisions,
+      collisionIndexes,
+    };
   }
 
   static createRandomBoard(iterationBorn = 0): Board {
