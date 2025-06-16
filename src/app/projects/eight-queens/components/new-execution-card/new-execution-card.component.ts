@@ -116,8 +116,8 @@ export class NewExecutionCardComponent {
       label: 'Aleatória',
     },
     {
-      value: InitialPopulation.WorstBoard,
-      label: 'Pior tabuleiro',
+      value: InitialPopulation.SequentialBoard,
+      label: 'Tabuleiro sequencial',
     },
   ];
 

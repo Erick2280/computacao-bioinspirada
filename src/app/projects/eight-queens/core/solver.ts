@@ -67,7 +67,7 @@ export enum SolverCompletionCondition {
 
 export enum InitialPopulation {
   Random = 'Random',
-  WorstBoard = 'WorstBoard',
+  SequentialBoard = 'SequentialBoard',
 }
 
 export class EightQueensSolver {
@@ -222,7 +222,7 @@ export class EightQueensSolver {
         Array.from({ length: this.parameters.populationSize }, () =>
           Board.createRandomBoard(),
         ),
-      [InitialPopulation.WorstBoard]: () =>
+      [InitialPopulation.SequentialBoard]: () =>
         Array.from(
           { length: this.parameters.populationSize },
           () => new Board([...Board.ORDERED_POSITIONS]),
