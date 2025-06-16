@@ -85,18 +85,23 @@ export class EightQueensSolver {
   }
 
   private generateInitialPopulation() {
-    if (this.parameters.initialPopulation === InitialPopulation.Random) {
-      this.boards = Array.from({ length: this.parameters.populationSize }, () =>
-        Board.createRandomBoard(),
-      );
-    }
+    const initialPopulationGenerators: Record<
+      InitialPopulation,
+      () => Board[]
+    > = {
+      [InitialPopulation.Random]: () =>
+        Array.from({ length: this.parameters.populationSize }, () =>
+          Board.createRandomBoard(),
+        ),
+      [InitialPopulation.WorstBoard]: () =>
+        Array.from(
+          { length: this.parameters.populationSize },
+          () => new Board([...Board.ORDERED_POSITIONS]),
+        ),
+    };
 
-    if (this.parameters.initialPopulation === InitialPopulation.WorstBoard) {
-      this.boards = Array.from(
-        { length: this.parameters.populationSize },
-        () => new Board([...Board.ORDERED_POSITIONS]),
-      );
-    }
+    this.boards =
+      initialPopulationGenerators[this.parameters.initialPopulation]();
   }
 
   pickRandomBoards(amount: number): Board[] {
@@ -121,20 +126,19 @@ export class EightQueensSolver {
   }
 
   private checkForCompletion() {
-    if (
-      this.parameters.completionCondition ===
-        SolverCompletionCondition.ConvergeOne &&
-      this.boards[0].fitness === 0
-    ) {
-      this.#state = SolverState.Solved;
-    }
+    const isCompletionConditionSatisfied: Record<
+      SolverCompletionCondition,
+      () => boolean
+    > = {
+      [SolverCompletionCondition.ConvergeOne]: () =>
+        this.boards[0].fitness === 0,
+      [SolverCompletionCondition.ConvergeAll]: () =>
+        this.boards[this.boards.length - 1].fitness === 0,
+    };
 
-    if (
-      this.parameters.completionCondition ===
-        SolverCompletionCondition.ConvergeAll &&
-      this.boards[this.boards.length - 1].fitness === 0
-    ) {
+    if (isCompletionConditionSatisfied[this.parameters.completionCondition]()) {
       this.#state = SolverState.Solved;
+      return;
     }
 
     if (this.#currentIteration! + 1 >= this.parameters.maxIterations) {
