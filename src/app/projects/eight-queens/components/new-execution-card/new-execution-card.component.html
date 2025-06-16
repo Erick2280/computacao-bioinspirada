@@ -73,6 +73,32 @@
 
       <label
         class="flex cursor-pointer items-center justify-between gap-x-3"
+        for="parent-selection-method-select"
+      >
+        <div class="flex items-center gap-2">
+          <ng-icon
+            name="remixDropperLine"
+            class="min-w-fit text-base md:text-lg"
+            aria-hidden="true"
+          ></ng-icon>
+          <span>Método de seleção de pais</span>
+        </div>
+
+        <select
+          [(ngModel)]="parentsSelectionMethod"
+          class="bg-bright text-dark w-42 min-w-fit rounded-lg border border-stone-300 py-1.75 ps-4 pe-8 transition-all hover:bg-stone-100 focus:border-teal-600 focus:ring-teal-600 focus:outline-none"
+          id="parent-selection-method-select"
+        >
+          @for (option of parentsSelectionMethodOptions; track option.value) {
+            <option value="{{ option.value }}">{{ option.label }}</option>
+          }
+        </select>
+      </label>
+
+      <div class="my-1 border-t border-solid border-stone-300"></div>
+
+      <label
+        class="flex cursor-pointer items-center justify-between gap-x-3"
         for="recombination-probability-input"
       >
         <div class="flex items-center gap-2">
@@ -100,6 +126,32 @@
       </label>
 
       <label
+        class="flex cursor-pointer flex-col items-start justify-between gap-y-3 pb-3"
+        for="recombination-method-select"
+      >
+        <div class="flex items-center gap-2">
+          <ng-icon
+            name="remixSettings6Line"
+            class="min-w-fit text-base md:text-lg"
+            aria-hidden="true"
+          ></ng-icon>
+          <span>Método de recombinação</span>
+        </div>
+
+        <select
+          [(ngModel)]="recombinationMethod"
+          class="bg-bright text-dark w-full rounded-lg border border-stone-300 py-1.75 ps-4 pe-8 transition-all hover:bg-stone-100 focus:border-teal-600 focus:ring-teal-600 focus:outline-none"
+          id="recombination-method-select"
+        >
+          @for (option of recombinationMethodOptions; track option.value) {
+            <option value="{{ option.value }}">{{ option.label }}</option>
+          }
+        </select>
+      </label>
+
+      <div class="my-1 border-t border-solid border-stone-300"></div>
+
+      <label
         class="flex cursor-pointer items-center justify-between gap-x-3"
         for="mutation-probability-input"
       >
@@ -125,6 +177,30 @@
             mutationProbability() | percent
           }}</span>
         </div>
+      </label>
+
+      <label
+        class="flex cursor-pointer flex-col items-start justify-between gap-y-3 pb-3"
+        for="mutation-method-select"
+      >
+        <div class="flex items-center gap-2">
+          <ng-icon
+            name="remixSettings6Line"
+            class="min-w-fit text-base md:text-lg"
+            aria-hidden="true"
+          ></ng-icon>
+          <span>Método de mutação</span>
+        </div>
+
+        <select
+          [(ngModel)]="mutationMethod"
+          class="bg-bright text-dark w-full rounded-lg border border-stone-300 py-1.75 ps-4 pe-8 transition-all hover:bg-stone-100 focus:border-teal-600 focus:ring-teal-600 focus:outline-none"
+          id="mutation-method-select"
+        >
+          @for (option of mutationMethodOptions; track option.value) {
+            <option value="{{ option.value }}">{{ option.label }}</option>
+          }
+        </select>
       </label>
 
       <div class="my-1 border-t border-solid border-stone-300"></div>

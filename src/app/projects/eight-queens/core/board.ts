@@ -109,6 +109,41 @@ export class Board {
     return new Board(mutatedPositions as BoardPositions, iterationBorn);
   }
 
+  static createFromSwappingWithCollision(
+    board: Board,
+    iterationBorn: number,
+  ): Board {
+    const collisionIndexes = Array.from(board.collisionIndexes.entries())
+      .filter(([, indexes]) => indexes.length > 0)
+      .map(([index]) => index);
+
+    if (collisionIndexes.length === 0) {
+      return board; // No collisions to resolve
+    }
+
+    const collisionIndexToSwap =
+      collisionIndexes[board.getRandomIndex(collisionIndexes.length)];
+    let randomIndexToSwap: number | undefined = undefined;
+
+    while (
+      randomIndexToSwap === undefined ||
+      randomIndexToSwap === collisionIndexToSwap
+    ) {
+      randomIndexToSwap = board.getRandomIndex(board.positions.length);
+    }
+
+    const mutatedPositions = [...board.positions];
+    [
+      mutatedPositions[collisionIndexToSwap],
+      mutatedPositions[randomIndexToSwap],
+    ] = [
+      mutatedPositions[randomIndexToSwap],
+      mutatedPositions[collisionIndexToSwap],
+    ];
+
+    return new Board(mutatedPositions as BoardPositions, iterationBorn);
+  }
+
   static createTwoFromCutAndCrossfill(
     board1: Board,
     board2: Board,
@@ -127,6 +162,70 @@ export class Board {
       ...offspringCut2,
       ...board1.getCrossfill(offspringCut2),
     ];
+
+    return [
+      new Board(offspring1 as BoardPositions, iterationBorn),
+      new Board(offspring2 as BoardPositions, iterationBorn),
+    ];
+  }
+
+  static createTwoFromCycleCrossover(
+    board1: Board,
+    board2: Board,
+    iterationBorn: number,
+  ): [Board, Board] {
+    const parent1 = [...board1.positions];
+    const parent2 = [...board2.positions];
+    const length = parent1.length;
+
+    // Create arrays to track which positions have been used
+    const used = new Array(length).fill(false);
+    const offspring1 = new Array(length);
+    const offspring2 = new Array(length);
+
+    let usedCount = 0;
+    let cycleStart = 0;
+
+    // Continue until all positions are assigned
+    while (usedCount < length) {
+      // Find the next unused position to start a new cycle
+      while (cycleStart < length && used[cycleStart]) {
+        cycleStart++;
+      }
+
+      if (cycleStart < length) {
+        let position = cycleStart;
+
+        // Follow the cycle
+        do {
+          used[position] = true;
+          usedCount++;
+
+          offspring1[position] = parent1[position];
+          offspring2[position] = parent2[position];
+
+          // Find where the value from parent2 occurs in parent1
+          const valueToFind = parent2[position];
+          position = parent1.findIndex(
+            (value, index) => !used[index] && value === valueToFind,
+          );
+
+          // If we can't find the next position or the cycle is complete, break
+          if (position === -1 || position === cycleStart) {
+            break;
+          }
+        } while (!used[position]);
+      }
+    }
+
+    // Fill any remaining unused positions by swapping between parents
+    for (let i = 0; i < length; i++) {
+      if (!used[i]) {
+        offspring1[i] = parent2[i];
+        offspring2[i] = parent1[i];
+        used[i] = true;
+      }
+    }
 
     return [
       new Board(offspring1 as BoardPositions, iterationBorn),

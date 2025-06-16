@@ -8,12 +8,100 @@ export interface SolverParameters {
   mutationProbability: number;
   maxIterations: number;
   parentCandidatesAmount: number;
+  parentsSelectionMethod: ParentsSelectionMethod;
+  recombinationMethod: RecombinationMethod;
+  mutationMethod: MutationMethod;
   initialPopulation: InitialPopulation;
   completionCondition: SolverCompletionCondition;
 }
 
+export interface SolverStatistics {
+  fitness: {
+    average: number[];
+    best: number[];
+    worst: number[];
+    median: number[];
+    standardDeviation: number[];
+  };
+  age: {
+    average: number[];
+    oldest: number[];
+    earlierIterationAlive: number[];
+  };
+  recombination: ChanceCounter;
+  mutation: ChanceCounter;
+}
+
+export interface ChanceCounter {
+  chancesRolled: number;
+  chancesHit: number;
+}
+
+export enum SolverState {
+  NotInitialized = 'NotInitialized',
+  InProgress = 'InProgress',
+  Solved = 'Solved',
+  ReachedMaxIterations = 'ReachedMaxIterations',
+}
+
+export enum MutationMethod {
+  SwapAny = 'SwapAny',
+  SwapCollision = 'SwapCollision',
+}
+
+export enum ParentsSelectionMethod {
+  Random = 'Random',
+  BestFitness = 'BestFitness',
+  TournamentOfThree = 'TournamentOfThree',
+}
+
+export enum RecombinationMethod {
+  CutAndCrossfill = 'CutAndCrossfill',
+  CycleCrossover = 'CycleCrossover',
+}
+
+export enum SolverCompletionCondition {
+  ConvergeOne = 'ConvergeOne',
+  ConvergeAll = 'ConvergeAll',
+}
+
+export enum InitialPopulation {
+  Random = 'Random',
+  WorstBoard = 'WorstBoard',
+}
+
 export class EightQueensSolver {
   readonly parameters: SolverParameters;
+  static readonly PARENTS_SELECTION_METHODS: Record<
+    ParentsSelectionMethod,
+    (boards: Board[]) => Board[]
+  > = {
+    [ParentsSelectionMethod.Random]: (boards) =>
+      boards.sort(() => Math.random() - 0.5).slice(0, 2),
+    [ParentsSelectionMethod.BestFitness]: (boards) => boards.slice(0, 2),
+    [ParentsSelectionMethod.TournamentOfThree]: (boards) => {
+      const tournamentSize = 3;
+      const selectedBoards = boards
+        .sort(() => Math.random() - 0.5)
+        .slice(0, tournamentSize);
+      return selectedBoards.sort((a, b) => a.fitness - b.fitness).slice(0, 2);
+    },
+  };
+  static readonly MUTATION_METHODS: Record<
+    MutationMethod,
+    (board: Board, currentIteration: number) => Board
+  > = {
+    [MutationMethod.SwapAny]: Board.createFromSwappingRandomPositions,
+    [MutationMethod.SwapCollision]: Board.createFromSwappingWithCollision,
+  };
+  static readonly RECOMBINATION_METHODS: Record<
+    RecombinationMethod,
+    (parent1: Board, parent2: Board, currentIteration: number) => Board[]
+  > = {
+    [RecombinationMethod.CutAndCrossfill]: Board.createTwoFromCutAndCrossfill,
+    [RecombinationMethod.CycleCrossover]: Board.createTwoFromCycleCrossover,
+  };
+
   boards: Board[] = [];
   #state: SolverState = SolverState.NotInitialized;
   #statistics: SolverStatistics | null = null;
@@ -79,8 +167,10 @@ export class EightQueensSolver {
       this.parameters.parentCandidatesAmount,
     );
 
-    // Since the board list is sorted by fitness, the first two boards are the best candidates for parents.
-    const selectedParents = parentCandidates.slice(0, 2);
+    const selectedParents =
+      EightQueensSolver.PARENTS_SELECTION_METHODS[
+        this.parameters.parentsSelectionMethod
+      ](parentCandidates);
     let offspring = selectedParents;
 
     const recombinationChanceCounter: ChanceCounter = {
@@ -93,25 +183,20 @@ export class EightQueensSolver {
       chancesHit: 0,
     };
 
-    // TODO: In the future, we might want to implement other recombination and mutation methods,
-    // maybe using different classes for each method.
     recombinationChanceCounter.chancesRolled++;
     if (rollChance(this.parameters.recombinationProbability)) {
-      offspring = Board.createTwoFromCutAndCrossfill(
-        selectedParents[0],
-        selectedParents[1],
-        this.#currentIteration!,
-      );
+      offspring = EightQueensSolver.RECOMBINATION_METHODS[
+        this.parameters.recombinationMethod
+      ](selectedParents[0], selectedParents[1], this.#currentIteration!);
       recombinationChanceCounter.chancesHit++;
     }
 
     for (const [index, board] of offspring.entries()) {
       mutationChanceCounter.chancesRolled++;
       if (rollChance(this.parameters.mutationProbability)) {
-        offspring[index] = Board.createFromSwappingRandomPositions(
-          board,
-          this.#currentIteration!,
-        );
+        offspring[index] = EightQueensSolver.MUTATION_METHODS[
+          this.parameters.mutationMethod
+        ](board, this.#currentIteration!);
         mutationChanceCounter.chancesHit++;
       }
     }
@@ -149,6 +234,10 @@ export class EightQueensSolver {
   }
 
   pickRandomBoards(amount: number): Board[] {
+    if (amount === this.boards.length) {
+      return [...this.boards];
+    }
+
     const selectedIndexes = new Set<number>();
 
     while (selectedIndexes.size < amount) {
@@ -242,43 +331,4 @@ export class EightQueensSolver {
     this.#statistics!.mutation.chancesHit +=
       counters.mutationChanceCounter.chancesHit;
   }
-}
-
-export interface SolverStatistics {
-  fitness: {
-    average: number[];
-    best: number[];
-    worst: number[];
-    median: number[];
-    standardDeviation: number[];
-  };
-  age: {
-    average: number[];
-    oldest: number[];
-    earlierIterationAlive: number[];
-  };
-  recombination: ChanceCounter;
-  mutation: ChanceCounter;
-}
-
-export interface ChanceCounter {
-  chancesRolled: number;
-  chancesHit: number;
-}
-
-export enum SolverState {
-  NotInitialized = 'NotInitialized',
-  InProgress = 'InProgress',
-  Solved = 'Solved',
-  ReachedMaxIterations = 'ReachedMaxIterations',
-}
-
-export enum SolverCompletionCondition {
-  ConvergeOne = 'ConvergeOne',
-  ConvergeAll = 'ConvergeAll',
-}
-
-export enum InitialPopulation {
-  Random = 'Random',
-  WorstBoard = 'WorstBoard',
 }
