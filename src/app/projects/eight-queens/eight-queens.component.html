@@ -209,6 +209,39 @@
               ></span>
             </div>
           </label>
+
+          <label
+            class="flex cursor-pointer items-center justify-between gap-x-3 py-1.5 md:py-2"
+            for="highlight-collisions-on-hover-toggle"
+          >
+            <div class="flex items-center gap-2">
+              <ng-icon
+                name="remixSwordLine"
+                class="min-w-fit text-base md:text-lg"
+                aria-hidden="true"
+              ></ng-icon>
+              <div class="flex flex-col items-start">
+                <span>Destacar colisões entre rainhas</span>
+                <p class="opacity-70">
+                  Aponte para uma rainha para ver as colisões.
+                </p>
+              </div>
+            </div>
+            <div class="relative inline-block h-6 min-w-11">
+              <input
+                type="checkbox"
+                [(ngModel)]="viewingOptions().highlightCollisionsOnHover"
+                id="highlight-collisions-on-hover-toggle"
+                class="peer sr-only"
+              />
+              <span
+                class="peer-focus:ring-offset-shade absolute inset-0 rounded-full bg-stone-400 transition-all duration-200 ease-in-out peer-checked:bg-teal-600 peer-hover:bg-stone-500 peer-hover:peer-checked:bg-teal-700 peer-focus:ring-4 peer-focus:ring-teal-600 peer-focus:ring-offset-4 peer-focus:outline-none peer-disabled:pointer-events-none peer-disabled:opacity-50"
+              ></span>
+              <span
+                class="absolute start-0.5 top-1/2 size-5 -translate-y-1/2 rounded-full bg-white shadow-xs transition-transform duration-200 ease-in-out peer-checked:translate-x-full"
+              ></span>
+            </div>
+          </label>
         </section>
 
         <section class="bg-shade rounded-lg p-4 md:p-6">

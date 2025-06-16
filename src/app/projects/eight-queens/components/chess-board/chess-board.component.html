@@ -2,17 +2,28 @@
   class="bg-bright grid aspect-square h-52 w-52 grid-cols-8 grid-rows-8 overflow-clip rounded-lg border-4 border-solid border-stone-500 shadow-lg"
   aria-hidden="true"
 >
-  @for (row of bidimensionalPositions(); let rowIndex = $index; track $index) {
-    @for (hasQueen of row; track $index) {
+  @for (
+    row of bidimensionalPositions();
+    let rowIndex = $index;
+    track rowIndex
+  ) {
+    @for (hasQueen of row; let colIndex = $index; track colIndex) {
+      @let highlight = isHighlighted(colIndex, hasQueen);
       <div
         class="grid h-full w-full place-items-center"
+        (mouseenter)="applyHover(colIndex, hasQueen)"
+        (mouseleave)="hoveredPosition.set(null)"
         [ngClass]="{
-          'even:bg-dark even:text-bright': rowIndex % 2 === 0,
-          'odd:bg-dark odd:text-bright': rowIndex % 2 !== 0,
+          'even:bg-dark even:text-bright': rowIndex % 2 === 0 && !highlight,
+          'odd:bg-dark odd:text-bright': rowIndex % 2 !== 0 && !highlight,
+          'text-bright bg-amber-700': highlight,
         }"
       >
-        @if (hasQueen) {
+        @if (hasQueen && !highlight) {
           <ng-icon name="remixVipCrown2Fill"></ng-icon>
+        }
+        @if (hasQueen && highlight) {
+          <ng-icon name="remixVipCrown2Line"></ng-icon>
         }
       </div>
     }

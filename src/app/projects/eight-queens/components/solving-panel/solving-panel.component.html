@@ -19,7 +19,12 @@
             </span>
           }
           @if (viewingOptions().showChessBoards) {
-            <app-chess-board [positions]="board.positions"></app-chess-board>
+            <app-chess-board
+              [board]="board"
+              [highlightCollisionsOnHover]="
+                viewingOptions().highlightCollisionsOnHover
+              "
+            ></app-chess-board>
           }
 
           @if (viewingOptions().showGenotypes) {

@@ -25,4 +25,5 @@ export class SolvingPanelComponent {
 export interface ViewingOptions {
   showChessBoards: boolean;
   showGenotypes: boolean;
+  highlightCollisionsOnHover: boolean;
 }

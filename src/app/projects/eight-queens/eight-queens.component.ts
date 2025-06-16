@@ -14,6 +14,7 @@ import {
   remixPauseFill,
   remixPlayFill,
   remixResetLeftFill,
+  remixSwordLine,
 } from '@ng-icons/remixicon';
 
 import { NewExecutionCardComponent } from '@app/projects/eight-queens/components/new-execution-card/new-execution-card.component';
@@ -47,6 +48,7 @@ import { ExecutionService } from '@app/projects/eight-queens/services/execution.
       remixResetLeftFill,
       remixContractRightFill,
       remixLoaderFill,
+      remixSwordLine,
     }),
   ],
 })
@@ -55,6 +57,7 @@ export class EightQueensPageComponent {
   viewingOptions = signal<ViewingOptions>({
     showChessBoards: true,
     showGenotypes: true,
+    highlightCollisionsOnHover: false,
   });
 
   SolverState = SolverState;
