@@ -5,9 +5,9 @@ import { NgIcon, provideIcons } from '@ng-icons/core';
 import { remixCheckFill } from '@ng-icons/remixicon';
 
 import { ChessBoardComponent } from '@app/projects/eight-queens/components/chess-board/chess-board.component';
-import { SolverState } from '@app/projects/eight-queens/core/solver';
+import { EQSolverState } from '@app/projects/eight-queens/core/solver';
 import { GenotypePipe } from '@app/projects/eight-queens/pipes/genotype.pipe';
-import { ExecutionService } from '@app/projects/eight-queens/services/execution.service';
+import { EQExecutionService } from '@app/projects/eight-queens/services/execution.service';
 
 import { StatisticsDashboardComponent } from '../statistics-dashboard/statistics-dashboard.component';
 
@@ -28,10 +28,10 @@ export class SolvingPanelComponent {
   readonly TAB_ID_PREFIX = 'solving-panel-tab-';
   readonly TABPANEL_ID_PREFIX = 'solving-panel-tabpanel-';
 
-  executionService = inject(ExecutionService);
+  executionService = inject(EQExecutionService);
   viewingOptions = input.required<ViewingOptions>();
 
-  SolverState = SolverState;
+  SolverState = EQSolverState;
   PanelTab = PanelTab;
 
   selectedTab = signal<PanelTab>(PanelTab.Boards);

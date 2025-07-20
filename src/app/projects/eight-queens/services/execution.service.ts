@@ -2,12 +2,12 @@ import { Injectable } from '@angular/core';
 
 import { BehaviorSubject } from 'rxjs';
 
-import { EightQueensSolver, SolverState } from '../core/solver';
+import { EQSolverState, EightQueensSolver } from '../core/solver';
 
 @Injectable({
   providedIn: 'root',
 })
-export class ExecutionService {
+export class EQExecutionService {
   #runningSolver: EightQueensSolver | null = null;
   #runningContinuously = false;
 
@@ -28,11 +28,11 @@ export class ExecutionService {
 
   step() {
     if (!this.#runningSolver) {
-      throw new Error('NoSolverRunning');
+      throw new Error('No solver running');
     }
 
     if (this.#runningSolver.state !== 'InProgress') {
-      throw new Error('SolverNotInProgress');
+      throw new Error('Solver not in progress');
     }
 
     this.#runningSolver.iterate();
@@ -47,7 +47,7 @@ export class ExecutionService {
       this.updateObservable();
 
       if (
-        this.#runningSolver?.state === SolverState.InProgress &&
+        this.#runningSolver?.state === EQSolverState.InProgress &&
         this.#runningContinuously
       ) {
         // Schedule the next iteration after a short delay
@@ -56,7 +56,7 @@ export class ExecutionService {
       }
     };
 
-    if (this.#runningSolver?.state !== SolverState.InProgress) {
+    if (this.#runningSolver?.state !== EQSolverState.InProgress) {
       return;
     }
 

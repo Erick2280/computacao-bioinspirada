@@ -1,21 +1,21 @@
 import { rollChance } from '@app/global/utils';
 
-import { Board } from './board';
+import { EQBoard } from './board';
 
-export interface SolverParameters {
+export interface EQSolverParameters {
   populationSize: number;
   recombinationProbability: number;
   mutationProbability: number;
   maxIterations: number;
   parentCandidatesAmount: number;
-  parentsSelectionMethod: ParentsSelectionMethod;
-  recombinationMethod: RecombinationMethod;
-  mutationMethod: MutationMethod;
-  initialPopulation: InitialPopulation;
-  completionCondition: SolverCompletionCondition;
+  parentsSelectionMethod: EQParentsSelectionMethod;
+  recombinationMethod: EQRecombinationMethod;
+  mutationMethod: EQMutationMethod;
+  initialPopulation: EQInitialPopulation;
+  completionCondition: EQSolverCompletionCondition;
 }
 
-export interface SolverStatistics {
+export interface EQSolverStatistics {
   fitness: {
     average: number[];
     best: number[];
@@ -28,58 +28,58 @@ export interface SolverStatistics {
     oldest: number[];
     earlierIterationAlive: number[];
   };
-  recombination: ChanceCounter;
-  mutation: ChanceCounter;
+  recombination: EQChanceCounter;
+  mutation: EQChanceCounter;
 }
 
-export interface ChanceCounter {
+export interface EQChanceCounter {
   chancesRolled: number;
   chancesHit: number;
 }
 
-export enum SolverState {
+export enum EQSolverState {
   NotInitialized = 'NotInitialized',
   InProgress = 'InProgress',
   Solved = 'Solved',
   ReachedMaxIterations = 'ReachedMaxIterations',
 }
 
-export enum MutationMethod {
+export enum EQMutationMethod {
   SwapAny = 'SwapAny',
   SwapCollision = 'SwapCollision',
 }
 
-export enum ParentsSelectionMethod {
+export enum EQParentsSelectionMethod {
   Random = 'Random',
   BestFitness = 'BestFitness',
   TournamentOfThree = 'TournamentOfThree',
 }
 
-export enum RecombinationMethod {
+export enum EQRecombinationMethod {
   CutAndCrossfill = 'CutAndCrossfill',
   CycleCrossover = 'CycleCrossover',
 }
 
-export enum SolverCompletionCondition {
+export enum EQSolverCompletionCondition {
   ConvergeOne = 'ConvergeOne',
   ConvergeAll = 'ConvergeAll',
 }
 
-export enum InitialPopulation {
+export enum EQInitialPopulation {
   Random = 'Random',
   SequentialBoard = 'SequentialBoard',
 }
 
 export class EightQueensSolver {
-  readonly parameters: SolverParameters;
+  readonly parameters: EQSolverParameters;
   static readonly PARENTS_SELECTION_METHODS: Record<
-    ParentsSelectionMethod,
-    (boards: Board[]) => Board[]
+    EQParentsSelectionMethod,
+    (boards: EQBoard[]) => EQBoard[]
   > = {
-    [ParentsSelectionMethod.Random]: (boards) =>
+    [EQParentsSelectionMethod.Random]: (boards) =>
       boards.sort(() => Math.random() - 0.5).slice(0, 2),
-    [ParentsSelectionMethod.BestFitness]: (boards) => boards.slice(0, 2),
-    [ParentsSelectionMethod.TournamentOfThree]: (boards) => {
+    [EQParentsSelectionMethod.BestFitness]: (boards) => boards.slice(0, 2),
+    [EQParentsSelectionMethod.TournamentOfThree]: (boards) => {
       const tournamentSize = 3;
       const selectedBoards = boards
         .sort(() => Math.random() - 0.5)
@@ -88,31 +88,32 @@ export class EightQueensSolver {
     },
   };
   static readonly MUTATION_METHODS: Record<
-    MutationMethod,
-    (board: Board, currentIteration: number) => Board
+    EQMutationMethod,
+    (board: EQBoard, currentIteration: number) => EQBoard
   > = {
-    [MutationMethod.SwapAny]: Board.createFromSwappingRandomPositions,
-    [MutationMethod.SwapCollision]: Board.createFromSwappingWithCollision,
+    [EQMutationMethod.SwapAny]: EQBoard.createFromSwappingRandomPositions,
+    [EQMutationMethod.SwapCollision]: EQBoard.createFromSwappingWithCollision,
   };
   static readonly RECOMBINATION_METHODS: Record<
-    RecombinationMethod,
-    (parent1: Board, parent2: Board, currentIteration: number) => Board[]
+    EQRecombinationMethod,
+    (parent1: EQBoard, parent2: EQBoard, currentIteration: number) => EQBoard[]
   > = {
-    [RecombinationMethod.CutAndCrossfill]: Board.createTwoFromCutAndCrossfill,
-    [RecombinationMethod.CycleCrossover]: Board.createTwoFromCycleCrossover,
+    [EQRecombinationMethod.CutAndCrossfill]:
+      EQBoard.createTwoFromCutAndCrossfill,
+    [EQRecombinationMethod.CycleCrossover]: EQBoard.createTwoFromCycleCrossover,
   };
 
-  boards: Board[] = [];
-  #state: SolverState = SolverState.NotInitialized;
-  #statistics: SolverStatistics | null = null;
+  boards: EQBoard[] = [];
+  #state: EQSolverState = EQSolverState.NotInitialized;
+  #statistics: EQSolverStatistics | null = null;
   #currentIteration: number | null = null;
 
-  constructor(parameters: SolverParameters) {
+  constructor(parameters: EQSolverParameters) {
     this.parameters = parameters;
     Object.freeze(this.parameters);
   }
 
-  get state(): SolverState {
+  get state(): EQSolverState {
     return this.#state;
   }
 
@@ -120,19 +121,19 @@ export class EightQueensSolver {
     return this.#currentIteration;
   }
 
-  get statistics(): SolverStatistics | null {
+  get statistics(): EQSolverStatistics | null {
     return this.#statistics;
   }
 
   initialize() {
-    if (this.#state !== SolverState.NotInitialized) {
+    if (this.#state !== EQSolverState.NotInitialized) {
       return;
     }
 
     this.generateInitialPopulation();
     this.sortBoardsByFitness();
     this.#currentIteration = 0;
-    this.#state = SolverState.InProgress;
+    this.#state = EQSolverState.InProgress;
     this.#statistics = {
       fitness: {
         average: [],
@@ -159,8 +160,8 @@ export class EightQueensSolver {
   }
 
   iterate() {
-    if (this.#state !== SolverState.InProgress) {
-      throw new Error('SolverNotInProgress');
+    if (this.#state !== EQSolverState.InProgress) {
+      throw new Error('Solver not in progress');
     }
 
     const parentCandidates = this.pickRandomBoards(
@@ -173,12 +174,12 @@ export class EightQueensSolver {
       ](parentCandidates);
     let offspring = selectedParents;
 
-    const recombinationChanceCounter: ChanceCounter = {
+    const recombinationChanceCounter: EQChanceCounter = {
       chancesRolled: 0,
       chancesHit: 0,
     };
 
-    const mutationChanceCounter: ChanceCounter = {
+    const mutationChanceCounter: EQChanceCounter = {
       chancesRolled: 0,
       chancesHit: 0,
     };
@@ -215,17 +216,17 @@ export class EightQueensSolver {
 
   private generateInitialPopulation() {
     const initialPopulationGenerators: Record<
-      InitialPopulation,
-      () => Board[]
+      EQInitialPopulation,
+      () => EQBoard[]
     > = {
-      [InitialPopulation.Random]: () =>
+      [EQInitialPopulation.Random]: () =>
         Array.from({ length: this.parameters.populationSize }, () =>
-          Board.createRandomBoard(),
+          EQBoard.createRandomBoard(),
         ),
-      [InitialPopulation.SequentialBoard]: () =>
+      [EQInitialPopulation.SequentialBoard]: () =>
         Array.from(
           { length: this.parameters.populationSize },
-          () => new Board([...Board.ORDERED_POSITIONS]),
+          () => new EQBoard([...EQBoard.ORDERED_POSITIONS]),
         ),
     };
 
@@ -233,7 +234,7 @@ export class EightQueensSolver {
       initialPopulationGenerators[this.parameters.initialPopulation]();
   }
 
-  pickRandomBoards(amount: number): Board[] {
+  pickRandomBoards(amount: number): EQBoard[] {
     if (amount === this.boards.length) {
       return [...this.boards];
     }
@@ -260,28 +261,28 @@ export class EightQueensSolver {
 
   private checkForCompletion() {
     const isCompletionConditionSatisfied: Record<
-      SolverCompletionCondition,
+      EQSolverCompletionCondition,
       () => boolean
     > = {
-      [SolverCompletionCondition.ConvergeOne]: () =>
+      [EQSolverCompletionCondition.ConvergeOne]: () =>
         this.boards[0].fitness === 0,
-      [SolverCompletionCondition.ConvergeAll]: () =>
+      [EQSolverCompletionCondition.ConvergeAll]: () =>
         this.boards[this.boards.length - 1].fitness === 0,
     };
 
     if (isCompletionConditionSatisfied[this.parameters.completionCondition]()) {
-      this.#state = SolverState.Solved;
+      this.#state = EQSolverState.Solved;
       return;
     }
 
     if (this.#currentIteration! + 1 >= this.parameters.maxIterations) {
-      this.#state = SolverState.ReachedMaxIterations;
+      this.#state = EQSolverState.ReachedMaxIterations;
     }
   }
 
   private updateStatistics(counters: {
-    mutationChanceCounter: ChanceCounter;
-    recombinationChanceCounter: ChanceCounter;
+    mutationChanceCounter: EQChanceCounter;
+    recombinationChanceCounter: EQChanceCounter;
   }) {
     if (this.boards.length === 0) {
       return;

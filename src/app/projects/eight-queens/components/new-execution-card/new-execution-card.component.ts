@@ -18,15 +18,15 @@ import {
 } from '@ng-icons/remixicon';
 
 import {
+  EQInitialPopulation,
+  EQMutationMethod,
+  EQParentsSelectionMethod,
+  EQRecombinationMethod,
+  EQSolverCompletionCondition,
+  EQSolverParameters,
   EightQueensSolver,
-  InitialPopulation,
-  MutationMethod,
-  ParentsSelectionMethod,
-  RecombinationMethod,
-  SolverCompletionCondition,
-  SolverParameters,
 } from '@app/projects/eight-queens/core/solver';
-import { ExecutionService } from '@app/projects/eight-queens/services/execution.service';
+import { EQExecutionService } from '@app/projects/eight-queens/services/execution.service';
 
 @Component({
   selector: 'app-new-execution-card',
@@ -54,87 +54,87 @@ export class NewExecutionCardComponent {
   mutationProbability = signal(0.4);
   maxIterations = signal(10000);
   parentCandidatesAmount = signal(5);
-  parentsSelectionMethod = signal<ParentsSelectionMethod>(
-    ParentsSelectionMethod.BestFitness,
+  parentsSelectionMethod = signal<EQParentsSelectionMethod>(
+    EQParentsSelectionMethod.BestFitness,
   );
-  recombinationMethod = signal<RecombinationMethod>(
-    RecombinationMethod.CutAndCrossfill,
+  recombinationMethod = signal<EQRecombinationMethod>(
+    EQRecombinationMethod.CutAndCrossfill,
   );
-  mutationMethod = signal<MutationMethod>(MutationMethod.SwapAny);
-  initialPopulation = signal<InitialPopulation>(InitialPopulation.Random);
-  completionCondition = signal<SolverCompletionCondition>(
-    SolverCompletionCondition.ConvergeOne,
+  mutationMethod = signal<EQMutationMethod>(EQMutationMethod.SwapAny);
+  initialPopulation = signal<EQInitialPopulation>(EQInitialPopulation.Random);
+  completionCondition = signal<EQSolverCompletionCondition>(
+    EQSolverCompletionCondition.ConvergeOne,
   );
   runContinuously = signal(true);
 
-  executionService = inject(ExecutionService);
+  executionService = inject(EQExecutionService);
 
-  ParentsSelectionMethod = ParentsSelectionMethod;
-  parentsSelectionMethodOptions: SelectOption<ParentsSelectionMethod>[] = [
+  ParentsSelectionMethod = EQParentsSelectionMethod;
+  parentsSelectionMethodOptions: SelectOption<EQParentsSelectionMethod>[] = [
     {
-      value: ParentsSelectionMethod.Random,
+      value: EQParentsSelectionMethod.Random,
       label: 'Aleatório',
     },
     {
-      value: ParentsSelectionMethod.BestFitness,
+      value: EQParentsSelectionMethod.BestFitness,
       label: 'Melhor fitness',
     },
     {
-      value: ParentsSelectionMethod.TournamentOfThree,
+      value: EQParentsSelectionMethod.TournamentOfThree,
       label: 'Torneio de três',
     },
   ];
 
-  RecombinationMethod = RecombinationMethod;
-  recombinationMethodOptions: SelectOption<RecombinationMethod>[] = [
+  RecombinationMethod = EQRecombinationMethod;
+  recombinationMethodOptions: SelectOption<EQRecombinationMethod>[] = [
     {
-      value: RecombinationMethod.CutAndCrossfill,
+      value: EQRecombinationMethod.CutAndCrossfill,
       label: 'Cut-and-crossfill',
     },
     {
-      value: RecombinationMethod.CycleCrossover,
+      value: EQRecombinationMethod.CycleCrossover,
       label: 'Cycle crossover',
     },
   ];
 
-  MutationMethod = MutationMethod;
+  MutationMethod = EQMutationMethod;
   mutationMethodOptions: SelectOption<string>[] = [
     {
-      value: MutationMethod.SwapAny,
+      value: EQMutationMethod.SwapAny,
       label: 'Trocar qualquer posição',
     },
     {
-      value: MutationMethod.SwapCollision,
+      value: EQMutationMethod.SwapCollision,
       label: 'Trocar posição com colisão',
     },
   ];
 
-  InitialPopulation = InitialPopulation;
-  initialPopulationOptions: SelectOption<InitialPopulation>[] = [
+  InitialPopulation = EQInitialPopulation;
+  initialPopulationOptions: SelectOption<EQInitialPopulation>[] = [
     {
-      value: InitialPopulation.Random,
+      value: EQInitialPopulation.Random,
       label: 'Aleatória',
     },
     {
-      value: InitialPopulation.SequentialBoard,
+      value: EQInitialPopulation.SequentialBoard,
       label: 'Tab. sequencial',
     },
   ];
 
-  SolverCompletionCondition = SolverCompletionCondition;
-  completionConditionOptions: SelectOption<SolverCompletionCondition>[] = [
+  SolverCompletionCondition = EQSolverCompletionCondition;
+  completionConditionOptions: SelectOption<EQSolverCompletionCondition>[] = [
     {
-      value: SolverCompletionCondition.ConvergeOne,
+      value: EQSolverCompletionCondition.ConvergeOne,
       label: 'Convergir um',
     },
     {
-      value: SolverCompletionCondition.ConvergeAll,
+      value: EQSolverCompletionCondition.ConvergeAll,
       label: 'Convergir todos',
     },
   ];
 
   startNewExecution() {
-    const parameters: SolverParameters = this.createSolverParameters();
+    const parameters: EQSolverParameters = this.createSolverParameters();
 
     const solver = new EightQueensSolver(parameters);
 
@@ -151,7 +151,7 @@ export class NewExecutionCardComponent {
     }
   }
 
-  createSolverParameters(): SolverParameters {
+  createSolverParameters(): EQSolverParameters {
     return {
       populationSize: this.populationSize(),
       initialPopulation: this.initialPopulation(),

@@ -22,8 +22,8 @@ import {
   SolvingPanelComponent,
   ViewingOptions,
 } from '@app/projects/eight-queens/components/solving-panel/solving-panel.component';
-import { SolverState } from '@app/projects/eight-queens/core/solver';
-import { ExecutionService } from '@app/projects/eight-queens/services/execution.service';
+import { EQSolverState } from '@app/projects/eight-queens/core/solver';
+import { EQExecutionService } from '@app/projects/eight-queens/services/execution.service';
 
 @Component({
   selector: 'app-eight-queens',
@@ -53,12 +53,12 @@ import { ExecutionService } from '@app/projects/eight-queens/services/execution.
   ],
 })
 export class EightQueensPageComponent {
-  executionService = inject(ExecutionService);
+  executionService = inject(EQExecutionService);
   viewingOptions = signal<ViewingOptions>({
     showChessBoards: true,
     showGenotypes: true,
     highlightCollisionsOnHover: false,
   });
 
-  SolverState = SolverState;
+  SolverState = EQSolverState;
 }

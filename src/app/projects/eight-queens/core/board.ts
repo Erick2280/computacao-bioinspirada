@@ -10,7 +10,7 @@ export type BoardPositions = [
   QueenPosition,
 ];
 
-export class Board {
+export class EQBoard {
   // Each board instance should be immutable. All mutations and recombinations should return a new Board instance.
 
   readonly fitness: number;
@@ -46,7 +46,7 @@ export class Board {
     );
 
     const queenRows = this.positions.map((pos) =>
-      Board.ORDERED_POSITIONS.indexOf(pos),
+      EQBoard.ORDERED_POSITIONS.indexOf(pos),
     );
 
     for (let i = 0; i < queenRows.length - 1; i++) {
@@ -73,7 +73,7 @@ export class Board {
     };
   }
 
-  static createRandomBoard(iterationBorn = 0): Board {
+  static createRandomBoard(iterationBorn = 0): EQBoard {
     const positions: BoardPositions = [...this.ORDERED_POSITIONS];
 
     for (let i = positions.length - 1; i > 0; i--) {
@@ -81,13 +81,13 @@ export class Board {
       [positions[i], positions[j]] = [positions[j], positions[i]];
     }
 
-    return new Board(positions, iterationBorn);
+    return new EQBoard(positions, iterationBorn);
   }
 
   static createFromSwappingRandomPositions(
-    board: Board,
+    board: EQBoard,
     iterationBorn = 0,
-  ): Board {
+  ): EQBoard {
     const mutatedPositions = [...board.positions];
     let indexesToSwap: [number, number] | undefined = undefined;
 
@@ -106,13 +106,13 @@ export class Board {
       mutatedPositions[indexesToSwap[0]],
     ];
 
-    return new Board(mutatedPositions as BoardPositions, iterationBorn);
+    return new EQBoard(mutatedPositions as BoardPositions, iterationBorn);
   }
 
   static createFromSwappingWithCollision(
-    board: Board,
+    board: EQBoard,
     iterationBorn: number,
-  ): Board {
+  ): EQBoard {
     const collisionIndexes = Array.from(board.collisionIndexes.entries())
       .filter(([, indexes]) => indexes.length > 0)
       .map(([index]) => index);
@@ -141,14 +141,14 @@ export class Board {
       mutatedPositions[collisionIndexToSwap],
     ];
 
-    return new Board(mutatedPositions as BoardPositions, iterationBorn);
+    return new EQBoard(mutatedPositions as BoardPositions, iterationBorn);
   }
 
   static createTwoFromCutAndCrossfill(
-    board1: Board,
-    board2: Board,
+    board1: EQBoard,
+    board2: EQBoard,
     iterationBorn: number,
-  ): [Board, Board] {
+  ): [EQBoard, EQBoard] {
     const cutPoint = board1.getRandomIndex(board1.positions.length);
 
     const offspringCut1 = board1.positions.slice(0, cutPoint);
@@ -164,16 +164,16 @@ export class Board {
     ];
 
     return [
-      new Board(offspring1 as BoardPositions, iterationBorn),
-      new Board(offspring2 as BoardPositions, iterationBorn),
+      new EQBoard(offspring1 as BoardPositions, iterationBorn),
+      new EQBoard(offspring2 as BoardPositions, iterationBorn),
     ];
   }
 
   static createTwoFromCycleCrossover(
-    board1: Board,
-    board2: Board,
+    board1: EQBoard,
+    board2: EQBoard,
     iterationBorn: number,
-  ): [Board, Board] {
+  ): [EQBoard, EQBoard] {
     const parent1 = [...board1.positions];
     const parent2 = [...board2.positions];
     const length = parent1.length;
@@ -228,8 +228,8 @@ export class Board {
     }
 
     return [
-      new Board(offspring1 as BoardPositions, iterationBorn),
-      new Board(offspring2 as BoardPositions, iterationBorn),
+      new EQBoard(offspring1 as BoardPositions, iterationBorn),
+      new EQBoard(offspring2 as BoardPositions, iterationBorn),
     ];
   }
 

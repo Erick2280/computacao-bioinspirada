@@ -5,7 +5,7 @@ import { NgIcon } from '@ng-icons/core';
 import { provideIcons } from '@ng-icons/core';
 import { remixVipCrown2Fill, remixVipCrown2Line } from '@ng-icons/remixicon';
 
-import { Board } from '@app/projects/eight-queens/core/board';
+import { EQBoard } from '@app/projects/eight-queens/core/board';
 
 @Component({
   selector: 'app-chess-board',
@@ -14,7 +14,7 @@ import { Board } from '@app/projects/eight-queens/core/board';
   viewProviders: [provideIcons({ remixVipCrown2Fill, remixVipCrown2Line })],
 })
 export class ChessBoardComponent {
-  board = input.required<Board>();
+  board = input.required<EQBoard>();
   highlightCollisionsOnHover = input<boolean>(false);
   hoveredPosition = signal<number | null>(null);
   hoveredCollisionIndexes = computed(() => {
@@ -32,7 +32,7 @@ export class ChessBoardComponent {
 
   bidimensionalPositions = computed(() => {
     const indexedPositions = this.board().positions.map((queen) =>
-      Board.ORDERED_POSITIONS.indexOf(queen),
+      EQBoard.ORDERED_POSITIONS.indexOf(queen),
     );
 
     const bidimensionalPositions: boolean[][] = Array(8)

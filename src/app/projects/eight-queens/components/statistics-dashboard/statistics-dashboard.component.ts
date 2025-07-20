@@ -12,10 +12,10 @@ import { Subscription } from 'rxjs';
 import * as Plot from '@observablehq/plot';
 
 import {
-  ChanceCounter,
+  EQChanceCounter,
   EightQueensSolver,
 } from '@app/projects/eight-queens/core/solver';
-import { ExecutionService } from '@app/projects/eight-queens/services/execution.service';
+import { EQExecutionService } from '@app/projects/eight-queens/services/execution.service';
 
 @Component({
   selector: 'app-statistics-dashboard',
@@ -23,12 +23,12 @@ import { ExecutionService } from '@app/projects/eight-queens/services/execution.
   templateUrl: './statistics-dashboard.component.html',
 })
 export class StatisticsDashboardComponent implements AfterViewInit, OnDestroy {
-  executionService = inject(ExecutionService);
+  executionService = inject(EQExecutionService);
 
   mutationObservedProbability = signal<number>(0);
   recombinationObservedProbability = signal<number>(0);
-  mutationChanceCounter = signal<ChanceCounter | null>(null);
-  recombinationChanceCounter = signal<ChanceCounter | null>(null);
+  mutationChanceCounter = signal<EQChanceCounter | null>(null);
+  recombinationChanceCounter = signal<EQChanceCounter | null>(null);
 
   runningSolverSubscription: Subscription | null = null;
 
@@ -230,7 +230,7 @@ export class StatisticsDashboardComponent implements AfterViewInit, OnDestroy {
     );
   }
 
-  calculateProbabilityFromChanceCounter(counter: ChanceCounter) {
+  calculateProbabilityFromChanceCounter(counter: EQChanceCounter) {
     return counter.chancesHit / counter.chancesRolled;
   }
 
