@@ -11,6 +11,11 @@ Erick Riso (<eaor@cin.ufpe.br>)
 - [Visualizar o projeto](https://bioinspirada.riso.dev/eight-queens)
 - [Visualizar o código-fonte](src/app/projects/eight-queens/)
 
+### Otimização de funções
+
+- [Visualizar o projeto](https://bioinspirada.riso.dev/functions-optimization)
+- [Visualizar o código-fonte](src/app/projects/functions-optimization/)
+
 ## Executar localmente
 
 Você precisa ter instalado o [Node.js](https://nodejs.org/) e o [Angular CLI](https://angular.dev/tools/cli) localmente.

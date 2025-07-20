@@ -21,6 +21,13 @@ export const routes: Routes = [
       ),
   },
   {
+    path: 'functions-optimization',
+    loadComponent: () =>
+      import(
+        './projects/functions-optimization/functions-optimization.component'
+      ).then((m) => m.FunctionsOptimizationComponent),
+  },
+  {
     path: '404',
     loadComponent: () =>
       import('./global/pages/error/error.component').then(
