@@ -95,30 +95,6 @@
 
       <label
         class="flex cursor-pointer items-center justify-between gap-x-3"
-        for="test-function-select"
-      >
-        <div class="flex items-center gap-2">
-          <ng-icon
-            name="remixFormula"
-            class="min-w-fit text-base md:text-lg"
-            aria-hidden="true"
-          ></ng-icon>
-          <span>Função de teste</span>
-        </div>
-
-        <select
-          [(ngModel)]="testFunction"
-          class="bg-bright text-dark w-42 min-w-fit rounded-lg border border-stone-300 py-1.75 ps-4 pe-8 transition-all hover:bg-stone-100 focus:border-teal-600 focus:ring-teal-600 focus:outline-none"
-          id="test-function-select"
-        >
-          @for (option of testFunctionOptions; track option.value) {
-            <option value="{{ option.value }}">{{ option.label }}</option>
-          }
-        </select>
-      </label>
-
-      <label
-        class="flex cursor-pointer items-center justify-between gap-x-3"
         for="parent-candidates-amount-input"
       >
         <div class="flex items-center gap-2">
@@ -290,6 +266,30 @@
       }
 
       <div class="my-1 border-t border-solid border-stone-300"></div>
+
+      <label
+        class="flex cursor-pointer items-center justify-between gap-x-3"
+        for="test-function-select"
+      >
+        <div class="flex items-center gap-2">
+          <ng-icon
+            name="remixFormula"
+            class="min-w-fit text-base md:text-lg"
+            aria-hidden="true"
+          ></ng-icon>
+          <span>Função de teste</span>
+        </div>
+
+        <select
+          [(ngModel)]="testFunction"
+          class="bg-bright text-dark w-42 min-w-fit rounded-lg border border-stone-300 py-1.75 ps-4 pe-8 transition-all hover:bg-stone-100 focus:border-teal-600 focus:ring-teal-600 focus:outline-none"
+          id="test-function-select"
+        >
+          @for (option of testFunctionOptions; track option.value) {
+            <option value="{{ option.value }}">{{ option.label }}</option>
+          }
+        </select>
+      </label>
 
       <label
         class="flex cursor-pointer items-center justify-between gap-x-3"

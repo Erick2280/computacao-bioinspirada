@@ -225,20 +225,6 @@
             <div class="flex items-center justify-between">
               <div class="flex items-center gap-2">
                 <ng-icon
-                  name="remixFormula"
-                  class="min-w-fit text-base md:text-lg"
-                  aria-hidden="true"
-                ></ng-icon>
-                <span>Função de teste</span>
-              </div>
-              <span class="text-sm font-bold">{{
-                getTestFunctionLabel(solver.parameters.testFunction)
-              }}</span>
-            </div>
-
-            <div class="flex items-center justify-between">
-              <div class="flex items-center gap-2">
-                <ng-icon
                   name="remixParentLine"
                   class="min-w-fit text-base md:text-lg"
                   aria-hidden="true"
@@ -346,6 +332,38 @@
               </div>
             }
 
+            <div class="my-2 border-t border-solid border-stone-300"></div>
+
+            <div class="flex items-center justify-between">
+              <div class="flex items-center gap-2">
+                <ng-icon
+                  name="remixFormula"
+                  class="min-w-fit text-base md:text-lg"
+                  aria-hidden="true"
+                ></ng-icon>
+                <span>Função de teste</span>
+              </div>
+              <span class="text-sm font-bold">{{
+                getTestFunctionLabel(solver.parameters.testFunction)
+              }}</span>
+            </div>
+
+            <div class="flex items-center justify-between">
+              <div class="flex items-center gap-2">
+                <ng-icon
+                  name="remixFlagLine"
+                  class="min-w-fit text-base md:text-lg"
+                  aria-hidden="true"
+                ></ng-icon>
+                <span>Condição de encerramento</span>
+              </div>
+              <span class="text-sm font-bold">{{
+                getCompletionConditionLabel(
+                  solver.parameters.completionCondition
+                )
+              }}</span>
+            </div>
+
             <div class="flex items-center justify-between">
               <div class="flex items-center gap-2">
                 <ng-icon
@@ -372,24 +390,6 @@
                   <span class="sr-only">Não</span>
                 }
               </div>
-            </div>
-
-            <div class="my-2 border-t border-solid border-stone-300"></div>
-
-            <div class="flex items-center justify-between">
-              <div class="flex items-center gap-2">
-                <ng-icon
-                  name="remixFlagLine"
-                  class="min-w-fit text-base md:text-lg"
-                  aria-hidden="true"
-                ></ng-icon>
-                <span>Condição de encerramento</span>
-              </div>
-              <span class="text-sm font-bold">{{
-                getCompletionConditionLabel(
-                  solver.parameters.completionCondition
-                )
-              }}</span>
             </div>
           </div>
         </section>
