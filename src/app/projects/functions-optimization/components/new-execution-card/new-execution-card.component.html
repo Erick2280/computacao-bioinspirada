@@ -1,0 +1,348 @@
+<section class="bg-shade rounded-lg">
+  <div class="p-4 md:p-6">
+    <h2 class="mb-4 font-serif text-xl font-bold md:text-2xl">Nova execução</h2>
+
+    <div class="flex flex-col gap-2">
+      <label
+        class="flex cursor-pointer items-center justify-between gap-x-3"
+        for="population-size-input"
+      >
+        <div class="flex items-center gap-2">
+          <ng-icon
+            name="remixHashtag"
+            class="min-w-fit text-base md:text-lg"
+            aria-hidden="true"
+          ></ng-icon>
+          <span>Tamanho da população</span>
+        </div>
+        <input
+          [(ngModel)]="populationSize"
+          (ngModelChange)="checkParentCandidatesAmount()"
+          type="number"
+          id="population-size-input"
+          class="bg-bright text-dark block w-42 rounded-lg border border-stone-300 px-1.5 py-1.75 text-right transition focus:border-teal-600 focus:ring-teal-600 focus:outline-none"
+          min="2"
+          required
+        />
+      </label>
+
+      <label
+        class="flex cursor-pointer items-center justify-between gap-x-3"
+        for="max-iterations-input"
+      >
+        <div class="flex items-center gap-2">
+          <ng-icon
+            name="remixHand"
+            class="min-w-fit text-base md:text-lg"
+            aria-hidden="true"
+          ></ng-icon>
+          <span>Máximo de iterações</span>
+        </div>
+        <input
+          [(ngModel)]="maxIterations"
+          type="number"
+          id="max-iterations-input"
+          class="bg-bright text-dark block w-42 rounded-lg border border-stone-300 px-1.5 py-1.75 text-right transition focus:border-teal-600 focus:ring-teal-600 focus:outline-none"
+          min="1"
+          required
+        />
+      </label>
+
+      <label
+        class="flex cursor-pointer items-center justify-between gap-x-3"
+        for="dimensions-input"
+      >
+        <div class="flex items-center gap-2">
+          <ng-icon
+            name="remixBox2Line"
+            class="min-w-fit text-base md:text-lg"
+            aria-hidden="true"
+          ></ng-icon>
+          <span>Dimensões</span>
+        </div>
+        <input
+          [(ngModel)]="dimensions"
+          type="number"
+          id="dimensions-input"
+          class="bg-bright text-dark block w-42 rounded-lg border border-stone-300 px-1.5 py-1.75 text-right transition focus:border-teal-600 focus:ring-teal-600 focus:outline-none"
+          min="1"
+          required
+        />
+      </label>
+
+      <label
+        class="flex cursor-pointer items-center justify-between gap-x-3"
+        for="convergence-threshold-input"
+      >
+        <div class="flex items-center gap-2">
+          <ng-icon
+            name="remixExpandRightLine"
+            class="min-w-fit text-base md:text-lg"
+            aria-hidden="true"
+          ></ng-icon>
+          <span>Limiar de convergência</span>
+        </div>
+        <input
+          [(ngModel)]="convergenceThreshold"
+          type="number"
+          id="convergence-threshold-input"
+          class="bg-bright text-dark block w-42 rounded-lg border border-stone-300 px-1.5 py-1.75 text-right transition focus:border-teal-600 focus:ring-teal-600 focus:outline-none"
+          step="0.001"
+          min="0"
+          required
+        />
+      </label>
+
+      <label
+        class="flex cursor-pointer items-center justify-between gap-x-3"
+        for="test-function-select"
+      >
+        <div class="flex items-center gap-2">
+          <ng-icon
+            name="remixFormula"
+            class="min-w-fit text-base md:text-lg"
+            aria-hidden="true"
+          ></ng-icon>
+          <span>Função de teste</span>
+        </div>
+
+        <select
+          [(ngModel)]="testFunction"
+          class="bg-bright text-dark w-42 min-w-fit rounded-lg border border-stone-300 py-1.75 ps-4 pe-8 transition-all hover:bg-stone-100 focus:border-teal-600 focus:ring-teal-600 focus:outline-none"
+          id="test-function-select"
+        >
+          @for (option of testFunctionOptions; track option.value) {
+            <option value="{{ option.value }}">{{ option.label }}</option>
+          }
+        </select>
+      </label>
+
+      <label
+        class="flex cursor-pointer items-center justify-between gap-x-3"
+        for="parent-candidates-amount-input"
+      >
+        <div class="flex items-center gap-2">
+          <ng-icon
+            name="remixParentLine"
+            class="min-w-fit text-base md:text-lg"
+            aria-hidden="true"
+          ></ng-icon>
+          <span>Candidatos a pais</span>
+        </div>
+        <input
+          [(ngModel)]="parentCandidatesAmount"
+          type="number"
+          id="parent-candidates-amount-input"
+          class="bg-bright text-dark block w-42 rounded-lg border border-stone-300 px-1.5 py-1.75 text-right transition focus:border-teal-600 focus:ring-teal-600 focus:outline-none"
+          min="2"
+          [max]="populationSize()"
+          required
+        />
+      </label>
+
+      <label
+        class="flex cursor-pointer flex-col items-start justify-between gap-y-3 py-2"
+        for="parent-selection-method-select"
+      >
+        <div class="flex items-center gap-2">
+          <ng-icon
+            name="remixDropperLine"
+            class="min-w-fit text-base md:text-lg"
+            aria-hidden="true"
+          ></ng-icon>
+          <span>Método de seleção de pais</span>
+        </div>
+
+        <select
+          [(ngModel)]="parentsSelectionMethod"
+          class="bg-bright text-dark w-full rounded-lg border border-stone-300 py-1.75 ps-4 pe-8 transition-all hover:bg-stone-100 focus:border-teal-600 focus:ring-teal-600 focus:outline-none"
+          id="parent-selection-method-select"
+        >
+          @for (option of parentsSelectionMethodOptions; track option.value) {
+            <option value="{{ option.value }}">{{ option.label }}</option>
+          }
+        </select>
+      </label>
+
+      <label
+        class="flex cursor-pointer flex-col items-start justify-between gap-y-3 py-2"
+        for="recombination-method-select"
+      >
+        <div class="flex items-center gap-2">
+          <ng-icon
+            name="remixSettings6Line"
+            class="min-w-fit text-base md:text-lg"
+            aria-hidden="true"
+          ></ng-icon>
+          <span>Método de recombinação</span>
+        </div>
+
+        <select
+          [(ngModel)]="recombinationMethod"
+          class="bg-bright text-dark w-full rounded-lg border border-stone-300 py-1.75 ps-4 pe-8 transition-all hover:bg-stone-100 focus:border-teal-600 focus:ring-teal-600 focus:outline-none"
+          id="recombination-method-select"
+        >
+          @for (option of recombinationMethodOptions; track option.value) {
+            <option value="{{ option.value }}">{{ option.label }}</option>
+          }
+        </select>
+      </label>
+
+      <label
+        class="flex cursor-pointer flex-col items-start justify-between gap-y-3 py-2"
+        for="mutation-method-select"
+      >
+        <div class="flex items-center gap-2">
+          <ng-icon
+            name="remixSettings6Line"
+            class="min-w-fit text-base md:text-lg"
+            aria-hidden="true"
+          ></ng-icon>
+          <span>Método de mutação</span>
+        </div>
+
+        <select
+          [(ngModel)]="mutationMethod"
+          class="bg-bright text-dark w-full rounded-lg border border-stone-300 py-1.75 ps-4 pe-8 transition-all hover:bg-stone-100 focus:border-teal-600 focus:ring-teal-600 focus:outline-none"
+          id="mutation-method-select"
+        >
+          @for (option of mutationMethodOptions; track option.value) {
+            <option value="{{ option.value }}">{{ option.label }}</option>
+          }
+        </select>
+      </label>
+
+      <div class="my-1 border-t border-solid border-stone-300"></div>
+
+      <label
+        class="flex cursor-pointer flex-col items-start justify-between gap-y-3 py-2"
+        for="mechanism-select"
+      >
+        <div class="flex items-center gap-2">
+          <ng-icon
+            name="remixSeedlingLine"
+            class="min-w-fit text-base md:text-lg"
+            aria-hidden="true"
+          ></ng-icon>
+          <span>Mecanismo</span>
+        </div>
+
+        <select
+          [(ngModel)]="mechanism"
+          class="bg-bright text-dark w-full rounded-lg border border-stone-300 py-1.75 ps-4 pe-8 transition-all hover:bg-stone-100 focus:border-teal-600 focus:ring-teal-600 focus:outline-none"
+          id="mechanism-select"
+        >
+          @for (option of mechanismOptions; track option.value) {
+            <option value="{{ option.value }}">{{ option.label }}</option>
+          }
+        </select>
+      </label>
+
+      @if (mechanism() === SolverMechanism.EvolutionStrategy) {
+        <label
+          class="flex cursor-pointer items-center justify-between gap-x-3"
+          for="offspring-size-input"
+        >
+          <div class="flex items-center gap-2">
+            <ng-icon
+              name="remixDnaLine"
+              class="min-w-fit text-base md:text-lg"
+              aria-hidden="true"
+            ></ng-icon>
+            <span>Tamanho da prole</span>
+          </div>
+          <input
+            [(ngModel)]="offspringSize"
+            type="number"
+            id="offspring-size-input"
+            class="bg-bright text-dark block w-42 rounded-lg border border-stone-300 px-1.5 py-1.75 text-right transition focus:border-teal-600 focus:ring-teal-600 focus:outline-none"
+            min="1"
+            required
+          />
+        </label>
+
+        <label
+          class="flex cursor-pointer items-center justify-between gap-x-3"
+          for="survivor-selection-strategy-select"
+        >
+          <div class="flex items-center gap-2">
+            <ng-icon
+              name="remixFilterLine"
+              class="min-w-fit text-base md:text-lg"
+              aria-hidden="true"
+            ></ng-icon>
+            <span>Estratégia de seleção de sobreviventes</span>
+          </div>
+
+          <select
+            [(ngModel)]="survivorSelectionStrategy"
+            class="bg-bright text-dark w-42 min-w-fit rounded-lg border border-stone-300 py-1.75 ps-4 pe-8 transition-all hover:bg-stone-100 focus:border-teal-600 focus:ring-teal-600 focus:outline-none"
+            id="survivor-selection-strategy-select"
+          >
+            @for (
+              option of survivorSelectionStrategyOptions;
+              track option.value
+            ) {
+              <option value="{{ option.value }}">{{ option.label }}</option>
+            }
+          </select>
+        </label>
+      }
+
+      <div class="my-1 border-t border-solid border-stone-300"></div>
+
+      <label
+        class="flex cursor-pointer items-center justify-between gap-x-3"
+        for="completion-condition-select"
+      >
+        <div class="flex items-center gap-2">
+          <ng-icon
+            name="remixFlagLine"
+            class="min-w-fit text-base md:text-lg"
+            aria-hidden="true"
+          ></ng-icon>
+          <span>Condição de encerramento</span>
+        </div>
+
+        <select
+          [(ngModel)]="completionCondition"
+          class="bg-bright text-dark w-42 min-w-fit rounded-lg border border-stone-300 py-1.75 ps-4 pe-8 transition-all hover:bg-stone-100 focus:border-teal-600 focus:ring-teal-600 focus:outline-none"
+          id="completion-condition-select"
+        >
+          @for (option of completionConditionOptions; track option.value) {
+            <option value="{{ option.value }}">{{ option.label }}</option>
+          }
+        </select>
+      </label>
+
+      <label
+        class="flex cursor-pointer items-center justify-between gap-x-3"
+        for="continuous-execution-toggle"
+      >
+        <div class="flex items-center gap-2">
+          <ng-icon
+            name="remixExpandRightLine"
+            class="min-w-fit text-base md:text-lg"
+            aria-hidden="true"
+          ></ng-icon>
+          <span>Executar continuamente</span>
+        </div>
+        <input
+          [(ngModel)]="runContinuously"
+          id="continuous-execution-toggle"
+          type="checkbox"
+          class="focus:ring-offset-shade my-3 h-4 w-4 rounded-sm text-teal-600 transition hover:bg-stone-200 hover:checked:bg-teal-700 focus:ring-4 focus:ring-teal-600 focus:ring-offset-4 focus:outline-none active:bg-teal-800"
+        />
+      </label>
+    </div>
+  </div>
+
+  <button
+    type="button"
+    (click)="startNewExecution()"
+    class="focus:ring-offset-bright flex w-full cursor-pointer flex-row items-center justify-between gap-4 rounded-b-lg bg-teal-600 p-4 text-xl font-bold text-white shadow transition hover:bg-teal-700 hover:shadow-lg focus:ring-4 focus:ring-teal-600 focus:ring-offset-4 focus:outline-none active:bg-teal-800 md:px-6 md:text-2xl"
+  >
+    Iniciar
+    <ng-icon name="remixPlayCircleFill" aria-hidden="true"></ng-icon>
+  </button>
+</section>

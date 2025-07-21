@@ -1,0 +1,270 @@
+<section
+  class="border-dark col-span-full row-span-full h-full rounded-xl border-1 border-solid bg-white px-8 py-4 shadow-xl md:rounded-3xl md:px-16"
+>
+  @let solver = executionService.runningSolver$ | async;
+
+  @if (solver) {
+    <h2
+      class="py-2 text-center font-serif text-lg font-bold sm:py-4 sm:text-xl"
+    >
+      Estatísticas da execução
+    </h2>
+
+    <div
+      class="grid grid-cols-[repeat(auto-fit,minmax(30rem,1fr))] gap-8 pt-2 pb-4"
+    >
+      <div class="bg-bright rounded-lg p-4">
+        <h3 class="pb-4 font-serif text-xl italic sm:text-2xl">Sumário</h3>
+
+        <div class="grid gap-4 pt-4">
+          <div class="flex items-center justify-between">
+            <div class="flex items-center gap-2">
+              <ng-icon
+                name="remixArrowUpLine"
+                class="min-w-fit text-base md:text-lg"
+                aria-hidden="true"
+              ></ng-icon>
+              <span class="text-sm">Melhor fitness atual</span>
+            </div>
+            <span class="font-sans text-sm font-bold tabular-nums">
+              {{
+                solver.statistics!.fitness.best[
+                  solver.statistics!.fitness.best.length - 1
+                ] | number: '1.6-6'
+              }}
+            </span>
+          </div>
+
+          <div class="flex items-center justify-between">
+            <div class="flex items-center gap-2">
+              <ng-icon
+                name="remixArrowDownLine"
+                class="min-w-fit text-base md:text-lg"
+                aria-hidden="true"
+              ></ng-icon>
+              <span class="text-sm">Pior fitness atual</span>
+            </div>
+            <span class="font-sans text-sm font-bold tabular-nums">
+              {{
+                solver.statistics!.fitness.worst[
+                  solver.statistics!.fitness.worst.length - 1
+                ] | number: '1.6-6'
+              }}
+            </span>
+          </div>
+
+          <div class="flex items-center justify-between">
+            <div class="flex items-center gap-2">
+              <ng-icon
+                name="remixBarChartLine"
+                class="min-w-fit text-base md:text-lg"
+                aria-hidden="true"
+              ></ng-icon>
+              <span class="text-sm">Desvio padrão</span>
+            </div>
+            <span class="font-sans text-sm font-bold tabular-nums">
+              {{
+                solver.statistics!.fitness.standardDeviation[
+                  solver.statistics!.fitness.standardDeviation.length - 1
+                ] | number: '1.6-6'
+              }}
+            </span>
+          </div>
+
+          <div class="flex items-center justify-between">
+            <div class="flex items-center gap-2">
+              <ng-icon
+                name="remixFocusLine"
+                class="min-w-fit text-base md:text-lg"
+                aria-hidden="true"
+              ></ng-icon>
+              <span class="text-sm">Distância ao mínimo global</span>
+            </div>
+            <span class="font-sans text-sm font-bold tabular-nums">
+              {{
+                solver.statistics!.distanceToGlobalMinimum.best[
+                  solver.statistics!.distanceToGlobalMinimum.best.length - 1
+                ] | number: '1.6-6'
+              }}
+            </span>
+          </div>
+
+          <div class="flex items-center justify-between">
+            <div class="flex items-center gap-2">
+              <ng-icon
+                name="remixCalculatorLine"
+                class="min-w-fit text-base md:text-lg"
+                aria-hidden="true"
+              ></ng-icon>
+              <span class="text-sm">Erro relativo do melhor</span>
+            </div>
+            <span class="font-sans text-sm font-bold tabular-nums">
+              {{
+                solver.statistics!.relativeError.best[
+                  solver.statistics!.relativeError.best.length - 1
+                ] | number: '1.6-6'
+              }}
+            </span>
+          </div>
+
+          <div class="flex items-center justify-between">
+            <div class="flex items-center gap-2">
+              <ng-icon
+                name="remixEqualizerLine"
+                class="min-w-fit text-base md:text-lg"
+                aria-hidden="true"
+              ></ng-icon>
+              <span class="text-sm">Fitness médio atual</span>
+            </div>
+            <span class="font-sans text-sm font-bold tabular-nums">
+              {{
+                solver.statistics!.fitness.average[
+                  solver.statistics!.fitness.average.length - 1
+                ] | number: '1.6-6'
+              }}
+            </span>
+          </div>
+
+          <div class="flex items-center justify-between">
+            <div class="flex items-center gap-2">
+              <ng-icon
+                name="remixPieChartLine"
+                class="min-w-fit text-base md:text-lg"
+                aria-hidden="true"
+              ></ng-icon>
+              <span class="text-sm">Mediana do fitness</span>
+            </div>
+            <span class="font-sans text-sm font-bold tabular-nums">
+              {{
+                solver.statistics!.fitness.median[
+                  solver.statistics!.fitness.median.length - 1
+                ] | number: '1.6-6'
+              }}
+            </span>
+          </div>
+
+          @if (
+            solver.parameters.mutationMethod ===
+              'SelfAdaptiveGaussianMutation' && solver.statistics!.sigma
+          ) {
+            <div class="flex items-center justify-between">
+              <div class="flex items-center gap-2">
+                <ng-icon
+                  name="remixFunctions"
+                  class="min-w-fit text-base md:text-lg"
+                  aria-hidden="true"
+                ></ng-icon>
+                <span class="text-sm">Sigma médio atual</span>
+              </div>
+              <span class="font-sans text-sm font-bold tabular-nums">
+                {{
+                  solver.statistics!.sigma.average[
+                    solver.statistics!.sigma.average.length - 1
+                  ] | number: '1.6-6'
+                }}
+              </span>
+            </div>
+
+            <div class="flex items-center justify-between">
+              <div class="flex items-center gap-2">
+                <ng-icon
+                  name="remixExpandWidthLine"
+                  class="min-w-fit text-base md:text-lg"
+                  aria-hidden="true"
+                ></ng-icon>
+                <span class="text-sm">Faixa do sigma (mín-máx)</span>
+              </div>
+              <span class="font-sans text-sm font-bold tabular-nums">
+                {{
+                  solver.statistics!.sigma.best[
+                    solver.statistics!.sigma.best.length - 1
+                  ] | number: '1.6-6'
+                }}
+                -
+                {{
+                  solver.statistics!.sigma.worst[
+                    solver.statistics!.sigma.worst.length - 1
+                  ] | number: '1.6-6'
+                }}
+              </span>
+            </div>
+          }
+        </div>
+      </div>
+
+      <div class="bg-bright rounded-lg p-4">
+        <h3 class="pb-4 font-serif text-base italic sm:text-lg">
+          Melhor, pior, média e mediana do fitness
+        </h3>
+
+        <div id="fitness-chart"></div>
+      </div>
+
+      <div class="bg-bright rounded-lg p-4">
+        <h3 class="pb-4 font-serif text-base italic sm:text-lg">
+          Desvio padrão do fitness
+        </h3>
+
+        <div id="fitness-standard-deviation-chart"></div>
+      </div>
+
+      <div class="bg-bright rounded-lg p-4">
+        <h3 class="pb-4 font-serif text-base italic sm:text-lg">
+          Idade média e indivíduo mais velho
+        </h3>
+
+        <div id="age-chart"></div>
+      </div>
+
+      <div class="bg-bright rounded-lg p-4">
+        <h3 class="pb-4 font-serif text-base italic sm:text-lg">
+          Iteração do indivíduo mais antigo
+        </h3>
+
+        <div id="earlier-iteration-alive-chart"></div>
+      </div>
+
+      <div class="bg-bright rounded-lg p-4">
+        <h3 class="pb-4 font-serif text-base italic sm:text-lg">
+          Distribuição de fitness
+        </h3>
+
+        <div id="fitness-histogram-chart"></div>
+      </div>
+
+      @if (
+        solver.parameters.mutationMethod === 'SelfAdaptiveGaussianMutation'
+      ) {
+        <div class="bg-bright rounded-lg p-4">
+          <h3 class="pb-4 font-serif text-base italic sm:text-lg">
+            Evolução dos valores sigma (auto-adaptação)
+          </h3>
+
+          <div id="sigma-chart"></div>
+        </div>
+
+        <div class="bg-bright rounded-lg p-4">
+          <h3 class="pb-4 font-serif text-base italic sm:text-lg">
+            Distribuição dos valores sigma
+          </h3>
+
+          <div id="sigma-histogram-chart"></div>
+        </div>
+      }
+    </div>
+  } @else {
+    <div
+      class="flex min-h-full flex-col items-center justify-center gap-8 py-4 text-center font-serif text-lg italic opacity-50 md:text-xl"
+    >
+      <img
+        src="assets/elements/functions-optimization.svg"
+        class="h-32 w-32"
+        alt=""
+      />
+      <p class="w-92 text-balance">
+        Quando a execução for iniciada, informações sobre o progresso aparecerão
+        aqui.
+      </p>
+    </div>
+  }
+</section>

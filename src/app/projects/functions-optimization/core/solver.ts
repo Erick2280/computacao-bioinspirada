@@ -24,7 +24,6 @@ export interface FOSolverParameters {
   // Evolution Strategy specific parameters
   offspringSize?: number;
   survivorSelectionStrategy?: FOSurvivorSelectionStrategy;
-  selfAdaptiveMutation?: boolean;
 }
 
 export interface FOSolverStatistics {
@@ -269,7 +268,8 @@ export class FunctionOptimizationSolver {
         worst: [],
       },
       ...(this.parameters.mechanism === FOSolverMechanism.EvolutionStrategy &&
-        this.parameters.selfAdaptiveMutation && {
+        this.parameters.mutationMethod ===
+          FOMutationMethod.SelfAdaptiveGaussianMutation && {
           sigma: {
             average: [],
             best: [],
@@ -398,7 +398,8 @@ export class FunctionOptimizationSolver {
   private generateInitialPopulation() {
     const withSigmas =
       this.parameters.mechanism === FOSolverMechanism.EvolutionStrategy &&
-      this.parameters.selfAdaptiveMutation;
+      this.parameters.mutationMethod ===
+        FOMutationMethod.SelfAdaptiveGaussianMutation;
 
     this.individuals = Array.from(
       { length: this.parameters.populationSize },
