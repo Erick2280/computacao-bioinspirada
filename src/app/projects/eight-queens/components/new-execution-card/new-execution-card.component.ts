@@ -29,7 +29,7 @@ import {
 import { EQExecutionService } from '@app/projects/eight-queens/services/execution.service';
 
 @Component({
-  selector: 'app-new-execution-card',
+  selector: 'app-eq-new-execution-card',
   imports: [NgIcon, FormsModule, PercentPipe],
   templateUrl: './new-execution-card.component.html',
   viewProviders: [
@@ -48,7 +48,7 @@ import { EQExecutionService } from '@app/projects/eight-queens/services/executio
     }),
   ],
 })
-export class NewExecutionCardComponent {
+export class EQNewExecutionCardComponent {
   populationSize = signal(100);
   recombinationProbability = signal(0.6);
   mutationProbability = signal(0.4);

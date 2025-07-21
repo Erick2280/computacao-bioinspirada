@@ -18,11 +18,13 @@ import {
 import { EQExecutionService } from '@app/projects/eight-queens/services/execution.service';
 
 @Component({
-  selector: 'app-statistics-dashboard',
+  selector: 'app-eq-statistics-dashboard',
   imports: [PercentPipe],
   templateUrl: './statistics-dashboard.component.html',
 })
-export class StatisticsDashboardComponent implements AfterViewInit, OnDestroy {
+export class EQStatisticsDashboardComponent
+  implements AfterViewInit, OnDestroy
+{
   executionService = inject(EQExecutionService);
 
   mutationObservedProbability = signal<number>(0);

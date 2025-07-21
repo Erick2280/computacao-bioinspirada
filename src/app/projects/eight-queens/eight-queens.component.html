@@ -141,10 +141,15 @@
                 'bg-amber-500':
                   solver.state === SolverState.ReachedMaxIterations,
               }"
-              [style]="`width: ${solver.state === SolverState.InProgress ? 
-                ((solver.currentIteration ?? 0) / solver.parameters.maxIterations) * 100
-                : 100    
-        }%`"
+              [style]="
+                `width: ${
+                  solver.state === SolverState.InProgress
+                    ? ((solver.currentIteration ?? 0) /
+                        solver.parameters.maxIterations) *
+                      100
+                    : 100
+                }%`
+              "
             ></div>
           </div>
         </section>
@@ -260,15 +265,15 @@
           </p>
         </section>
       } @else {
-        <app-new-execution-card></app-new-execution-card>
+        <app-eq-new-execution-card></app-eq-new-execution-card>
       }
     </div>
     <div
       class="grid min-h-full grid-cols-1 grid-rows-1 content-center pb-16 lg:flex-1"
     >
-      <app-solving-panel
+      <app-eq-solving-panel
         [viewingOptions]="viewingOptions()"
-      ></app-solving-panel>
+      ></app-eq-solving-panel>
     </div>
   </div>
 </div>

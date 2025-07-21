@@ -9,14 +9,14 @@ import { EQSolverState } from '@app/projects/eight-queens/core/solver';
 import { GenotypePipe } from '@app/projects/eight-queens/pipes/genotype.pipe';
 import { EQExecutionService } from '@app/projects/eight-queens/services/execution.service';
 
-import { StatisticsDashboardComponent } from '../statistics-dashboard/statistics-dashboard.component';
+import { EQStatisticsDashboardComponent } from '../statistics-dashboard/statistics-dashboard.component';
 
 @Component({
-  selector: 'app-solving-panel',
+  selector: 'app-eq-solving-panel',
   imports: [
     AsyncPipe,
     ChessBoardComponent,
-    StatisticsDashboardComponent,
+    EQStatisticsDashboardComponent,
     NgIcon,
     GenotypePipe,
     NgClass,
@@ -24,7 +24,7 @@ import { StatisticsDashboardComponent } from '../statistics-dashboard/statistics
   templateUrl: './solving-panel.component.html',
   viewProviders: [provideIcons({ remixCheckFill })],
 })
-export class SolvingPanelComponent {
+export class EQSolvingPanelComponent {
   readonly TAB_ID_PREFIX = 'solving-panel-tab-';
   readonly TABPANEL_ID_PREFIX = 'solving-panel-tabpanel-';
 

@@ -17,9 +17,9 @@ import {
   remixSwordLine,
 } from '@ng-icons/remixicon';
 
-import { NewExecutionCardComponent } from '@app/projects/eight-queens/components/new-execution-card/new-execution-card.component';
+import { EQNewExecutionCardComponent } from '@app/projects/eight-queens/components/new-execution-card/new-execution-card.component';
 import {
-  SolvingPanelComponent,
+  EQSolvingPanelComponent,
   ViewingOptions,
 } from '@app/projects/eight-queens/components/solving-panel/solving-panel.component';
 import { EQSolverState } from '@app/projects/eight-queens/core/solver';
@@ -30,10 +30,10 @@ import { EQExecutionService } from '@app/projects/eight-queens/services/executio
   imports: [
     RouterModule,
     NgIcon,
-    NewExecutionCardComponent,
+    EQNewExecutionCardComponent,
     AsyncPipe,
     NgClass,
-    SolvingPanelComponent,
+    EQSolvingPanelComponent,
     FormsModule,
   ],
   templateUrl: './eight-queens.component.html',
