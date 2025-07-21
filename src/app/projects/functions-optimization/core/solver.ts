@@ -83,6 +83,7 @@ export enum FOParentsSelectionMethod {
 }
 
 export enum FORecombinationMethod {
+  NoRecombination = 'NoRecombination',
   UniformCrossover = 'UniformCrossover',
   ArithmeticCrossover = 'ArithmeticCrossover',
   IntermediateRecombination = 'IntermediateRecombination', // ES: Arithmetic mean
@@ -90,6 +91,7 @@ export enum FORecombinationMethod {
 }
 
 export enum FOMutationMethod {
+  NoMutation = 'NoMutation',
   GaussianMutation = 'GaussianMutation',
   UniformMutation = 'UniformMutation',
   SelfAdaptiveGaussianMutation = 'SelfAdaptiveGaussianMutation',
@@ -145,6 +147,7 @@ export class FunctionOptimizationSolver {
     FOMutationMethod,
     (individual: FOIndividual, currentIteration: number) => FOIndividual
   > = {
+    [FOMutationMethod.NoMutation]: (individual) => individual,
     [FOMutationMethod.GaussianMutation]:
       FOIndividual.createFromGaussianMutation,
     [FOMutationMethod.UniformMutation]: FOIndividual.createFromUniformMutation,
@@ -160,6 +163,10 @@ export class FunctionOptimizationSolver {
       currentIteration: number,
     ) => FOIndividual[]
   > = {
+    [FORecombinationMethod.NoRecombination]: (parent1, parent2) => [
+      parent1,
+      parent2,
+    ],
     [FORecombinationMethod.UniformCrossover]: (
       parent1,
       parent2,

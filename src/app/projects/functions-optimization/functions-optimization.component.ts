@@ -112,6 +112,7 @@ export class FunctionsOptimizationComponent {
 
   getRecombinationMethodLabel(method: FORecombinationMethod): string {
     const methodLabels = {
+      [FORecombinationMethod.NoRecombination]: 'Sem recombinação',
       [FORecombinationMethod.UniformCrossover]: 'Crossover uniforme',
       [FORecombinationMethod.ArithmeticCrossover]: 'Crossover aritmético',
       [FORecombinationMethod.IntermediateRecombination]:
@@ -123,6 +124,7 @@ export class FunctionsOptimizationComponent {
 
   getMutationMethodLabel(method: FOMutationMethod): string {
     const methodLabels = {
+      [FOMutationMethod.NoMutation]: 'Sem mutação',
       [FOMutationMethod.GaussianMutation]: 'Mutação gaussiana',
       [FOMutationMethod.UniformMutation]: 'Mutação uniforme',
       [FOMutationMethod.SelfAdaptiveGaussianMutation]:

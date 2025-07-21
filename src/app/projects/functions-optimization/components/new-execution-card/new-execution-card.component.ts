@@ -110,6 +110,10 @@ export class FONewExecutionCardComponent {
   RecombinationMethod = FORecombinationMethod;
   recombinationMethodOptions: SelectOption<FORecombinationMethod>[] = [
     {
+      value: FORecombinationMethod.NoRecombination,
+      label: 'Sem recombinação',
+    },
+    {
       value: FORecombinationMethod.UniformCrossover,
       label: 'Crossover uniforme',
     },
@@ -129,6 +133,10 @@ export class FONewExecutionCardComponent {
 
   MutationMethod = FOMutationMethod;
   mutationMethodOptions: SelectOption<FOMutationMethod>[] = [
+    {
+      value: FOMutationMethod.NoMutation,
+      label: 'Sem mutação',
+    },
     {
       value: FOMutationMethod.GaussianMutation,
       label: 'Mutação gaussiana',
