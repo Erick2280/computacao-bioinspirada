@@ -7,6 +7,7 @@ import { NgIcon, provideIcons } from '@ng-icons/core';
 import {
   remixBox2Line,
   remixCheckFill,
+  remixCloseFill,
   remixContractRightFill,
   remixDnaLine,
   remixDropperLine,
@@ -23,6 +24,7 @@ import {
   remixResetLeftFill,
   remixSeedlingLine,
   remixSettings6Line,
+  remixStopCircleLine,
 } from '@ng-icons/remixicon';
 
 import { FONewExecutionCardComponent } from '@app/projects/functions-optimization/components/new-execution-card/new-execution-card.component';
@@ -71,6 +73,8 @@ import { FOExecutionService } from '@app/projects/functions-optimization/service
       remixResetLeftFill,
       remixSeedlingLine,
       remixSettings6Line,
+      remixStopCircleLine,
+      remixCloseFill,
     }),
   ],
 })

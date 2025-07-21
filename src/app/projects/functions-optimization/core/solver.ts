@@ -20,6 +20,7 @@ export interface FOSolverParameters {
   parentsSelectionMethod: FOParentsSelectionMethod;
   recombinationMethod: FORecombinationMethod;
   mutationMethod: FOMutationMethod;
+  stopIfStagnation?: boolean;
 
   // Evolution Strategy specific parameters
   offspringSize?: number;
@@ -72,6 +73,7 @@ export enum FOSolverState {
   InProgress = 'InProgress',
   Solved = 'Solved',
   ReachedMaxIterations = 'ReachedMaxIterations',
+  Stagnated = 'Stagnated',
 }
 
 export enum FOParentsSelectionMethod {
@@ -207,6 +209,8 @@ export class FunctionOptimizationSolver {
   #state: FOSolverState = FOSolverState.NotInitialized;
   #statistics: FOSolverStatistics | null = null;
   #currentIteration: number | null = null;
+  #bestFitnessHistory: number[] = [];
+  #lastImprovementIteration = 0;
 
   constructor(parameters: FOSolverParameters) {
     this.parameters = parameters;
@@ -277,6 +281,10 @@ export class FunctionOptimizationSolver {
           },
         }),
     };
+
+    this.#bestFitnessHistory = [];
+    this.#lastImprovementIteration = 0;
+
     this.checkForCompletion();
   }
 
@@ -453,8 +461,38 @@ export class FunctionOptimizationSolver {
       return;
     }
 
+    if (this.parameters.stopIfStagnation && this.#currentIteration! > 0) {
+      this.updateStagnationTracking();
+
+      const stagnationGenerations = 50;
+      const generationsWithoutImprovement =
+        this.#currentIteration! - this.#lastImprovementIteration;
+
+      if (generationsWithoutImprovement >= stagnationGenerations) {
+        this.#state = FOSolverState.Stagnated;
+        return;
+      }
+    }
+
     if (this.#currentIteration! + 1 >= this.parameters.maxIterations) {
       this.#state = FOSolverState.ReachedMaxIterations;
+    }
+  }
+
+  private updateStagnationTracking() {
+    const currentBestFitness = this.individuals[0].fitness;
+    const stagnationThreshold = 1e-10;
+
+    this.#bestFitnessHistory.push(currentBestFitness);
+
+    if (this.#bestFitnessHistory.length > 1) {
+      const previousBestFitness =
+        this.#bestFitnessHistory[this.#bestFitnessHistory.length - 2];
+      const improvement = Math.abs(currentBestFitness - previousBestFitness);
+
+      if (improvement > stagnationThreshold) {
+        this.#lastImprovementIteration = this.#currentIteration!;
+      }
     }
   }
 

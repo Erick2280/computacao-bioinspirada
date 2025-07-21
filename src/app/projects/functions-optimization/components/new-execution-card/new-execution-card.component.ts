@@ -16,6 +16,7 @@ import {
   remixPlayCircleFill,
   remixSeedlingLine,
   remixSettings6Line,
+  remixStopCircleLine,
 } from '@ng-icons/remixicon';
 
 import {
@@ -53,6 +54,7 @@ import { FOExecutionService } from '@app/projects/functions-optimization/service
       remixSettings6Line,
       remixDropperLine,
       remixFilterLine,
+      remixStopCircleLine,
     }),
   ],
 })
@@ -82,6 +84,8 @@ export class FONewExecutionCardComponent {
   survivorSelectionStrategy = signal<FOSurvivorSelectionStrategy>(
     FOSurvivorSelectionStrategy.MuPlusLambda,
   );
+
+  stopIfStagnation = signal(true);
 
   runContinuously = signal(true);
 
@@ -231,6 +235,7 @@ export class FONewExecutionCardComponent {
       parentsSelectionMethod: this.parentsSelectionMethod(),
       recombinationMethod: this.recombinationMethod(),
       mutationMethod: this.mutationMethod(),
+      stopIfStagnation: this.stopIfStagnation(),
     };
 
     // Add Evolution Strategy specific parameters if needed

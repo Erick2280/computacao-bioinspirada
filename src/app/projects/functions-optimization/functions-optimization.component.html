@@ -83,7 +83,8 @@
               'bg-shade text-dark': solver.state === SolverState.InProgress,
               'bg-teal-100 text-teal-800': solver.state === SolverState.Solved,
               'text-dark bg-amber-100':
-                solver.state === SolverState.ReachedMaxIterations,
+                solver.state === SolverState.ReachedMaxIterations ||
+                solver.state === SolverState.Stagnated,
             }"
           >
             @if (
@@ -123,6 +124,11 @@
               <ng-icon name="remixHand" class="min-w-fit" aria-hidden="true">
               </ng-icon>
               <span>Máximo de iterações alcançado</span>
+            }
+            @if (solver.state === SolverState.Stagnated) {
+              <ng-icon name="remixHand" class="min-w-fit" aria-hidden="true">
+              </ng-icon>
+              <span>Estagnado</span>
             }
           </div>
 
@@ -339,6 +345,34 @@
                 }}</span>
               </div>
             }
+
+            <div class="flex items-center justify-between">
+              <div class="flex items-center gap-2">
+                <ng-icon
+                  name="remixStopCircleLine"
+                  class="min-w-fit text-base md:text-lg"
+                  aria-hidden="true"
+                ></ng-icon>
+                <span>Parar se estagnado</span>
+              </div>
+              <div class="flex items-center">
+                @if (solver.parameters.stopIfStagnation) {
+                  <ng-icon
+                    name="remixCheckFill"
+                    class="text-lg"
+                    aria-hidden="true"
+                  ></ng-icon>
+                  <span class="sr-only">Sim</span>
+                } @else {
+                  <ng-icon
+                    name="remixCloseFill"
+                    class="text-lg"
+                    aria-hidden="true"
+                  ></ng-icon>
+                  <span class="sr-only">Não</span>
+                }
+              </div>
+            </div>
 
             <div class="my-2 border-t border-solid border-stone-300"></div>
 

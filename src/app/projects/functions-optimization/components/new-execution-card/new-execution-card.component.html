@@ -317,6 +317,26 @@
 
       <label
         class="flex cursor-pointer items-center justify-between gap-x-3"
+        for="stop-if-stagnation-toggle"
+      >
+        <div class="flex items-center gap-2">
+          <ng-icon
+            name="remixStopCircleLine"
+            class="min-w-fit text-base md:text-lg"
+            aria-hidden="true"
+          ></ng-icon>
+          <span>Parar se estagnado</span>
+        </div>
+        <input
+          [(ngModel)]="stopIfStagnation"
+          id="stop-if-stagnation-toggle"
+          type="checkbox"
+          class="focus:ring-offset-shade my-3 h-4 w-4 rounded-sm text-teal-600 transition hover:bg-stone-200 hover:checked:bg-teal-700 focus:ring-4 focus:ring-teal-600 focus:ring-offset-4 focus:outline-none active:bg-teal-800"
+        />
+      </label>
+
+      <label
+        class="flex cursor-pointer items-center justify-between gap-x-3"
         for="continuous-execution-toggle"
       >
         <div class="flex items-center gap-2">
