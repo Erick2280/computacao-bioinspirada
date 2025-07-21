@@ -63,14 +63,14 @@ export class FONewExecutionCardComponent {
   maxIterations = signal(2000);
   dimensions = signal(30);
   convergenceThreshold = signal(0.01);
-  parentCandidatesAmount = signal(20);
+  parentCandidatesAmount = signal(50);
   testFunction = signal<FOTestFunctionType>(FOTestFunctionType.Ackley);
   mechanism = signal<FOSolverMechanism>(FOSolverMechanism.EvolutionStrategy);
   parentsSelectionMethod = signal<FOParentsSelectionMethod>(
     FOParentsSelectionMethod.TournamentOfThree,
   );
   recombinationMethod = signal<FORecombinationMethod>(
-    FORecombinationMethod.ArithmeticCrossover,
+    FORecombinationMethod.DiscreteRecombination,
   );
   mutationMethod = signal<FOMutationMethod>(
     FOMutationMethod.SelfAdaptiveGaussianMutation,
@@ -80,7 +80,7 @@ export class FONewExecutionCardComponent {
   );
 
   // Evolution Strategy specific parameters
-  offspringSize = signal(200);
+  offspringSize = signal(300);
   survivorSelectionStrategy = signal<FOSurvivorSelectionStrategy>(
     FOSurvivorSelectionStrategy.MuPlusLambda,
   );

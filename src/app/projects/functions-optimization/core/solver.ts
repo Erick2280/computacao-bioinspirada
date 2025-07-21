@@ -468,7 +468,7 @@ export class FunctionOptimizationSolver {
     if (this.parameters.stopIfStagnation && this.#currentIteration! > 0) {
       this.updateStagnationTracking();
 
-      const stagnationGenerations = 50;
+      const stagnationGenerations = 100;
       const generationsWithoutImprovement =
         this.#currentIteration! - this.#lastImprovementIteration;
 
