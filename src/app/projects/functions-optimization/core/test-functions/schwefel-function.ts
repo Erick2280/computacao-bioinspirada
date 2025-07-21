@@ -1,7 +1,12 @@
-import { FOFunctionDomain, FOPoint, FOTestFunction } from './test-function';
+import {
+  FOFunctionDomain,
+  FOPoint,
+  FOTestFunction,
+  FOTestFunctionType,
+} from './test-function';
 
 export class SchwefelFunction extends FOTestFunction {
-  readonly name = 'Schwefel';
+  readonly type = FOTestFunctionType.Schwefel;
   readonly domain: FOFunctionDomain = { min: -500, max: 500 };
   readonly globalMinimum: { point: FOPoint; value: number };
 

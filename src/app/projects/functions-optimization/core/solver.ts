@@ -1,5 +1,12 @@
 import { FOIndividual, FOIndividualMeta } from './individual';
-import { FOTestFunction } from './test-functions/test-function';
+import { AckleyFunction } from './test-functions/ackley-function';
+import { RastriginFunction } from './test-functions/rastrigin-function';
+import { RosenbrockFunction } from './test-functions/rosenbrock-function';
+import { SchwefelFunction } from './test-functions/schwefel-function';
+import {
+  FOTestFunction,
+  FOTestFunctionType,
+} from './test-functions/test-function';
 
 export interface FOSolverParameters {
   populationSize: number;
@@ -7,7 +14,7 @@ export interface FOSolverParameters {
   dimensions: number;
   completionCondition: FOSolverCompletionCondition;
   mechanism: FOSolverMechanism;
-  testFunction: FOTestFunction;
+  testFunction: FOTestFunctionType;
   parentCandidatesAmount: number;
   convergenceThreshold: number;
   parentsSelectionMethod: FOParentsSelectionMethod;
@@ -204,10 +211,15 @@ export class FunctionOptimizationSolver {
 
   constructor(parameters: FOSolverParameters) {
     this.parameters = parameters;
+
     this.meta = {
-      testFunction: parameters.testFunction,
+      testFunction: FunctionOptimizationSolver.getInstanceOfTestFunction(
+        parameters.testFunction,
+        parameters.dimensions,
+      ),
       dimensions: parameters.dimensions,
     };
+
     Object.freeze(this.parameters);
     Object.freeze(this.meta);
   }
@@ -442,6 +454,24 @@ export class FunctionOptimizationSolver {
 
     if (this.#currentIteration! + 1 >= this.parameters.maxIterations) {
       this.#state = FOSolverState.ReachedMaxIterations;
+    }
+  }
+
+  private static getInstanceOfTestFunction(
+    type: FOTestFunctionType,
+    dimensions: number,
+  ): FOTestFunction {
+    switch (type) {
+      case FOTestFunctionType.Ackley:
+        return new AckleyFunction(dimensions);
+      case FOTestFunctionType.Rastrigin:
+        return new RastriginFunction(dimensions);
+      case FOTestFunctionType.Rosenbrock:
+        return new RosenbrockFunction(dimensions);
+      case FOTestFunctionType.Schwefel:
+        return new SchwefelFunction(dimensions);
+      default:
+        throw new Error(`Unknown test function type: ${type}`);
     }
   }
 

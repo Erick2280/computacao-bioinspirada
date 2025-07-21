@@ -5,8 +5,15 @@ export interface FOFunctionDomain {
 
 export type FOPoint = number[];
 
+export enum FOTestFunctionType {
+  Ackley = 'Ackley',
+  Schwefel = 'Schwefel',
+  Rastrigin = 'Rastrigin',
+  Rosenbrock = 'Rosenbrock',
+}
+
 export abstract class FOTestFunction {
-  abstract readonly name: string;
+  abstract readonly type: FOTestFunctionType;
   abstract readonly domain: FOFunctionDomain;
   abstract readonly globalMinimum: { point: FOPoint; value: number };
   readonly dimensions: number;

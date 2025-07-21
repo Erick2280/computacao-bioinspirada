@@ -1,7 +1,12 @@
-import { FOFunctionDomain, FOPoint, FOTestFunction } from './test-function';
+import {
+  FOFunctionDomain,
+  FOPoint,
+  FOTestFunction,
+  FOTestFunctionType,
+} from './test-function';
 
 export class RosenbrockFunction extends FOTestFunction {
-  readonly name = 'Rosenbrock';
+  readonly type = FOTestFunctionType.Rosenbrock;
   readonly domain: FOFunctionDomain = { min: -2.048, max: 2.048 };
   readonly globalMinimum: { point: FOPoint; value: number };
 

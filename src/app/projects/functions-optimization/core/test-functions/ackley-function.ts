@@ -1,7 +1,12 @@
-import { FOFunctionDomain, FOPoint, FOTestFunction } from './test-function';
+import {
+  FOFunctionDomain,
+  FOPoint,
+  FOTestFunction,
+  FOTestFunctionType,
+} from './test-function';
 
 export class AckleyFunction extends FOTestFunction {
-  readonly name = 'Ackley';
+  readonly type = FOTestFunctionType.Ackley;
   readonly domain: FOFunctionDomain = { min: -32.768, max: 32.768 };
   readonly globalMinimum: { point: FOPoint; value: number };
 

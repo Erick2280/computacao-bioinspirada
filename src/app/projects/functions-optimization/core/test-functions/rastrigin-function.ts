@@ -1,7 +1,12 @@
-import { FOFunctionDomain, FOPoint, FOTestFunction } from './test-function';
+import {
+  FOFunctionDomain,
+  FOPoint,
+  FOTestFunction,
+  FOTestFunctionType,
+} from './test-function';
 
 export class RastriginFunction extends FOTestFunction {
-  readonly name = 'Rastrigin';
+  readonly type = FOTestFunctionType.Rastrigin;
   readonly domain: FOFunctionDomain = { min: -5.12, max: 5.12 };
   readonly globalMinimum: { point: FOPoint; value: number };
 
