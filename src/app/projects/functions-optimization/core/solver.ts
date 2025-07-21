@@ -1,5 +1,3 @@
-import { rollChance } from '@app/global/utils';
-
 import { FOIndividual, FOIndividualMeta } from './individual';
 import { FOTestFunction } from './test-functions/test-function';
 
@@ -10,13 +8,16 @@ export interface FOSolverParameters {
   completionCondition: FOSolverCompletionCondition;
   mechanism: FOSolverMechanism;
   testFunction: FOTestFunction;
-  recombinationProbability: number;
-  mutationProbability: number;
   parentCandidatesAmount: number;
   convergenceThreshold: number;
   parentsSelectionMethod: FOParentsSelectionMethod;
   recombinationMethod: FORecombinationMethod;
   mutationMethod: FOMutationMethod;
+
+  // Evolution Strategy specific parameters
+  offspringSize?: number;
+  survivorSelectionStrategy?: FOSurvivorSelectionStrategy;
+  selfAdaptiveMutation?: boolean;
 }
 
 export interface FOSolverStatistics {
@@ -42,13 +43,12 @@ export interface FOSolverStatistics {
     best: number[];
     worst: number[];
   };
-  recombination: FOChanceCounter;
-  mutation: FOChanceCounter;
-}
-
-export interface FOChanceCounter {
-  chancesRolled: number;
-  chancesHit: number;
+  sigma?: {
+    // Evolution Strategy specific - mutation step sizes
+    average: number[];
+    best: number[];
+    worst: number[];
+  };
 }
 
 export enum FOSolverCompletionCondition {
@@ -72,16 +72,25 @@ export enum FOParentsSelectionMethod {
   Random = 'Random',
   BestFitness = 'BestFitness',
   TournamentOfThree = 'TournamentOfThree',
+  UniformRandom = 'UniformRandom', // ES: Select parents uniformly from entire population
 }
 
 export enum FORecombinationMethod {
   UniformCrossover = 'UniformCrossover',
   ArithmeticCrossover = 'ArithmeticCrossover',
+  IntermediateRecombination = 'IntermediateRecombination', // ES: Arithmetic mean
+  DiscreteRecombination = 'DiscreteRecombination', // ES: Random selection per gene
 }
 
 export enum FOMutationMethod {
   GaussianMutation = 'GaussianMutation',
   UniformMutation = 'UniformMutation',
+  SelfAdaptiveGaussianMutation = 'SelfAdaptiveGaussianMutation',
+}
+
+export enum FOSurvivorSelectionStrategy {
+  MuPlusLambda = 'MuPlusLambda', // μ + λ: parents + offspring compete
+  MuCommaLambda = 'MuCommaLambda', // μ, λ: only offspring compete
 }
 
 export class FunctionOptimizationSolver {
@@ -105,6 +114,26 @@ export class FunctionOptimizationSolver {
         .sort((a, b) => a.fitness - b.fitness)
         .slice(0, 2);
     },
+    [FOParentsSelectionMethod.UniformRandom]: (individuals) => {
+      // ES uniform selection: each individual has equal probability of being selected
+      const parent1 =
+        individuals[Math.floor(Math.random() * individuals.length)];
+      let parent2 = individuals[Math.floor(Math.random() * individuals.length)];
+
+      // Ensure different parents if possible with proper retry mechanism
+      let attempts = 0;
+      const maxAttempts = 10;
+      while (
+        individuals.length > 1 &&
+        parent1 === parent2 &&
+        attempts < maxAttempts
+      ) {
+        parent2 = individuals[Math.floor(Math.random() * individuals.length)];
+        attempts++;
+      }
+
+      return [parent1, parent2];
+    },
   };
 
   static readonly MUTATION_METHODS: Record<
@@ -114,6 +143,8 @@ export class FunctionOptimizationSolver {
     [FOMutationMethod.GaussianMutation]:
       FOIndividual.createFromGaussianMutation,
     [FOMutationMethod.UniformMutation]: FOIndividual.createFromUniformMutation,
+    [FOMutationMethod.SelfAdaptiveGaussianMutation]:
+      FOIndividual.createFromSelfAdaptiveGaussianMutation,
   };
 
   static readonly RECOMBINATION_METHODS: Record<
@@ -140,6 +171,26 @@ export class FunctionOptimizationSolver {
       currentIteration,
     ) =>
       FOIndividual.createTwoFromArithmeticCrossover(
+        parent1,
+        parent2,
+        currentIteration,
+      ),
+    [FORecombinationMethod.IntermediateRecombination]: (
+      parent1,
+      parent2,
+      currentIteration,
+    ) =>
+      FOIndividual.createTwoFromIntermediateRecombination(
+        parent1,
+        parent2,
+        currentIteration,
+      ),
+    [FORecombinationMethod.DiscreteRecombination]: (
+      parent1,
+      parent2,
+      currentIteration,
+    ) =>
+      FOIndividual.createTwoFromDiscreteRecombination(
         parent1,
         parent2,
         currentIteration,
@@ -205,14 +256,14 @@ export class FunctionOptimizationSolver {
         best: [],
         worst: [],
       },
-      recombination: {
-        chancesRolled: 0,
-        chancesHit: 0,
-      },
-      mutation: {
-        chancesRolled: 0,
-        chancesHit: 0,
-      },
+      ...(this.parameters.mechanism === FOSolverMechanism.EvolutionStrategy &&
+        this.parameters.selfAdaptiveMutation && {
+          sigma: {
+            average: [],
+            best: [],
+            worst: [],
+          },
+        }),
     };
     this.checkForCompletion();
   }
@@ -222,6 +273,16 @@ export class FunctionOptimizationSolver {
       throw new Error('Solver not in progress');
     }
 
+    if (this.parameters.mechanism === FOSolverMechanism.EvolutionStrategy) {
+      this.iterateEvolutionStrategy();
+    } else {
+      this.iterateGeneticAlgorithm();
+    }
+
+    this.#currentIteration!++;
+  }
+
+  private iterateGeneticAlgorithm() {
     const parentCandidates = this.pickRandomIndividuals(
       this.parameters.parentCandidatesAmount,
     );
@@ -232,50 +293,104 @@ export class FunctionOptimizationSolver {
       ](parentCandidates);
     let offspring = selectedParents;
 
-    const recombinationChanceCounter: FOChanceCounter = {
-      chancesRolled: 0,
-      chancesHit: 0,
-    };
-
-    const mutationChanceCounter: FOChanceCounter = {
-      chancesRolled: 0,
-      chancesHit: 0,
-    };
-
-    recombinationChanceCounter.chancesRolled++;
-    if (rollChance(this.parameters.recombinationProbability)) {
-      offspring = FunctionOptimizationSolver.RECOMBINATION_METHODS[
-        this.parameters.recombinationMethod
-      ](selectedParents[0], selectedParents[1], this.#currentIteration!);
-      recombinationChanceCounter.chancesHit++;
-    }
+    offspring = FunctionOptimizationSolver.RECOMBINATION_METHODS[
+      this.parameters.recombinationMethod
+    ](selectedParents[0], selectedParents[1], this.#currentIteration!);
 
     for (const [index, individual] of offspring.entries()) {
-      mutationChanceCounter.chancesRolled++;
-      if (rollChance(this.parameters.mutationProbability)) {
-        offspring[index] = FunctionOptimizationSolver.MUTATION_METHODS[
-          this.parameters.mutationMethod
-        ](individual, this.#currentIteration!);
-        mutationChanceCounter.chancesHit++;
-      }
+      offspring[index] = FunctionOptimizationSolver.MUTATION_METHODS[
+        this.parameters.mutationMethod
+      ](individual, this.#currentIteration!);
     }
 
     this.individuals.push(...offspring);
     this.sortIndividualsByFitness();
     this.cutPopulationToSize();
     this.checkForCompletion();
-    this.updateStatistics({
-      mutationChanceCounter,
-      recombinationChanceCounter,
-    });
+    this.updateStatistics();
+  }
 
-    this.#currentIteration!++;
+  private iterateEvolutionStrategy() {
+    const offspringSize =
+      this.parameters.offspringSize || this.parameters.populationSize;
+    const offspring: FOIndividual[] = [];
+
+    // Generate offspring
+    for (let i = 0; i < offspringSize; i++) {
+      let newIndividual: FOIndividual;
+
+      if (this.individuals.length >= 2) {
+        const parentCandidates = this.pickRandomIndividuals(
+          this.parameters.parentCandidatesAmount,
+        );
+        const selectedParents =
+          FunctionOptimizationSolver.PARENTS_SELECTION_METHODS[
+            this.parameters.parentsSelectionMethod
+          ](parentCandidates);
+
+        const recombinedOffspring =
+          FunctionOptimizationSolver.RECOMBINATION_METHODS[
+            this.parameters.recombinationMethod
+          ](selectedParents[0], selectedParents[1], this.#currentIteration!);
+
+        // Take the first offspring from recombination
+        newIndividual = recombinedOffspring[0];
+      } else {
+        // If only one parent, clone it
+        const parent = this.individuals[0];
+        newIndividual = new FOIndividual(
+          [...parent.genes],
+          parent.meta,
+          this.#currentIteration!,
+          parent.sigmas ? [...parent.sigmas] : undefined,
+        );
+      }
+
+      newIndividual = FunctionOptimizationSolver.MUTATION_METHODS[
+        this.parameters.mutationMethod
+      ](newIndividual, this.#currentIteration!);
+
+      offspring.push(newIndividual);
+    }
+
+    // Survivor selection
+    this.applySurvivorSelection(offspring);
+
+    this.sortIndividualsByFitness();
+    this.checkForCompletion();
+    this.updateStatistics();
+  }
+
+  private applySurvivorSelection(offspring: FOIndividual[]) {
+    const strategy =
+      this.parameters.survivorSelectionStrategy ||
+      FOSurvivorSelectionStrategy.MuPlusLambda;
+
+    switch (strategy) {
+      case FOSurvivorSelectionStrategy.MuPlusLambda:
+        // Parents and offspring compete
+        this.individuals.push(...offspring);
+        this.sortIndividualsByFitness();
+        this.cutPopulationToSize();
+        break;
+
+      case FOSurvivorSelectionStrategy.MuCommaLambda:
+        // Only offspring compete (parents are discarded)
+        this.individuals = offspring;
+        this.sortIndividualsByFitness();
+        this.cutPopulationToSize();
+        break;
+    }
   }
 
   private generateInitialPopulation() {
+    const withSigmas =
+      this.parameters.mechanism === FOSolverMechanism.EvolutionStrategy &&
+      this.parameters.selfAdaptiveMutation;
+
     this.individuals = Array.from(
       { length: this.parameters.populationSize },
-      () => FOIndividual.createRandom(this.meta),
+      () => FOIndividual.createRandom(this.meta, 0, withSigmas),
     );
   }
 
@@ -330,10 +445,7 @@ export class FunctionOptimizationSolver {
     }
   }
 
-  private updateStatistics(counters: {
-    mutationChanceCounter: FOChanceCounter;
-    recombinationChanceCounter: FOChanceCounter;
-  }) {
+  private updateStatistics() {
     if (this.individuals.length === 0) {
       return;
     }
@@ -402,14 +514,19 @@ export class FunctionOptimizationSolver {
     this.#statistics!.relativeError.best.push(Math.min(...relativeErrors));
     this.#statistics!.relativeError.worst.push(Math.max(...relativeErrors));
 
-    // Genetic operation counters
-    this.#statistics!.recombination.chancesRolled +=
-      counters.recombinationChanceCounter.chancesRolled;
-    this.#statistics!.recombination.chancesHit +=
-      counters.recombinationChanceCounter.chancesHit;
-    this.#statistics!.mutation.chancesRolled +=
-      counters.mutationChanceCounter.chancesRolled;
-    this.#statistics!.mutation.chancesHit +=
-      counters.mutationChanceCounter.chancesHit;
+    // Evolution Strategy specific: sigma statistics
+    if (this.#statistics!.sigma && this.individuals.some((ind) => ind.sigmas)) {
+      const allSigmas = this.individuals
+        .filter((ind) => ind.sigmas)
+        .flatMap((ind) => ind.sigmas!);
+
+      if (allSigmas.length > 0) {
+        const averageSigma =
+          allSigmas.reduce((sum, sigma) => sum + sigma, 0) / allSigmas.length;
+        this.#statistics!.sigma.average.push(averageSigma);
+        this.#statistics!.sigma.best.push(Math.min(...allSigmas));
+        this.#statistics!.sigma.worst.push(Math.max(...allSigmas));
+      }
+    }
   }
 }
