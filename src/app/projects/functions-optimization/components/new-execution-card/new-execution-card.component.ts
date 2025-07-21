@@ -94,8 +94,8 @@ export class FONewExecutionCardComponent {
   ParentsSelectionMethod = FOParentsSelectionMethod;
   parentsSelectionMethodOptions: SelectOption<FOParentsSelectionMethod>[] = [
     {
-      value: FOParentsSelectionMethod.Random,
-      label: 'Aleatório',
+      value: FOParentsSelectionMethod.UniformRandom,
+      label: 'Aleatório uniforme',
     },
     {
       value: FOParentsSelectionMethod.BestFitness,
@@ -104,10 +104,6 @@ export class FONewExecutionCardComponent {
     {
       value: FOParentsSelectionMethod.TournamentOfThree,
       label: 'Torneio de três',
-    },
-    {
-      value: FOParentsSelectionMethod.UniformRandom,
-      label: 'Uniforme aleatório',
     },
   ];
 

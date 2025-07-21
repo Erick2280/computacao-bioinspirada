@@ -77,10 +77,9 @@ export enum FOSolverState {
 }
 
 export enum FOParentsSelectionMethod {
-  Random = 'Random',
+  UniformRandom = 'UniformRandom',
   BestFitness = 'BestFitness',
   TournamentOfThree = 'TournamentOfThree',
-  UniformRandom = 'UniformRandom', // ES: Select parents uniformly from entire population
 }
 
 export enum FORecombinationMethod {
@@ -109,8 +108,6 @@ export class FunctionOptimizationSolver {
     FOParentsSelectionMethod,
     (individuals: FOIndividual[]) => FOIndividual[]
   > = {
-    [FOParentsSelectionMethod.Random]: (individuals) =>
-      individuals.sort(() => Math.random() - 0.5).slice(0, 2),
     [FOParentsSelectionMethod.BestFitness]: (individuals) =>
       individuals.slice(0, 2),
     [FOParentsSelectionMethod.TournamentOfThree]: (individuals) => {

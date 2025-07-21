@@ -103,10 +103,9 @@ export class FunctionsOptimizationComponent {
 
   getParentsSelectionMethodLabel(method: FOParentsSelectionMethod): string {
     const methodLabels = {
-      [FOParentsSelectionMethod.Random]: 'Aleatório',
+      [FOParentsSelectionMethod.UniformRandom]: 'Aleatório uniforme',
       [FOParentsSelectionMethod.BestFitness]: 'Melhor fitness',
       [FOParentsSelectionMethod.TournamentOfThree]: 'Torneio de três',
-      [FOParentsSelectionMethod.UniformRandom]: 'Uniforme aleatório',
     };
     return methodLabels[method];
   }
