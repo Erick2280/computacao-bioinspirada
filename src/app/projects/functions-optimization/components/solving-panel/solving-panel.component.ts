@@ -225,15 +225,15 @@ export class FOSolvingPanelComponent implements AfterViewInit, OnDestroy {
         grid: true,
       },
       marks: [
-        Plot.rectY(
-          currentFitnessValues,
-          Plot.binX(
+        Plot.rectY(currentFitnessValues, {
+          ...Plot.binX(
             { y: 'count' },
             {
               x: (d) => d,
             },
           ),
-        ),
+          fill: '#0d9488',
+        }),
       ],
     });
 
@@ -255,7 +255,7 @@ export class FOSolvingPanelComponent implements AfterViewInit, OnDestroy {
           Plot.line(data, {
             x: 'iteration',
             y: 'sigmaMean',
-            stroke: '#7c3aed',
+            stroke: '#0d9488',
             strokeWidth: 2,
             tip: true,
             title: 'Sigma médio',
@@ -263,7 +263,7 @@ export class FOSolvingPanelComponent implements AfterViewInit, OnDestroy {
           Plot.line(data, {
             x: 'iteration',
             y: 'sigmaBest',
-            stroke: '#059669',
+            stroke: '#0d9488',
             strokeWidth: 1,
             tip: true,
             title: 'Sigma mínimo',
@@ -271,7 +271,7 @@ export class FOSolvingPanelComponent implements AfterViewInit, OnDestroy {
           Plot.line(data, {
             x: 'iteration',
             y: 'sigmaWorst',
-            stroke: '#dc2626',
+            stroke: '#d97706',
             strokeWidth: 1,
             tip: true,
             title: 'Sigma máximo',
@@ -295,15 +295,15 @@ export class FOSolvingPanelComponent implements AfterViewInit, OnDestroy {
             grid: true,
           },
           marks: [
-            Plot.rectY(
-              currentSigmaValues,
-              Plot.binX(
+            Plot.rectY(currentSigmaValues, {
+              ...Plot.binX(
                 { y: 'count' },
                 {
                   x: (d) => d,
                 },
               ),
-            ),
+              fill: '#0d9488',
+            }),
           ],
         });
       }
