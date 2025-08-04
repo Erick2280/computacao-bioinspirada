@@ -1,0 +1,557 @@
+Data,Tipo,Pratos Principais,Acompanhamentos,Bebidas,Sobremesas
+2023-10-02,Almoço,Torta Madalena de Soja; Vatapá de Jaca,"Salada Crua; Salada Cozida: Batata, Cenoura e Vagem; Farofa; Feijão Preto; Arroz Refogado",Suco,Fruta
+2023-10-02,Jantar,Coxa e Sobrecoxa ao Forno; Lentilha ao Molho,Salada Crua; Sopa de Legumes com Carne; Creme de Cebola; Cuscuz; Arroz com Vagem,Suco; Café; Café com Leite,
+2023-10-03,Almoço,Vaca Atolada; Lentilha com Cebola Caramelizada,"Salada Crua; Salada Cozida: Abóbora, Batata e Chuchu; Espaguete ao Alho e Óleo; Feijão Mulatinho; Arroz Colorido",Suco,Paçoca
+2023-10-03,Jantar,Lombo Suíno ao Molho Agridoce; Soja Oriental,Salada Crua; Sopa de Peixe; Sopa de Feijão Vegetariana; Macaxeira; Espaguete ao Sugo,Suco; Café; Café com Leite,
+2023-10-04,Almoço,Frango ao Forno; Estrogonofe de Grão-de-bico,"Salada Crua; Salada Cozida: Batata, Chuchu e Cenoura; Cuscuz Temperado; Feijão Preto; Arroz com Ervilha",Suco,Fruta
+2023-10-04,Jantar,Guisado Bovino; Ratatouille,Salada Crua; Arroz Doce; Caldo Verde; Batata-doce; Arroz com Cenoura,Suco; Café; Café com Leite,
+2023-10-05,Almoço,Suíno ao Molho Escuro; Soja Refogada,"Salada Crua; Salada Cozida: Batata, Cenoura, Vagem e Ervilha; Espaguete ao Alho e Óleo; Feijão Mulatinho; Arroz com Cenoura",Suco,Creme Rosé
+2023-10-05,Jantar,Hambúrguer; Grão-de-bico com Legumes,Salada Crua; Sopa de Feijão com Carne; Creme de Abóbora; Inhame; Espaguete com Ervas,Suco; Café; Café com Leite,
+2023-10-06,Almoço,Feijoada; Torta de Repolho,"Salada Crua; Salada Cozida: Couve, Repolho e Cenoura; Farofa; Feijão Preto; Arroz Branco",Suco,Fruta
+2023-10-06,Jantar,Charque Acebolada; Torta Madalena de Soja,Salada Crua; Sopa de Legumes; Mungunzá; Cuscuz; Arroz Branco,Suco; Café; Café com Leite,
+2023-10-09,Almoço,Peixe à Gomes de Sá; Lasanha de Jaca,"Salada Crua; Salada Cozida: Batata, Cenoura, Vagem e Milho; Abóbora ao Forno; Feijão Mulatinho; Arroz Refogado",Suco,Fruta
+2023-10-09,Jantar,Frango Xadrez; Bobó de Grão-de-bico,Salada Crua; Sopa de Peixe; Creme de Batata; Batata-doce; Arroz Branco,Suco; Café; Café com Leite,
+2023-10-10,Almoço,Frango ao Molho de Tomate; Risoto de Grão-de-bico,"Salada Crua; Salada Cozida: Abobrinha, Beterraba e Chuchu; Espaguete ao Alho e Óleo; Feijão Mulatinho; Arroz com Cenoura",Suco,Pé-de-moleque
+2023-10-10,Jantar,Isca de Carne à Chinesa; Moqueca de Banana com Legumes,Salada Crua; Canja; Creme de Cenoura; Macaxeira; Espaguete ao Sugo,Suco; Café; Café com Leite,
+2023-10-11,Almoço,Cozido; Torta Madalena de Soja,"Salada Crua; Salada Cozida: Abóbora, Batata-doce e Batata; Pirão; Feijão Mulatinho; Arroz Colorido",Suco,Fruta
+2023-10-11,Jantar,Toscana Acebolada; Bolinho de Soja,Salada Crua; Canjiquinha; Sopa de Legumes; Cuscuz; Arroz com Brócolis,Suco; Café; Café com Leite,
+2023-10-16,Almoço,Torta Salgada Vegetariana; Estrogonofe de Jaca,"Salada Crua; Salada Cozida: Abóbora, Batata e Chuchu; Purê Misto; Feijão Mulatinho; Arroz Refogado",Suco,Fruta
+2023-10-16,Jantar,Salsicha ao Molho; Estrogonofe de Grão-de-bico,Salada Crua; Sopa de Legumes com Carne; Creme de Abóbora; Inhame; Espaguete ao Alho e Óleo,Suco; Café; Café com Leite,
+2023-10-17,Almoço,Frango ao Molho Cremoso; Assado de Lentilha com Legumes,"Salada Crua; Salada Cozida: Batata, Chuchu e Cenoura com Parmesão; Batata ao Forno; Feijão Mulatinho; Arroz com Cenoura",Suco,Doce de Goiaba
+2023-10-17,Jantar,Charque Acebolada; Soja Refogada,Salada Crua; Arroz Doce; Creme de Cenoura; Cuscuz; Arroz Branco,Suco; Café; Café com Leite,
+2023-10-18,Almoço,Suíno Acebolado; Soja ao Sugo,"Salada Crua; Salada Cozida: Abóbora, Batata-doce e Repolho; Farofa; Feijão Preto; Arroz Branco",Suco,Fruta
+2023-10-18,Jantar,Frango ao Molho de Queijo; Lasanha de Berinjela,Salada Crua; Sopa de Legumes com Frango; Sopa de Legumes; Macaxeira; Arroz com Milho,Suco; Café; Café com Leite,
+2023-10-19,Almoço,Guisado com Batatas; Bobó de Grão-de-bico,"Salada Crua; Salada Cozida: Batata, Vagem e Cenoura; Macarrão ao Alho e Óleo; Feijão Mulatinho; Arroz Refogado",Suco,Chocolate
+2023-10-19,Jantar,Suíno ao Molho; Soja com Legumes,Salada Crua; Sopa de Feijão com Carne; Caldo Verde; Batata-doce; Espaguete ao Alho e Óleo,Suco; Café; Café com Leite,
+2023-10-20,Almoço,Dobradinha; Torta de Legumes,"Salada Crua; Salada Cozida: Abóbora, Batata-doce e Repolho; Farofa; Feijão Preto; Arroz Branco",Suco,Fruta
+2023-10-20,Jantar,Isca de Carne Acebolada; Assado de Lentilha,Salada Crua; Mungunzá; Creme de Batata; Cuscuz; Arroz Refogado,Suco; Café; Café com Leite,
+2023-10-23,Almoço,Frango na Aveia; Moqueca de Banana com Legumes,"Salada Crua; Salada Cozida: Abóbora, Batata e Chuchu; Macarrão Colorido; Feijão Preto; Arroz com Brócolis",Suco,Picolé
+2023-10-23,Jantar,Charque ao Vinagrete; Torta Madalena Vegetariana,Salada Crua; Creme de Abóbora; Sopa de Feijão com Carne; Macaxeira; Arroz com Cenoura,Suco; Café; Café com Leite,
+2023-10-24,Almoço,Fígado ao Molho Madeira; Lasanha de Soja,"Salada Crua; Salada Cozida: Batata, Chuchu e Cenoura; Cuscuz Temperado; Feijão Mulatinho; Arroz com Ervilha",Suco,Fruta
+2023-10-24,Jantar,Lombo Suíno ao Molho Agridoce; Bobó de Grão-de-bico,Salada Crua; Caldo Verde; Canja; Batata-doce; Espaguete ao Alho e Óleo,Suco; Café; Café com Leite,
+2023-10-25,Almoço,Peixe à Gomes de Sá; Lentilha com Cebola Caramelizada,"Salada Crua; Salada Cozida: Batata, Chuchu e Cenoura; Quibebe; Feijão Mulatinho; Arroz com Milho",Suco,Fruta
+2023-10-25,Jantar,Calabresa Acebolada; Soja ao Sugo,Salada Crua; Sopa de Legumes; Canjiquinha; Cuscuz; Arroz Colorido,Suco; Café; Café com Leite,
+2023-10-26,Almoço,Torta Madalena de Carne; Grão-de-bico com Legumes,"Salada Crua; Salada Cozida: Abóbora, Batata e Chuchu; Macarrão ao Alho e Óleo; Feijão Macassar; Arroz Refogado",Suco,Doce de Goiaba
+2023-10-26,Jantar,Fricassê de Frango; Lentilha à Bolonhesa,Salada Crua; Creme de Batata; Sopa de Carne; Inhame; Macarrão ao Alho e Óleo,Suco; Café; Café com Leite,
+2023-10-27,Almoço,Feijoada; Torta Salgada de Legumes,"Salada Crua; Salada Cozida: Couve, Repolho e Cenoura; Farofa; Feijão Preto; Arroz Branco",Suco,Fruta
+2023-10-27,Jantar,Guisado Bovino; Torta Madalena de Soja,Salada Crua; Sopa de Feijão Vegetariana; Arroz Doce; Cuscuz; Arroz com Brócolis,Suco; Café; Café com Leite,
+2023-10-30,Almoço,Lasanha de Soja; Escondidinho de Jaca,"Salada Crua; Salada Cozida: Batata, Cenoura e Vagem; Farofa; Feijão Preto; Arroz Carioca",Suco,Fruta
+2023-10-30,Jantar,Frango ao Molho com Batatas; Grão-de-bico com Legumes,Salada Crua; Creme de Cebola; Sopa de Legumes com Carne; Cuscuz; Arroz com Vagem,Suco; Café; Café com Leite,
+2023-10-31,Almoço,Vaca Atolada; Bolonhesa de Lentilha,"Salada Crua; Salada Cozida: Abóbora, Batata e Chuchu; Macarrão ao Alho e Óleo; Feijão Mulatinho; Arroz Colorido",Suco,Bolo de Chocolate
+2023-10-31,Jantar,Charque; Soja Oriental,Salada Crua; Creme de Cenoura; Sopa de Peixe; Macaxeira; Espaguete ao Sugo,Suco; Café; Café com Leite,
+2023-11-01,Almoço,Cozido; Soja ao Sugo,"Salada Crua; Salada Cozida: Batata, Chuchu e Cenoura; Pirão; Feijão Preto; Arroz com Ervilha",Suco,Fruta
+2023-11-01,Jantar,Hambúrguer; Ratatouille,Salada Crua; Sopa de Legumes; Mungunzá; Batata-doce; Arroz com Cenoura,Suco; Café; Café com Leite,
+2023-11-06,Almoço,Fricassê de Frango; Moqueca de Banana com Legumes,"Salada Crua; Salada Cozida: Abóbora, Batata e Chuchu; Farofa; Feijão Mulatinho; Arroz com Brócolis",Suco,Fruta
+2023-11-06,Jantar,Charque ao Vinagrete; Lentilha Assada,Salada Crua; Canja; Sopa de Feijão; Macaxeira; Arroz Carioca,Suco; Café; Café com Leite,
+2023-11-07,Almoço,Fígado ao Molho com Batatas; Torta Madalena Vegetariana,"Salada Crua; Salada Cozida: Batata, Vagem e Cenoura; Cuscuz Temperado; Feijão Macassar; Arroz com Ervilha",Suco,Pé-de-moleque
+2023-11-07,Jantar,Lombo Suíno ao Molho Agridoce; Grão-de-bico,Salada Crua; Canjiquinha; Creme de Espinafre; Batata-doce; Arroz Branco,Suco; Café; Café com Leite,
+2023-11-08,Almoço,Peixe à Zé do Pipo; Grão-de-bico com Legumes,"Salada Crua; Salada Cozida: Abóbora, Chuchu e Beterraba; Abóbora ao Forno; Feijão Mulatinho; Arroz com Milho",Suco,Fruta
+2023-11-08,Jantar,Salsicha ao Molho; Escondidinho Vegetariano,Salada Crua; Creme de Cenoura; Sopa de Legumes com Carne; Cuscuz; Espaguete ao Alho e Óleo,Suco; Café; Café com Leite,
+2023-11-09,Almoço,Guisado com Batatas; Assado de Lentilha com Legumes,"Salada Crua; Salada Cozida: Abóbora, Batata e Repolho; Espaguete ao Alho e Óleo; Feijão Mulatinho; Arroz com Milho",Suco,Doce de Goiaba
+2023-11-09,Jantar,Bife ao Molho; Torta de Legumes,Salada Crua; Creme de Cebola; Sopa de Feijão com Carne; Cará; Espaguete ao Alho e Óleo,Suco; Café; Café com Leite,
+2023-11-10,Almoço,Feijoada; Torta de Legumes,"Salada Crua; Salada Cozida: Couve Manteiga, Repolho e Cenoura; Farofa; Feijão Preto; Arroz Branco",Suco,Fruta
+2023-11-10,Jantar,Frango Acebolado; Estrogonofe de Jaca,Salada Crua; Sopa de Legumes; Arroz Doce; Cuscuz; Arroz com Cenoura,Suco; Café; Café com Leite,
+2023-11-13,Almoço,Bobó de Grão-de-bico; Lasanha de Jaca,"Salada Crua; Salada Cozida: Batata, Cenoura e Vagem; Farofa; Feijão Preto; Arroz Refogado",Suco,Fruta
+2023-11-13,Jantar,Coxa e Sobrecoxa ao Forno; Lentilha ao Molho,Salada Crua; Creme de Cebola; Sopa de Legumes com Carne; Cuscuz; Arroz com Vagem,Suco; Café; Café com Leite,
+2023-11-14,Almoço,Frango ao Forno; Moqueca de Banana com Legumes,"Salada Crua; Salada Cozida: Batata, Chuchu e Cenoura; Purê de Batata; Feijão Mulatinho; Arroz com Ervilha",Suco,Fruta
+2023-11-14,Jantar,Lombo Suíno ao Molho Agridoce; Soja Oriental,Salada Crua; Sopa de Feijão Vegetariana; Sopa de Peixe; Macaxeira; Arroz Refogado,Suco; Café; Café com Leite,
+2023-11-16,Almoço,Suíno ao Molho Barbecue; Soja Refogada,"Salada Crua; Salada Cozida: Batata, Cenoura, Chuchu e Ervilha; Espaguete ao Alho e Óleo; Feijão Mulatinho; Arroz com Cenoura",Suco,Paçoca
+2023-11-16,Jantar,Calabresa Acebolada; Grão-de-bico com Legumes,Salada Crua; Creme de Abóbora; Sopa de Feijão com Carne; Inhame; Espaguete com Ervas,Suco; Café; Café com Leite,
+2023-11-17,Almoço,Dobradinha; Vatapá de Jaca,"Salada Crua; Salada Cozida: Abóbora, Batata-doce e Cenoura; Farofa; Feijão Preto; Arroz Branco",Suco,Fruta
+2023-11-17,Jantar,Charque Acebolada; Torta Madalena de Soja,Salada Crua; Sopa de Legumes; Mungunzá; Cuscuz; Arroz Branco,Suco; Café; Café com Leite,
+2023-11-20,Almoço,Peixe à Gomes de Sá; Torta de Repolho,"Salada Crua; Salada Cozida: Batata, Cenoura, Vagem e Milho; Quibebe; Feijão Mulatinho; Arroz Refogado",Suco,Fruta
+2023-11-20,Jantar,Frango Xadrez; Bobó de Grão-de-bico,Salada Crua; Creme de Batata; Sopa de Peixe; Batata-doce; Arroz Branco,Suco; Café; Café com Leite,
+2023-11-21,Almoço,Fígado à Portuguesa; Lasanha de Soja,"Salada Crua; Salada Cozida: Abobrinha, Beterraba e Chuchu; Espaguete ao Alho e Óleo; Feijão Preto; Arroz com Cenoura",Suco,Chocolate
+2023-11-21,Jantar,Isca de Carne à Chinesa; Moqueca de Banana com Legumes,Salada Crua; Creme de Cenoura; Canja; Inhame; Espaguete ao Sugo,Suco; Café; Café com Leite,
+2023-11-22,Almoço,Isca de Carne à Chinesa; Escondidinho de Jaca,"Salada Crua; Salada Cozida: Vagem, Batata e Cenoura; Cuscuz Temperado; Feijão Macassar; Arroz Colorido",Suco,Fruta
+2023-11-22,Jantar,Toscana Acebolada; Bolinho de Soja,Salada Crua; Sopa de Legumes; Canjiquinha; Cuscuz; Arroz com Brócolis,Suco; Café; Café com Leite,
+2023-11-23,Almoço,Frango ao Molho Pomodoro; Bolonhesa de Lentilha,"Salada Crua; Salada Cozida: Batata, Cenoura e Chuchu com Molho Branco; Espaguete ao Sugo; Feijão Preto; Arroz com Espinafre",Suco,Picolé
+2023-11-23,Jantar,Charque à Brejeira; Lentilha Assada com Legumes,Salada Crua; Sopa de Carne; Sopa de Feijão; Macaxeira; Espaguete ao Alho e Óleo,Suco; Café; Café com Leite,
+2023-11-24,Almoço,Cassoulet; Torta Madalena de Soja,"Salada Crua; Salada Cozida: Batata, Repolho e Abóbora; Farofa; Feijão Mulatinho; Arroz Branco",Suco,Fruta
+2023-11-24,Jantar,Carré ao Forno; Lasanha de Soja,Salada Crua; Creme de Abóbora; Arroz Doce; Cuscuz; Arroz com Cenoura,Suco; Café; Café com Leite,
+2023-11-27,Almoço,Torta Salgada Vegetariana; Vatapá de Jaca,"Salada Crua; Salada Cozida: Abóbora, Batata e Chuchu; Macarrão ao Alho e Óleo; Feijão Mulatinho; Arroz Refogado",Suco,Fruta
+2023-11-27,Jantar,Guisado Bovino; Estrogonofe de Grão-de-bico,Salada Crua; Sopa de Legumes com Carne; Creme de Abóbora; Inhame; Espaguete ao Alho e Óleo,Suco; Café; Café com Leite,
+2023-11-28,Almoço,Frango ao Molho Cremoso; Assado de Lentilha com Legumes,"Salada Crua; Salada Cozida: Batata, Chuchu e Cenoura com Parmesão; Batata ao Forno; Feijão Mulatinho; Arroz com Cenoura",Suco,Paçoca
+2023-11-28,Jantar,Charque à Brejeira; Torta de Legumes,Salada Crua; Creme de Cenoura; Mungunzá; Cuscuz; Arroz Branco,Suco; Café; Café com Leite,
+2023-11-29,Almoço,Suíno ao Molho Barbecue; Soja ao Sugo,"Salada Crua; Salada Cozida: Abóbora, Chuchu e Batata; Farofa; Feijão Preto; Arroz Branco",Suco,Fruta
+2023-11-29,Jantar,Frango ao Molho de Queijo; Lasanha de Berinjela,Salada Crua; Sopa de Legumes com Frango; Caldo Verde; Macaxeira; Arroz com Milho,Suco; Café; Café com Leite,
+2023-11-30,Almoço,Torta Madalena de Carne; Bobó de Grão-de-bico,"Salada Crua; Salada Cozida: Batata, Cenoura e Vagem; Macarrão ao Alho e Óleo; Feijão Mulatinho; Arroz com Espinafre",Suco,Doce de Banana
+2023-11-30,Jantar,Suíno ao Molho; Soja com Legumes,Salada; Sopa de Feijão com Carne; Sopa de Legumes; Batata-doce; Espaguete ao Alho e Óleo,Suco; Café; Café com Leite,
+2023-12-01,Almoço,Dobradinha; Torta de Legumes,"Salada Crua; Salada Cozida: Abóbora, Batata-doce e Repolho; Farofa; Feijão Preto; Arroz Branco",Suco,Fruta
+2023-12-01,Jantar,Hambúrguer; Assado de Lentilha,Salada Crua; Creme de Batata; Mungunzá; Cuscuz; Arroz Refogado,Suco; Café; Café com Leite,
+2023-12-04,Almoço,Frango na Aveia; Moqueca de Banana com Legumes,"Salada Crua; Salada Cozida: Abóbora, Batata e Chuchu; Macarrão Colorido; Feijão Preto; Arroz com Brócolis",Suco,Fruta
+2023-12-04,Jantar,Charque ao Vinagrete; Torta Madalena Vegetariana,Salada Crua; Sopa de Feijão com Carne; Creme de Abóbora; Macaxeira; Arroz com Cenoura,Suco; Café; Café com Leite,
+2023-12-05,Almoço,Fígado ao Molho Madeira; Torta Salgada de Legumes,"Salada Crua; Salada Cozida: Batata, Vagem e Cenoura; Cuscuz Temperado; Feijão Mulatinho; Arroz com Ervilha",Suco,Chocolate
+2023-12-05,Jantar,Lombo Suíno ao Molho Agridoce; Bobó de Grão-de-bico,Salada Crua; Caldo Verde; Canja; Batata-doce; Espaguete ao Alho e Óleo,Suco; Café; Café com Leite,
+2023-12-06,Almoço,Peixe à Gomes de Sá; Lentilha com Cebola Caramelizada,"Salada Crua; Salada Cozida: Batata, Chuchu e Cenoura; Abóbora ao Forno; Feijão Mulatinho; Arroz com Milho",Suco,Fruta
+2023-12-06,Jantar,Salsicha ao Molho; Soja ao Sugo,Salada Crua; Sopa de Legumes; Canjiquinha; Cuscuz; Espaguete ao Alho e Óleo,Suco; Café; Café com Leite,
+2023-12-07,Almoço,Cozido; Torta de Falso Camarão,"Salada Crua; Salada Cozida: Repolho, Abóbora e Batata-doce; Pirão; Feijão Mulatinho; Arroz Branco",Suco,Fruta
+2023-12-07,Jantar,Fricassê de Frango; Lentilha à Bolonhesa,Salada; Sopa de Carne; Creme de Batata; Inhame; Arroz Colorido,Suco; Café; Café com Leite,
+2023-12-11,Almoço,Bolinho de Soja; Lasanha de Jaca,"Salada Crua; Salada Cozida: Batata, Cenoura e Vagem; Farofa; Feijão Mulatinho; Arroz Carioca",Suco,Fruta
+2023-12-11,Jantar,Fricassê de Frango; Grão-de-bico com Legumes,Salada Crua; Creme de Cebola; Sopa de Legumes com Carne; Cuscuz; Arroz com Vagem,Suco; Café; Café com Leite,
+2023-12-12,Almoço,Suíno ao Molho de Abacaxi; Bolonhesa de Lentilha,"Salada Crua; Salada Cozida: Abóbora, Batata e Chuchu; Batata ao Forno; Feijão Mulatinho; Arroz Colorido",Suco,Pé-de-moleque
+2023-12-12,Jantar,Calabresa Acebolada; Soja Oriental,Salada Crua; Creme de Cenoura; Canja; Macaxeira; Espaguete ao Sugo,Suco; Café; Café com Leite,
+2023-12-13,Almoço,Frango ao Molho Branco; Grão-de-bico com Legumes,"Salada Crua; Salada Cozida: Batata, Chuchu e Cenoura; Macarrão ao Alho e Óleo; Feijão Mulatinho; Arroz Branco",Suco,Fruta
+2023-12-13,Jantar,Torta Madalena de Carne; Ratatouille,Salada Crua; Sopa de Legumes; Arroz Doce; Batata-doce; Arroz Carioca,Suco; Café; Café com Leite,
+2023-12-14,Almoço,Vaca Atolada; Vatapá de Jaca,"Salada Crua; Salada Cozida: Vagem, Cenoura e Batata; Cuscuz Temperado; Feijão Preto; Arroz Carioca",Suco,Paçoca
+2023-12-14,Jantar,Carré ao Forno; Bolinho de Soja,Salada; Creme de Abóbora; Sopa de Peixe; Cará; Espaguete ao Alho e Óleo,Suco; Café; Café com Leite,
+2023-12-15,Almoço,Feijoada; Soja Refogada,"Salada Crua; Salada Cozida: Couve, Repolho e Cenoura; Farofa; Feijão Preto; Arroz Branco",Suco,Fruta
+2023-12-15,Jantar,Charque à Brejeira; Moqueca de Banana com Legumes,Salada Crua; Caldo Verde; Canjiquinha; Cuscuz; Macarrão ao Alho e Óleo,Suco; Café; Café com Leite,
+2023-12-18,Almoço,Fricassê de Frango; Lasanha de Jaca,"Salada Crua; Salada Cozida: Abóbora, Batata e Chuchu; Farofa; Feijão Preto; Arroz Branco",Suco,Fruta
+2023-12-18,Jantar,Charque Acebolada; Abobrinha à Milanesa,Salada Crua; Creme de Batata; Sopa de Feijão com Carne; Macaxeira; Arroz Carioca,Suco; Café; Café com Leite,
+2023-12-19,Almoço,Fígado ao Molho Madeira; Moqueca de Banana com Legumes,"Salada Crua; Salada Cozida: Batata, Vagem e Cenoura; Abóbora ao Forno; Feijão Mulatinho; Arroz Carioca",Suco,Picolé
+2023-12-19,Jantar,Frango Acebolado; Torta Madalena Vegetariana,Salada Crua; Creme de Espinafre; Canja; Batata-doce; Espaguete ao Alho e Óleo,Suco; Café; Café com Leite,
+2023-12-20,Almoço,Moqueca de Peixe; Grão-de-bico com Legumes,"Salada Crua; Salada Cozida: Abobrinha, Repolho e Cenoura; Espaguete ao Alho e Óleo; Feijão Preto; Arroz Refogado",Suco,Fruta
+2023-12-20,Jantar,Toscana Acebolada; Soja ao Sugo,Salada Crua; Sopa de Legumes; Mungunzá; Banana Comprida; Espaguete ao Alho e Óleo,Suco; Café; Café com Leite,
+2023-12-21,Almoço,Guisado com Batatas; Assado de Lentilha com Legumes,"Salada Crua; Salada Cozida: Abóbora, Batata-doce e Repolho; Cuscuz Temperado; Feijão Preto; Arroz Branco",Suco,Bolo
+2023-12-21,Jantar,Pernil ao Molho Madeira; Lentilha com Cebola Caramelizada,Salada; Sopa de Feijão Vegetariana; Canjiquinha; Macaxeira; Arroz com Cenoura,Suco; Café; Café com Leite,
+2023-12-22,Almoço,Chester; Bolinho de Soja,"Salada Crua; Salada Cozida: Batata, Chuchu e Cenoura; Farofa; Feijão Mulatinho; Arroz Festivo",Suco,Bolo
+2024-01-29,Almoço,Lasanha de Carne; Soja Refogada,"Salada Crua; Salada Cozida: Abóbora, Batata e Chuchu; Farofa; Feijão Mulatinho; Arroz Branco",Suco,Bombom
+2024-01-29,Jantar,Charque ao Vinagrete; Torta Madalena Vegetariana,Salada Crua; Creme de Abóbora; Sopa de Feijão com Carne; Macaxeira; Arroz com Cenoura,Suco; Café; Café com Leite,
+2024-01-30,Almoço,Peixe à Escabeche; Moqueca de Banana com Legumes,"Salada Crua; Salada Cozida: Batata-doce, Repolho e Abóbora; Espaguete ao Alho e Óleo; Feijão Mulatinho; Arroz Carioca",Suco,Fruta
+2024-01-30,Jantar,Lombo Suíno ao Molho Agridoce; Quiche de Cebola,Salada Crua; Caldo Verde; Canja; Batata-doce; Espaguete ao Alho e Óleo,Suco; Café; Café com Leite,
+2024-01-31,Almoço,Fricassê de Frango; Grão-de-bico com Legumes,"Salada Crua; Salada Cozida: Abobrinha, Repolho e Cenoura; Purê de Batata; Feijão Preto; Arroz Refogado",Suco,Fruta
+2024-01-31,Jantar,Salsicha ao Molho; Soja ao Sugo,Salada Crua; Sopa de Legumes; Canjiquinha; Cuscuz; Espaguete ao Alho e Óleo,Suco; Café; Café com Leite,
+2024-02-01,Almoço,Guisado com Batatas; Assado de Lentilha com Legumes,"Salada Crua; Salada Cozida: Abóbora, Batata e Chuchu; Espaguete ao Alho e Óleo; Feijão Mulatinho; Arroz Colorido",Suco,Doce de Goiaba
+2024-02-01,Jantar,Bife ao Molho; Torta Salgada Vegetariana,Salada; Canja; Arroz Doce; Cuscuz; Arroz com Cenoura,Suco; Café; Café com Leite,
+2024-02-02,Almoço,Feijoada; Torta de Legumes,"Salada Crua; Salada Cozida: Couve Manteiga, Repolho e Cenoura; Farofa; Feijão Preto; Arroz Branco",Suco,Fruta
+2024-02-02,Jantar,Frango Acebolado; Soja Caipira,Salada Crua; Sopa de Legumes; Sopa de Feijão com Carne; Cará; Espaguete ao Alho e Óleo,Suco; Café; Café com Leite,
+2024-02-05,Almoço,Isca de Carne à Chinesa; Torta de Repolho,"Salada Crua; Salada Cozida: Abobrinha, Beterraba e Chuchu; Cuscuz Temperado; Feijão Mulatinho; Arroz Refogado",Suco,Melão
+2024-02-05,Jantar,Frango Xadrez; Bolinho de Soja,Salada Crua; Creme de Batata; Sopa de Peixe; Cuscuz; Arroz Branco,Suco; Café; Café com Leite,
+2024-02-06,Almoço,Isca de Fígado à Portuguesa; Risoto de Grão-de-bico,"Salada Crua; Salada Cozida: Batata, Cenoura, Vagem e Milho; Espaguete ao Sugo; Feijão Preto; Arroz com Cenoura",Suco,Paçoca
+2024-02-06,Jantar,Torta Madalena de Carne; Ratatouille,Salada Crua; Creme de Cenoura; Canja; Macaxeira; Espaguete ao Sugo,Suco; Café; Café com Leite,
+2024-02-07,Almoço,Moqueca de Peixe; Bolonhesa de Lentilha,"Salada Crua; Salada Cozida: Batata, Repolho e Abóbora; Abóbora ao Forno; Feijão Mulatinho; Arroz Colorido",Suco,Fruta
+2024-02-07,Jantar,Toscana Acebolada; Bobó de Grão-de-bico,Salada Crua; Sopa de Legumes; Canjiquinha; Cuscuz; Arroz com Brócolis,Suco; Café; Café com Leite,
+2024-02-08,Almoço,Frango Caipira; Escondidinho de Jaca,"Salada Crua; Salada Cozida: Cenoura, Batata e Chuchu; Espaguete ao Alho e Óleo; Feijão Macassar; Arroz com Espinafre",Suco,Picolé
+2024-02-08,Jantar,Charque à Brejeira; Lentilha Assada com Legumes,Salada; Sopa de Carne; Sopa de Feijão Vegetariana; Batata-doce; Espaguete ao Alho e Óleo,Suco; Café; Café com Leite,
+2024-02-09,Almoço,Cassoulet; Torta Madalena de Soja,"Salada Crua; Salada Cozida: Couve Manteiga, Repolho e Cenoura; Farofa; Feijão Preto; Arroz Branco",Suco,Fruta
+2024-02-15,Almoço,Suíno ao Molho Barbecue; Soja Refogada,"Salada Crua; Salada Cozida: Cenoura, Batata e Chuchu; Macarrão ao Alho e Óleo; Feijão Mulatinho; Arroz com Cenoura",Suco,Chocolate
+2024-02-15,Jantar,Hambúrguer; Grão-de-bico com Legumes,Salada; Creme de Abóbora; Sopa de Feijão com Carne; Inhame; Espaguete com Ervas,Suco; Café; Café com Leite,
+2024-02-16,Almoço,Dobradinha; Torta Salgada Vegetariana,"Salada Crua; Salada Cozida: Abóbora, Batata-doce e Cenoura; Farofa; Feijão Preto; Arroz Branco",Suco,Fruta
+2024-02-16,Jantar,Charque Acebolada; Torta Madalena de Soja,Salada Crua; Sopa de Legumes; Mungunzá; Arroz Branco; Cuscuz,Suco; Café; Café com Leite,
+2024-02-19,Almoço,Empadão de Falso Camarão; Vatapá de Jaca,"Salada Crua; Salada Cozida: Abóbora, Batata e Chuchu; Farofa de Banana; Feijão Mulatinho; Arroz Refogado",Suco,Fruta
+2024-02-19,Jantar,Guisado Bovino com Legumes; Estrogonofe de Grão-de-bico,Salada Crua; Mungunzá; Creme de Abóbora; Espaguete ao Alho e Óleo; Inhame,Suco; Café; Café com Leite,
+2024-02-20,Almoço,Frango ao Molho de Queijo; Assado de Lentilha com Legumes,"Salada Crua; Salada Cozida: Batata, Chuchu e Cenoura com Parmesão; Batata Gratinada; Feijão Macassar; Arroz com Cenoura",Suco,Doce de Goiaba
+2024-02-20,Jantar,Charque à Brejeira; Soja Refogada,Salada Crua; Sopa de Legumes com Carne; Creme de Cenoura; Cuscuz; Arroz Branco,Suco; Café; Café com Leite,
+2024-02-21,Almoço,Suíno com Cebola Agridoce; Soja ao Sugo,"Salada Crua; Salada Cozida: Couve, Cenoura e Repolho; Purê de Abóbora; Feijão Preto; Arroz Branco",Suco,Fruta
+2024-02-21,Jantar,Calabresa; Abobrinha à Milanesa,Salada Crua; Sopa de Legumes com Frango; Caldo Verde; Espaguete ao Alho e Óleo; Macaxeira,Suco; Café; Café com Leite,
+2024-02-22,Almoço,Bife ao Molho Madeira; Grão-de-bico com Legumes,"Salada Crua; Salada Cozida: Abóbora, Batata-doce e Repolho; Macarrão ao Alho e Óleo; Feijão Mulatinho; Arroz com Espinafre",Suco,Pé-de-moleque
+2024-02-22,Jantar,Suíno ao Molho Barbecue; Soja com Legumes,Salada; Sopa de Legumes; Sopa de Feijão com Carne; Batata-doce; Arroz com Milho,Suco; Café; Café com Leite,
+2024-02-23,Almoço,Cozido; Torta de Legumes,"Salada Crua; Salada Cozida: Couve Manteiga, Repolho e Cenoura; Pirão; Feijão Mulatinho; Arroz Branco",Suco,Fruta
+2024-02-23,Jantar,Salsicha ao Molho; Quiche de Cebola,Salada Crua; Sopa de Legumes; Arroz Doce; Arroz com Cenoura; Cuscuz,Suco; Café; Café com Leite,
+2024-02-26,Almoço,Fricassê de Frango; Moqueca de Banana com Legumes,"Salada Crua; Salada Cozida: Abóbora, Batata e Chuchu; Farofa; Feijão Mulatinho; Arroz com Brócolis",Suco,Fruta
+2024-02-26,Jantar,Charque ao Vinagrete; Lentilha Assada,Salada Crua; Canja; Sopa de Feijão; Cuscuz; Arroz Carioca,Suco; Café; Café com Leite,
+2024-02-27,Almoço,Isca de Fígado ao Molho com Batatas; Lasanha de Soja,"Salada Crua; Salada Cozida: Batata, Vagem e Cenoura; Cuscuz Temperado; Feijão Macassar; Arroz com Ervilha",Suco,Fruta
+2024-02-27,Jantar,Lombo Suíno ao Molho Agridoce; Torta Madalena Vegetariana,Salada Crua; Canjiquinha; Creme de Espinafre; Batata-doce; Espaguete ao Alho e Óleo,Suco; Café; Café com Leite,
+2024-02-28,Almoço,Peixe à Escabeche; Bobó de Grão-de-bico,"Salada Crua; Salada Cozida: Abóbora, Chuchu e Batata; Farofa de Cenoura; Feijão Preto; Arroz com Milho",Suco,Fruta
+2024-02-28,Jantar,Fricassê de Frango; Risoto de Grão-de-bico,Salada Crua; Creme de Cenoura; Sopa de Legumes com Carne; Cuscuz; Arroz Branco,Suco; Café; Café com Leite,
+2024-02-29,Almoço,Carne ao Molho Oriental; Lentilha com Cebola Caramelizada,"Salada Crua; Salada Cozida: Repolho, Abobrinha e Cenoura; Espaguete ao Alho e Óleo; Feijão Mulatinho; Arroz Branco",Suco,Bolo
+2024-02-29,Jantar,Bife ao Molho Madeira; Soja Caipira,Salada; Creme de Cebola; Mungunzá; Macaxeira; Espaguete ao Alho e Óleo,Suco; Café; Café com Leite,
+2024-03-01,Almoço,Feijoada; Torta de Repolho,"Salada Crua; Salada Cozida: Couve Manteiga, Repolho e Cenoura; Farofa; Feijão Preto; Arroz Branco",Suco,Fruta
+2024-03-01,Jantar,Calabresa; Ratatouille,Salada Crua; Sopa de Legumes; Sopa de Feijão com Carne; Cará; Arroz Branco,Suco; Café; Café com Leite,
+2024-03-04,Almoço,Risoto de Grão-de-bico; Torta Salgada Vegetariana,"Salada Crua; Salada Cozida: Abóbora, Batata e Milho; Espaguete ao Alho e Óleo; Feijão Mulatinho; Arroz Refogado",Suco,Fruta
+2024-03-04,Jantar,Calabresa Acebolada; Moqueca de Banana com Legumes,Salada Crua; Creme de Batata; Sopa de Legumes com Frango; Batata-doce; Arroz com Vagem,Suco; Café; Café com Leite,
+2024-03-05,Almoço,Guisado Bovino com Legumes; Lasanha de Soja,"Salada Crua; Salada Cozida: Repolho, Batata-doce e Abóbora; Cuscuz Temperado; Feijão Macassar; Arroz Branco",Suco,Pé-de-moleque
+2024-03-05,Jantar,Frango à Pizzaiolo; Soja Refogada,Salada Crua; Creme de Cenoura; Canja; Macaxeira; Espaguete ao Alho e Óleo,Suco; Café; Café com Leite,
+2024-03-07,Almoço,Suíno com Cebola Agridoce; Bobó de Grão-de-bico,"Salada Crua; Salada Cozida: Batata, Chuchu e Cenoura; Abóbora ao Forno; Feijão Preto; Arroz com Ervilha",Suco,Paçoca
+2024-03-07,Jantar,Charque ao Vinagrete; Bolinho de Soja,Salada; Creme de Cebola; Sopa de Legumes com Carne; Batata-doce; Arroz Branco,Suco; Café; Café com Leite,
+2024-03-08,Almoço,Cassoulet; Pastelão Vegetariano,"Salada Crua; Salada Cozida: Beterraba, Chuchu e Milho; Farofa de Banana; Feijão Mulatinho; Arroz Branco",Suco,Fruta
+2024-03-08,Jantar,Lombo Suíno ao Molho de Abacaxi; Quiche de Cebola,Salada Crua; Creme de Abóbora; Sopa de Feijão Vegetariana; Cuscuz; Espaguete ao Alho e Óleo,Suco; Café; Café com Leite,
+2024-03-11,Almoço,Frango ao Forno; Bolinho de Soja,"Salada Crua; Salada Cozida: Abóbora, Batata e Chuchu; Espaguete ao Alho e Óleo; Feijão Mulatinho; Arroz Refogado",Suco,Fruta
+2024-03-11,Jantar,Guisado com Legumes; Pastelão Vegetariano,Salada Crua; Sopa de Feijão com Carne; Canjiquinha; Cuscuz; Arroz Branco,Suco; Café; Café com Leite,
+2024-03-12,Almoço,Peixe à Gomes de Sá; Lentilha com Cebola Caramelizada,"Salada Crua; Salada Cozida: Beterraba, Chuchu e Milho; Cuscuz Temperado; Feijão Macassar; Arroz Carioca",Suco,Chocolate
+2024-03-12,Jantar,Toscana Acebolada; Soja ao Sugo,Salada Crua; Creme de Batata; Canja; Cará; Espaguete ao Alho e Óleo,Suco; Café; Café com Leite,
+2024-03-13,Almoço,Isca de Fígado à Portuguesa; Empadão de Falso Camarão,"Salada Crua; Salada Cozida: Abóbora, Batata-doce e Repolho; Quibebe; Feijão Preto; Arroz Branco",Suco,Fruta
+2024-03-13,Jantar,Suíno ao Molho Agridoce; Abobrinha à Milanesa,Salada Crua; Creme de Abóbora; Sopa de Legumes com Frango; Macaxeira; Arroz com Milho,Suco; Café; Café com Leite,
+2024-03-14,Almoço,Frango à Pizzaiolo; Moqueca de Banana com Legumes,"Salada Crua; Salada Cozida: Vagem, Batata e Cenoura; Espaguete ao Alho e Óleo; Feijão Mulatinho; Arroz com Ervilha",Suco,Fruta
+2024-03-14,Jantar,Frango Caipira; Bobó de Grão-de-bico,Salada; Creme de Cenoura; Mungunzá; Batata-doce; Espaguete com Ervas,Suco; Café; Café com Leite,
+2024-03-15,Almoço,Cozido; Grão-de-bico com Legumes,"Salada Crua; Salada Cozida: Abóbora, Batata-doce e Repolho; Pirão; Feijão Mulatinho; Arroz Branco",Suco,Doce de Goiaba
+2024-03-15,Jantar,Charque à Brejeira; Lasanha de Soja,Salada Crua; Caldo Verde; Sopa de Legumes; Cuscuz; Arroz Carioca,Suco; Café; Café com Leite,
+2024-03-18,Almoço,Lasanha de Jaca; Soja ao Sugo,"Salada Crua; Salada Cozida: Abóbora, Batata e Chuchu; Farofa; Feijão Preto; Arroz com Vagem",Suco,Picolé
+2024-03-18,Jantar,Frango Acebolado; Bolonhesa de Lentilha,Salada Crua; Creme de Abóbora; Sopa de Legumes com Carne; Cuscuz; Espaguete ao Alho e Óleo,Suco; Café; Café com Leite,
+2024-03-19,Almoço,Frango na Aveia; Estrogonofe de Grão-de-bico,"Salada Crua; Salada Cozida: Vagem, Batata e Cenoura; Macarrão ao Alho e Óleo; Feijão Macassar; Arroz com Cenoura",Suco,Fruta
+2024-03-19,Jantar,Carne ao Molho Oriental; Ratatouille,Salada Crua; Caldo Verde; Sopa de Legumes com Frango; Cará; Arroz Colorido,Suco; Café; Café com Leite,
+2024-03-20,Almoço,Suíno ao Molho de Abacaxi; Soja ao Sugo,"Salada Crua; Salada Cozida: Batata, Chuchu e Cenoura; Purê de Batata; Feijão Mulatinho; Arroz Branco",Suco,Fruta
+2024-03-20,Jantar,Charque Acebolada; Bolonhesa de Soja,Salada Crua; Creme de Cebola; Canjiquinha; Macaxeira; Espaguete ao Alho e Óleo,Suco; Café; Café com Leite,
+2024-03-21,Almoço,Carne de Sol Acebolada; Assado de Lentilha com Legumes,"Salada Crua; Salada Cozida: Abóbora, Batata e Chuchu; Macarrão ao Alho e Óleo; Feijão Macassar; Arroz com Brócolis",Suco,Fruta
+2024-03-21,Jantar,Hambúrguer; Estrogonofe de Grão-de-bico,Salada; Creme de Cenoura; Sopa de Feijão com Carne; Cuscuz; Arroz com Milho,Suco; Café; Café com Leite,
+2024-03-22,Almoço,Feijoada; Abobrinha à Milanesa,"Salada Crua; Salada Cozida: Couve Manteiga, Repolho e Cenoura; Farofa de Cenoura; Feijão Preto; Arroz Branco",Suco,Doce de Banana
+2024-03-22,Jantar,Lombo Acebolado; Soja Oriental,Salada Crua; Creme de Batata; Canja; Batata-doce; Arroz Branco,Suco; Café; Café com Leite,
+2024-03-26,Almoço,Moqueca de Peixe; Torta Madalena de Soja,Salada Crua; Salada Cozida; Farofa; Feijão Macassar; Arroz Branco,Suco,Banana
+2024-03-26,Jantar,Lombo ao Molho Madeira; Abobrinha à Parmegiana,Salada Crua; Creme de Cenoura; Mungunzá; Macaxeira; Arroz Branco,Suco; Café; Café com Leite,
+2024-08-05,Almoço,Frango à Parmegiana; Soja Oriental,"Salada Crua; Salada Cozida: Abóbora, Batata e Chuchu; Arroz Colorido; Feijão Macassar; Espaguete ao Alho e Óleo",Suco,Fruta
+2024-08-05,Jantar,Bife ao Molho Madeira; Bolonhesa de Lentilha,Salada Crua; Cará; Arroz com Ervilha; Creme de Abóbora; Sopa de Feijão com Carne,Suco; Café; Café com Leite,
+2024-08-06,Almoço,Moqueca de Peixe; Estrogonofe de Grão-de-bico,"Salada Crua; Salada Cozida: Vagem, Batata e Cenoura; Arroz Carioca; Feijão Preto; Quibebe",Suco,Paçoca
+2024-08-06,Jantar,Frango ao Molho de Queijo; Bolinho de Soja,Salada Crua; Cuscuz; Espaguete ao Alho e Óleo; Creme de Batata; Sopa de Legumes com Carne,Suco; Café; Café com Leite,
+2024-08-07,Almoço,Carne de Sol Acebolada; Empadão de Falso Camarão,"Salada Crua; Salada Cozida: Batata, Cenoura, Vagem e Milho; Arroz com Brócolis; Feijão Mulatinho; Purê de Batata",Suco,Fruta
+2024-08-07,Jantar,Guisado com Legumes; Ratatouille,Salada Crua; Macaxeira; Arroz Colorido; Sopa de Feijão Vegetariana; Sopa de Legumes com Frango,Suco; Café; Café com Leite,
+2024-08-08,Almoço,Frango ao Forno; Assado de Lentilha com Legumes,"Salada Crua; Salada Cozida: Abóbora, Batata-doce e Chuchu; Arroz com Vagem; Feijão Macassar; Espaguete ao Alho e Óleo",Suco,Doce de Banana
+2024-08-08,Jantar,Salsicha ao Molho; Torta Salgada Vegetariana,Salada Crua; Cuscuz; Arroz Carioca; Sopa de Legumes; Mungunzá,Suco; Café; Café com Leite,
+2024-08-09,Almoço,Feijoada; Abobrinha à Pizzaiolo,Salada Crua; Salada Cozida: Couve e Repolho; Arroz Branco; Feijão Preto; Farofa,Suco,Fruta
+2024-08-09,Jantar,Escondidinho de Charque; Soja Refogada,Salada Crua; Espaguete ao Alho e Óleo; Batata-doce; Creme de Cenoura; Sopa de Peixe,Suco; Café; Café com Leite,
+2024-08-12,Almoço,Lasanha de Berinjela; Soja Caipira,"Salada Crua; Salada Cozida: Abóbora, Batata e Chuchu; Arroz Refogado; Feijão Mulatinho; Quibebe",Suco,Doce de Goiaba
+2024-08-12,Jantar,Lombo Suíno ao Molho Agridoce; Torta Salgada de Soja,Salada Crua; Cuscuz; Arroz com Brócolis; Sopa de Feijão Vegetariana; Sopa de Feijão com Carne,Suco; Café; Café com Leite,
+2024-08-13,Almoço,Moqueca de Banana com Legumes; Bife à Pizzaiolo,"Salada Crua; Salada Cozida: Vagem, Batata e Cenoura; Arroz com Milho; Feijão Tropeiro; Espaguete ao Alho e Óleo",Suco,Fruta
+2024-08-13,Jantar,Calabresa Acebolada; Abobrinha à Pizzaiolo,Salada Crua; Arroz Branco; Macaxeira; Creme de Cebola; Sopa de Legumes com Carne,Suco; Café; Café com Leite,
+2024-08-14,Almoço,Frango à Primavera; Bolonhesa de Lentilha,"Salada Crua; Salada Cozida: Batata, Chuchu e Abóbora; Arroz com Espinafre; Feijão Mulatinho; Legumes Gratinados",Suco,Paçoca
+2024-08-14,Jantar,Estrogonofe de Carne; Soja com Azeitonas,Salada Crua; Espaguete ao Alho e Óleo; Cará; Caldo Verde; Sopa de Legumes com Frango,Suco; Café; Café com Leite,
+2024-08-15,Almoço,Lombo ao Molho Agridoce; Pastelão Vegetariano,"Salada Crua; Salada Cozida: Abóbora, Batata e Chuchu; Arroz com Ervilha; Feijão Macassar; Espaguete ao Alho e Óleo",Suco,Doce de Banana
+2024-08-15,Jantar,Frango ao Forno; Lentilha com Cebola Caramelizada,Salada Crua; Batata-doce; Arroz com Vagem; Creme de Abóbora; Arroz Doce,Suco; Café; Café com Leite,
+2024-08-16,Almoço,Cassoulet; Grão-de-bico com Legumes,"Salada Crua; Salada Cozida: Beterraba, Chuchu e Milho; Arroz Colorido; Feijão Preto; Farofa",Suco,Fruta
+2024-08-16,Jantar,Torta Madalena de Charque; Risoto de Grão-de-bico,Salada Crua; Espaguete ao Alho e Óleo; Cuscuz; Creme de Batata; Canja,Suco; Café; Café com Leite,
+2024-08-19,Almoço,Estrogonofe de Frango; Quiche de Cebola,"Salada Crua; Salada Cozida: Vagem, Batata e Cenoura; Arroz Carioca; Feijão Preto; Espaguete ao Alho e Óleo",Suco,Fruta
+2024-08-19,Jantar,Bife Acebolado; Soja Oriental,Salada Crua; Arroz Refogado; Macaxeira; Creme de Espinafre; Sopa de Legumes com Frango,Suco; Café; Café com Leite,
+2024-08-20,Almoço,Isca de Carne à Brejeira; Assado de Lentilha com Legumes,"Salada Crua; Salada Cozida: Abóbora, Batata e Chuchu; Arroz com Brócolis; Feijão Mulatinho; Farofa de Cuscuz",Suco,Fruta
+2024-08-20,Jantar,Quiche de Charque; Bobó de Grão-de-bico,Salada Crua; Espaguete ao Alho e Óleo; Cuscuz; Sopa de Legumes; Mungunzá,Suco; Café; Café com Leite,
+2024-08-21,Almoço,Isca de Fígado à Portuguesa; Torta Madalena Vegetariana,"Salada Crua; Salada Cozida: Batata, Chuchu e Cenoura; Arroz com Vagem; Feijão Preto; Purê de Batata",Suco,Chocolate
+2024-08-21,Jantar,Toscana Acebolada; Pastelão Vegetariano,Salada Crua; Arroz com Milho; Macaxeira; Creme de Cenoura; Sopa de Feijão com Carne,Suco; Café; Café com Leite,
+2024-08-22,Almoço,Bife ao Molho Madeira; Bobó de Grão-de-bico,"Salada Crua; Salada Cozida: Batata, Cenoura, Vagem e Milho; Arroz Refogado; Feijão Macassar; Espaguete ao Alho e Óleo",Suco,Fruta
+2024-08-22,Jantar,Fricassê de Frango; Soja Caipira,Salada Crua; Espaguete ao Alho e Óleo; Cuscuz; Sopa de Feijão Vegetariana; Sopa de Legumes com Carne,Suco; Café; Café com Leite,
+2024-08-23,Almoço,Dobradinha; Soja ao Sugo,"Salada Crua; Salada Cozida: Batata, Beterraba e Chuchu; Arroz Branco; Feijão Mulatinho; Farofa de Cenoura",Suco,Pé-de-moleque
+2024-08-23,Jantar,Torta Madalena de Carne; Lentilha com Cebola Caramelizada,Salada Crua; Arroz com Espinafre; Banana Cozida; Creme de Cebola; Canja,Suco; Café; Café com Leite,
+2024-08-26,Almoço,Abobrinha à Milanesa; Torta Madalena de Soja,"Salada Crua; Salada Cozida: Beterraba, Cenoura, Vagem e Milho; Arroz com Milho; Feijão Macassar; Batata Sautê",Suco,Picolé
+2024-08-26,Jantar,Hambúrguer; Soja Refogada,Salada Crua; Espaguete ao Alho e Óleo; Batata; Caldo Verde; Mungunzá,Suco; Café; Café com Leite,
+2024-08-27,Almoço,Lombo ao Molho de Abacaxi; Quiche de Cebola,"Salada Crua; Salada Cozida: Abobrinha, Beterraba e Chuchu; Arroz com Espinafre; Feijão Preto; Espaguete ao Alho e Óleo",Suco,Fruta
+2024-08-27,Jantar,Frango ao Molho de Queijo; Assado de Lentilha com Legumes,Salada Crua; Arroz com Ervilha; Cará; Creme de Abóbora; Canja,Suco; Café; Café com Leite,
+2024-08-28,Almoço,Frango Xadrez; Soja Refogada,"Salada Crua; Salada Cozida: Vagem, Batata e Beterraba; Arroz com Ervilha; Feijão Mulatinho; Farofa",Suco,Fruta
+2024-08-28,Jantar,Torta de Charque; Estrogonofe de Grão-de-bico,Salada Crua; Arroz Colorido; Cuscuz; Creme de Abóbora; Sopa de Legumes com Carne,Suco; Café; Café com Leite,
+2024-08-29,Almoço,Bife ao Molho; Grão-de-bico com Legumes,"Salada Crua; Salada Cozida: Batata, Chuchu e Cenoura; Arroz Colorido; Feijão Preto; Espaguete ao Alho e Óleo",Suco,Bolo
+2024-08-29,Jantar,Lombo Suíno Acebolado; Quiche de Cebola,Salada Crua; Arroz Carioca; Batata-doce; Creme de Espinafre; Sopa de Feijão com Carne,Suco; Café; Café com Leite,
+2024-08-30,Almoço,Cozido; Lentilha com Cebola Caramelizada,Salada Crua; Salada Cozida: Couve e Repolho; Arroz Carioca; Feijão Mulatinho; Pirão,Suco,Fruta
+2024-08-30,Jantar,Isca de Carne à Brejeira; Soja ao Sugo,Salada Crua; Espaguete ao Alho e Óleo; Macaxeira; Sopa de Feijão; Sopa de Legumes com Frango,Suco; Café; Café com Leite,
+2024-09-02,Almoço,Fricassê de Frango; Soja Refogada,"Salada Crua; Salada Cozida: Batata, Cenoura e Chuchu; Arroz com Brócolis; Feijão Macassar; Quibebe",Suco,Fruta
+2024-09-02,Jantar,Calabresa ao Molho de Tomate; Risoto de Grão-de-bico,Salada Crua; Arroz Colorido; Cuscuz; Caldo Verde; Mungunzá,Suco; Café; Café com Leite,
+2024-09-03,Almoço,Suíno ao Molho Agridoce; Abobrinha à Parmegiana,"Salada Crua; Salada Cozida: Beterraba, Chuchu e Milho; Arroz Branco; Feijão Mulatinho; Espaguete ao Alho e Óleo",Suco,Fruta
+2024-09-03,Jantar,Guisado com Legumes; Torta Salgada de Soja,Salada Crua; Arroz com Brócolis; Macaxeira; Creme de Abóbora; Canja,Suco; Café; Café com Leite,
+2024-09-04,Almoço,Bolinho de Peixe; Bobó de Grão-de-bico,"Salada Crua; Salada Cozida: Abóbora, Batata e Chuchu; Arroz com Vagem; Feijão Macassar; Purê de Batata",Suco,Doce de Banana
+2024-09-04,Jantar,Frango ao Forno; Lentilha com Legumes,Salada Crua; Espaguete ao Alho e Óleo; Batata-doce; Creme de Cenoura; Sopa de Legumes com Carne,Suco; Café; Café com Leite,
+2024-09-05,Almoço,Fígado ao Molho Madeira; Pastelão Vegetariano,"Salada Crua; Salada Cozida: Batata, Chuchu e Cenoura; Arroz Refogado; Feijão Mulatinho; Espaguete ao Alho e Óleo",Suco,Fruta
+2024-09-05,Jantar,Lombo Suíno ao Molho de Abacaxi; Soja Refogada,Salada Crua; Arroz com Vagem; Cuscuz; Creme de Batata; Sopa de Feijão com Carne,Suco; Café; Café com Leite,
+2024-09-06,Almoço,Feijoada; Bolonhesa de Lentilha,Salada Crua; Salada Cozida: Couve e Repolho; Arroz com Milho; Feijão Preto; Farofa,Suco,Pé-de-moleque
+2024-09-06,Jantar,Torta Madalena de Charque; Pastelão Vegetariano,Salada Crua; Espaguete ao Alho e Óleo; Cará; Sopa de Feijão Vegetariana; Sopa de Peixe,Suco; Café; Café com Leite,
+2024-09-09,Almoço,Moqueca de Jaca; Lasanha de Soja,"Salada Crua; Salada Cozida: Abóbora, Batata e Chuchu; Arroz com Espinafre; Espaguete ao Alho e Óleo; Legumes Gratinados",Suco,Chocolate
+2024-09-09,Jantar,Carne ao Molho Oriental; Bacalhoada Vegetariana,Salada Crua; Cará; Espaguete ao Alho e Óleo; Creme de Batata; Sopa de Legumes com Frango,Suco; Café; Café com Leite,
+2024-09-10,Almoço,Estrogonofe de Carne; Moqueca de Banana,"Salada Crua; Salada Cozida: Vagem, Batata e Cenoura; Arroz com Ervilha; Feijão Macassar; Espaguete ao Alho e Óleo",Suco,Fruta
+2024-09-10,Jantar,Lombo Suíno ao Molho Madeira; Bolonhesa de Lentilha,Salada Crua; Arroz Refogado; Cuscuz; Sopa de Legumes; Arroz Doce,Suco; Café; Café com Leite,
+2024-09-11,Almoço,Lombo Suíno com Cebola Caramelizada; Torta Madalena Vegetariana,"Salada Crua; Salada Cozida: Batata, Chuchu e Cenoura; Arroz Colorido; Feijão Mulatinho; Farofa de Banana",Suco,Paçoca
+2024-09-11,Jantar,Frango Xadrez; Bobó de Grão-de-bico,Salada Crua; Arroz com Milho; Cuscuz; Caldo Verde; Canja,Suco; Café; Café com Leite,
+2024-09-12,Almoço,Frango à Primavera; Assado de Lentilha com Legumes,"Salada Crua; Salada Cozida: Abóbora, Batata e Chuchu; Arroz Carioca; Feijão Macassar; Espaguete ao Alho e Óleo",Suco,Fruta
+2024-09-12,Jantar,Toscana Acebolada; Bolinho de Soja,Salada Crua; Arroz com Espinafre; Batata-doce; Creme de Abóbora; Sopa de Legumes com Carne,Suco; Café; Café com Leite,
+2024-09-13,Almoço,Cassoulet; Risoto de Grão-de-bico,"Salada Crua; Salada Cozida: Abóbora, Batata-doce e Cenoura; Arroz com Brócolis; Feijão Mulatinho; Quibebe",Suco,Fruta
+2024-09-13,Jantar,Escondidinho de Charque; Torta de Repolho,Salada Crua; Espaguete ao Alho e Óleo; Cuscuz; Creme de Cenoura; Sopa de Feijão com Carne,Suco; Café; Café com Leite,
+2024-09-16,Almoço,Frango Caipira; Lentilha com Cebola Caramelizada,"Salada Crua; Salada Cozida: Batata, Cenoura e Vagem; Arroz Branco; Feijão Mulatinho; Purê de Batata",Suco,Fruta
+2024-09-16,Jantar,Lombo Suíno Acebolado; Risoto de Grão-de-bico,Salada Crua; Arroz com Ervilha; Macaxeira; Creme de Cebola; Sopa de Peixe,Suco; Café; Café com Leite,
+2024-09-17,Almoço,Isca de Fígado à Portuguesa; Torta Madalena de Soja,"Salada Crua; Salada Cozida: Abóbora, Batata e Chuchu; Arroz com Vagem; Feijão Preto; Espaguete ao Alho e Óleo",Suco,Gelatina
+2024-09-17,Jantar,Frango Acebolado; Soja Oriental,Salada Crua; Arroz Colorido; Cuscuz; Sopa de Feijão Vegetariana; Canja,Suco; Café; Café com Leite,
+2024-09-18,Almoço,Torta Madalena de Carne; Estrogonofe de Grão-de-bico,"Salada Crua; Salada Cozida: Batata, Chuchu e Cenoura; Arroz Refogado; Feijão Macassar; Farofa de Cuscuz",Suco,Fruta
+2024-09-18,Jantar,Frango à Pizzaiolo; Ratatouille,Salada Crua; Espaguete ao Alho e Óleo; Cará; Creme de Batata; Canjiquinha,Suco; Café; Café com Leite,
+2024-09-19,Almoço,Isca de Carne à Chinesa; Torta de Repolho,"Salada Crua; Salada Cozida: Abobrinha, Cenoura e Chuchu; Arroz com Milho; Feijão Mulatinho; Espaguete ao Alho e Óleo",Suco,Fruta
+2024-09-19,Jantar,Salsicha ao Molho; Assado de Lentilha com Legumes,Salada Crua; Espaguete ao Alho e Óleo; Cuscuz; Caldo Verde; Sopa de Legumes com Carne,Suco; Café; Café com Leite,
+2024-09-20,Almoço,Dobradinha; Ratatouille,"Salada Crua; Salada Cozida: Batata, Beterraba e Chuchu; Arroz com Espinafre; Feijão Macassar; Farofa",Suco,Doce de Goiaba
+2024-09-20,Jantar,Frango ao Forno; Soja Caipira,Salada Crua; Arroz Carioca; Batata-doce; Canja; Sopa de Legumes,Suco; Café; Café com Leite,
+2024-09-23,Almoço,Frango ao Forno; Soja Refogada,"Salada Crua; Salada Cozida: Abóbora, Batata e Chuchu; Arroz com Espinafre; Feijão Preto; Espaguete ao Alho e Óleo",Suco,Picolé
+2024-09-23,Jantar,Lombo ao Molho Agridoce; Lentilha com Cebola Caramelizada,Salada Crua; Arroz com Brócolis; Cuscuz; Creme de Abóbora; Sopa de Feijão com Carne,Suco; Café; Café com Leite,
+2024-09-24,Almoço,Isca de Carne à Brejeira; Bolonhesa de Lentilha,"Salada Crua; Salada Cozida: Vagem, Batata e Cenoura; Arroz Carioca; Feijão Macassar; Farofa de Cenoura",Suco,Fruta
+2024-09-24,Jantar,Hambúrguer; Soja ao Molho Oriental,Salada Crua; Espaguete ao Alho e Óleo; Macaxeira; Creme de Cenoura; Sopa de Peixe,Suco; Café; Café com Leite,
+2024-09-25,Almoço,Peixe Empanado; Soja com Azeitonas,"Salada Crua; Salada Cozida: Batata, Chuchu e Abóbora; Arroz Colorido; Feijão Mulatinho; Purê de Batata",Suco,Pé-de-moleque
+2024-09-25,Jantar,Bife ao Molho Madeira; Estrogonofe de Grão-de-bico,Salada Crua; Arroz Branco; Cuscuz; Creme de Cebola; Sopa de Legumes com Frango,Suco; Café; Café com Leite,
+2024-09-26,Almoço,Frango ao Molho de Queijo; Grão-de-bico com Legumes,"Salada Crua; Salada Cozida: Abóbora, Batata e Chuchu; Arroz com Brócolis; Feijão Tropeiro; Espaguete ao Alho e Óleo",Suco,Fruta
+2024-09-26,Jantar,Frango na Aveia; Torta Madalena Vegetariana,Salada Crua; Espaguete ao Alho e Óleo; Batata-doce; Sopa de Feijão Vegetariana; Mungunzá,Suco; Café; Café com Leite,
+2024-09-27,Almoço,Cozido; Suflê de Legumes,"Salada Crua; Salada Cozida: Abóbora, Batata-doce e Cenoura; Arroz Branco; Feijão Mulatinho; Pirão",Suco,Fruta
+2024-09-27,Jantar,Escondidinho de Carne de Sol; Soja ao Sugo,Salada Crua; Arroz com Vagem; Cará; Creme de Batata; Canja,Suco; Café; Café com Leite,
+2024-09-30,Almoço,Frango ao Forno; Soja Oriental,"Salada Crua; Salada Cozida: Abobrinha, Cenoura e Chuchu; Arroz com Vagem; Feijão Mulatinho; Farofa",Suco,Bolo
+2024-09-30,Jantar,Carne à Moda da Casa; Bacalhoada Vegetariana,Salada Crua; Arroz Refogado; Banana Comprida; Sopa de Legumes; Sopa de Legumes com Carne,Suco; Café; Café com Leite,
+2024-10-01,Almoço,Carne à Brejeira; Bobó de Grão-de-bico,"Salada Crua; Salada Cozida: Batata, Cenoura e Chuchu; Arroz Refogado; Feijão Macassar; Espaguete ao Alho e Óleo",Suco,Gelatina
+2024-10-01,Jantar,Calabresa Acebolada; Bolinho de Soja,Salada Crua; Arroz Refogado; Cuscuz; Caldo Verde; Sopa de Feijão com Carne,Suco; Café; Café com Leite,
+2024-10-02,Almoço,Isca de Fígado Acebolado; Quiche de Repolho,"Salada Crua; Salada Cozida: Batata, Cenoura e Chuchu; Arroz Branco; Feijão Mulatinho; Quibebe",Suco,Fruta
+2024-10-02,Jantar,Frango ao Sugo; Empadão de Falso Camarão,Salada Crua; Espaguete ao Alho e Óleo; Batata-doce; Creme de Abóbora; Sopa de Peixe,Suco; Café; Café com Leite,
+2024-10-03,Almoço,Suíno ao Molho de Abacaxi; Assado de Lentilha com Legumes,"Salada Crua; Salada Cozida: Batata, Cenoura, Vagem e Milho; Arroz Refogado; Feijão Mulatinho; Espaguete ao Alho e Óleo",Suco,Fruta
+2024-10-03,Jantar,Estrogonofe de Carne; Torta Salgada de Soja,Salada Crua; Arroz Branco; Macaxeira; Sopa de Legumes com Frango; Creme de Cenoura,Suco; Café; Café com Leite,
+2024-10-04,Almoço,Feijoada; Escondidinho Vegetariano,Salada Crua; Salada Cozida: Couve e Repolho; Arroz Branco; Feijão Preto; Farofa,Suco,Pudim de Coco
+2024-10-04,Jantar,Frango ao Forno; Quiche de Cebola,Salada Crua; Espaguete ao Alho e Óleo; Cará; Creme de Cebola; Arroz Doce,Suco; Café; Café com Leite,
+2024-10-07,Almoço,Frango Acebolado; Abobrinha à Parmegiana,"Salada Crua; Salada Cozida: Batata, Beterraba e Chuchu; Arroz Refogado; Feijão Mulatinho; Purê de Batata",Suco,Picolé
+2024-10-07,Jantar,Isca de Carne ao Molho Barbecue; Lasanha de Soja,Salada Crua; Espaguete ao Alho e Óleo; Cuscuz; Sopa de Feijão Vegetariana; Canja,Suco; Café; Café com Leite,
+2024-10-08,Almoço,Suíno ao Molho Barbecue; Suflê de Legumes,"Salada Crua; Salada Cozida: Abobrinha, Beterraba e Chuchu; Arroz Branco; Feijão Macassar; Espaguete ao Alho e Óleo",Suco,Fruta
+2024-10-08,Jantar,Frango à Delícia; Empadão Vegano,Salada Crua; Arroz Refogado; Macaxeira; Creme de Batata; Sopa de Legumes com Carne,Suco; Café; Café com Leite,
+2024-10-09,Almoço,Lasanha de Carne; Lentilha com Cebola Caramelizada,"Salada Crua; Salada Cozida: Batata, Cenoura e Vagem; Arroz Refogado; Feijão Preto; Espaguete ao Alho e Óleo",Suco,Fruta
+2024-10-09,Jantar,Salsicha ao Molho; Torta Madalena de Soja,Salada Crua; Arroz Branco; Batata-doce; Sopa de Legumes; Canjiquinha,Suco; Café; Café com Leite,
+2024-10-10,Almoço,Frango ao Molho de Laranja; Bobó de Grão-de-bico,"Salada Crua; Salada Cozida: Repolho, Batata-doce e Abóbora; Arroz Branco; Feijão Mulatinho; Farofa de Banana",Suco,Fruta
+2024-10-10,Jantar,Suíno ao Molho de Abacaxi; Abobrinha à Milanesa,Salada Crua; Arroz Refogado; Cuscuz; Sopa de Feijão com Macarrão; Sopa de Peixe,Suco; Café; Café com Leite,
+2024-10-11,Almoço,Cassoulet; Quiche de Cebola,"Salada Crua; Salada Cozida: Abobrinha, Cenoura e Chuchu; Arroz Refogado; Feijão Mulatinho; Farofa com Batata Palha",Suco,Fruta
+2024-10-11,Jantar,Escondidinho de Carne de Sol; Moqueca de Banana,Salada Crua; Espaguete ao Alho e Óleo; Cará; Creme de Abóbora; Sopa de Legumes com Frango,Suco; Café; Café com Leite,
+2024-10-14,Almoço,Frango ao Forno; Fricassê de Soja,"Salada Crua; Salada Cozida: Abóbora, Batata e Chuchu; Arroz Refogado; Feijão Preto; Batata Sautê",Suco,Fruta
+2024-10-14,Jantar,Calabresa ao Molho de Tomate; Bobó de Grão-de-bico,Salada Crua; Arroz Branco; Banana Comprida; Creme de Cenoura; Arroz Doce,Suco; Café; Café com Leite,
+2024-10-15,Almoço,Carne de Sol Acebolada; Bolinho de Legumes,"Salada Crua; Salada Cozida: Batata, Cenoura e Chuchu; Arroz Branco; Feijão Tropeiro; Espaguete ao Alho e Óleo",Suco,Doce de Goiaba
+2024-10-15,Jantar,Frango à Pizzaiolo; Assado de Lentilha,Salada Crua; Arroz Refogado; Cuscuz; Sopa de Lentilha; Canja,Suco; Café; Café com Leite,
+2024-10-16,Almoço,Frango ao Forno; Bolonhesa de Lentilha,"Salada Crua; Salada Cozida: Batata, Cenoura, Vagem e Milho; Arroz Refogado; Feijão Macassar; Purê Misto",Suco,Fruta
+2024-10-16,Jantar,Torta Madalena de Charque; Pastelão Vegetariano,Salada Crua; Espaguete ao Alho e Óleo; Macaxeira; Creme de Batata; Sopa de Feijão com Carne,Suco; Café; Café com Leite,
+2024-10-17,Almoço,Isca de Fígado ao Molho com Legumes; Risoto de Grão-de-bico,"Salada Crua; Salada Cozida: Batata, Beterraba e Chuchu; Arroz Branco; Feijão Preto; Espaguete ao Alho e Óleo",Suco,Fruta
+2024-10-17,Jantar,Suíno ao Molho Agridoce; Soja com Azeitonas,Salada Crua; Arroz Branco; Batata-doce; Sopa de Feijão Vegetariana; Creme de Macaxeira com Charque,Suco; Café; Café com Leite,
+2024-10-18,Almoço,Dobradinha; Empadão de Falso Camarão,"Salada Crua; Salada Cozida: Repolho, Batata-doce e Abóbora; Arroz Refogado; Feijão Mulatinho; Farofa",Suco,Pudim de Chocolate
+2024-10-18,Jantar,Isca de Carne à Brejeira; Estrogonofe de Soja,Salada Crua; Espaguete ao Alho e Óleo; Cuscuz; Sopa de Legumes; Sopa de Peixe,Suco; Café; Café com Leite,
+2024-10-21,Almoço,Bife ao Molho Madeira; Torta de Legumes,"Salada Crua; Salada Cozida: Abóbora, Batata e Chuchu; Arroz Refogado; Feijão Macassar; Espaguete ao Alho e Óleo",Suco,Fruta
+2024-10-21,Jantar,Quiche de Charque; Soja Caipira,Salada Crua; Arroz Refogado; Batata-doce; Caldo Verde; Sopa de Legumes com Frango,Suco; Café; Café com Leite,
+2024-10-22,Almoço,Peixe à Dorê; Grão-de-bico ao Molho Xadrez,"Salada Crua; Salada Cozida: Vagem, Batata e Cenoura; Arroz Branco; Feijão Mulatinho; Purê de Batata",Suco,Fruta
+2024-10-22,Jantar,Frango à Milanesa; Risoto de Grão-de-bico,Salada Crua; Espaguete ao Alho e Óleo; Macaxeira; Creme de Abóbora; Mungunzá,Suco; Café; Café com Leite,
+2024-10-23,Almoço,Estrogonofe de Frango; Assado de Lentilha com Legumes,"Salada Crua; Salada Cozida: Batata, Chuchu e Abóbora; Arroz Refogado; Feijão Mulatinho; Farofa de Cenoura",Suco,Pé-de-moleque
+2024-10-23,Jantar,Suíno ao Molho de Laranja; Soja ao Sugo,Salada Crua; Espaguete ao Alho e Óleo; Cuscuz; Creme de Cebola; Canja,Suco; Café; Café com Leite,
+2024-10-24,Almoço,Frango ao Forno com Batatas; Ratatouille,"Salada Crua; Salada Cozida: Batata, Cenoura, Vagem e Milho; Arroz Branco; Feijão Macassar; Espaguete ao Alho e Óleo",Suco,Fruta
+2024-10-24,Jantar,Guisado com Legumes; Torta de Legumes,Salada Crua; Arroz Refogado; Cará; Creme de Cenoura; Sopa de Feijão com Carne,Suco; Café; Café com Leite,
+2024-10-25,Almoço,Cozido; Lasanha de Berinjela,"Salada Crua; Salada Cozida: Abóbora, Batata-doce e Cenoura; Arroz Refogado; Feijão Preto; Pirão",Suco,Chocolate
+2024-10-25,Jantar,Hambúrguer; Lentilha com Cebola Caramelizada,Salada Crua; Arroz Branco; Cuscuz; Sopa de Feijão Vegetariana; Sopa de Legumes com Carne,Suco; Café; Café com Leite,
+2024-10-29,Almoço,Suíno ao Molho Madeira; Risoto de Grão-de-bico,"Salada Crua; Salada Cozida: Cenoura, Repolho e Chuchu; Arroz Branco; Feijão Macassar; Batata Sautê",Suco,Fruta
+2024-10-29,Jantar,Carne ao Molho Oriental; Soja Refogada,Salada Crua; Espaguete ao Alho e Óleo; Macaxeira; Sopa de Legumes; Arroz Doce,Suco; Café; Café com Leite,
+2024-10-30,Almoço,Bife à Parmegiana; Lentilha com Cebola Caramelizada,"Salada Crua; Salada Cozida: Batata, Cenoura e Vagem; Arroz Refogado; Feijão Preto; Espaguete ao Alho e Óleo",Suco,Fruta
+2024-10-30,Jantar,Calabresa Acebolada; Torta de Repolho,Salada Crua; Arroz Refogado; Batata-doce; Caldo Verde; Sopa de Legumes com Frango,Suco; Café; Café com Leite,
+2024-10-31,Almoço,Isca de Fígado à Portuguesa; Torta Madalena de Legumes,"Salada Crua; Salada Cozida: Repolho, Batata-doce e Abóbora; Arroz Branco; Feijão Mulatinho; Quibebe",Suco,Bolo
+2024-10-31,Jantar,Estrogonofe de Frango; Soja ao Molho Oriental,Salada Crua; Arroz Branco; Cará; Creme de Abóbora; Canja,Suco; Café; Café com Leite,
+2024-11-01,Almoço,Feijoada; Suflê de Legumes,Salada Crua; Salada Cozida: Couve e Repolho; Arroz com Cenoura; Feijão Preto; Farofa com Batata Palha,Suco,Fruta
+2024-11-01,Jantar,Suíno ao Molho Agridoce; Grão-de-bico com Legumes,Salada Crua; Espaguete ao Alho e Óleo; Cuscuz; Creme de Cenoura; Sopa de Legumes com Carne,Suco; Café; Café com Leite,
+2024-11-04,Almoço,Frango ao Forno; Soja ao Sugo,"Salada Crua; Salada Cozida: Abóbora, Batata e Chuchu; Arroz Refogado; Feijão Preto; Farofa",Suco,Fruta
+2024-11-04,Jantar,Frango à Pizzaiolo; Bolonhesa de Lentilha,Salada Crua; Espaguete ao Alho e Óleo; Cuscuz; Sopa de Feijão Vegetariana; Creme de Peixe,Suco; Café; Café com Leite,
+2024-11-05,Almoço,Fricassê de Frango; Empadão de Falso Camarão,"Salada Crua; Salada Cozida: Repolho, Batata-doce e Abóbora; Arroz Carioca; Feijão Tropeiro; Espaguete ao Alho e Óleo",Suco,Fruta
+2024-11-05,Jantar,Toscana Acebolada; Estrogonofe de Grão-de-bico,Salada Crua; Arroz Branco; Macaxeira; Creme de Cebola; Sopa de Legumes com Frango,Suco; Café; Café com Leite,
+2024-11-06,Almoço,Moqueca de Peixe; Bacalhoada Vegetariana,"Salada Crua; Salada Cozida: Batata, Cenoura e Chuchu; Arroz com Brócolis; Feijão Mulatinho; Quibebe",Suco,Picolé
+2024-11-06,Jantar,Quiche de Carne de Sol; Soja ao Sugo,Salada Crua; Arroz com Vagem; Cará; Creme de Batata; Sopa de Feijão com Carne,Suco; Café; Café com Leite,
+2024-11-07,Almoço,Estrogonofe de Carne; Lentilha com Cebola Caramelizada,"Salada Crua; Salada Cozida: Repolho, Abobrinha e Cenoura; Arroz com Milho; Feijão Preto; Espaguete ao Alho e Óleo",Suco,Fruta
+2024-11-07,Jantar,Suíno ao Molho Oriental; Escondidinho Vegetariano,Salada Crua; Arroz com Espinafre; Batata-doce; Sopa de Legumes; Canjiquinha,Suco; Café; Café com Leite,
+2024-11-08,Almoço,Cassoulet; Risoto de Grão-de-bico,"Salada Crua; Salada Cozida: Batata, Cenoura e Vagem; Arroz Refogado; Feijão Mulatinho; Farofa com Batata Palha",Suco,Pudim de Coco
+2024-11-08,Jantar,Bife de Panela; Soja Oriental,Salada Crua; Espaguete ao Alho e Óleo; Cuscuz; Creme de Macaxeira com Charque; Sopa de Feijão,Suco; Café; Café com Leite,
+2024-11-11,Almoço,Frango à Parmegiana; Assado de Lentilha com Legumes,"Salada Crua; Salada Cozida: Batata, Cenoura e Vagem; Arroz Refogado; Feijão Mulatinho; Legumes Sautê",Suco,Fruta
+2024-11-11,Jantar,Suíno ao Molho de Laranja; Torta Madalena Vegetariana,Salada Crua; Arroz Refogado; Macaxeira; Creme de Abóbora; Mungunzá,Suco; Café; Café com Leite,
+2024-11-12,Almoço,Fígado ao Molho Madeira; Quiche de Cebola,"Salada Crua; Salada Cozida: Abóbora, Batata-doce e Cenoura; Arroz com Brócolis; Feijão Preto; Espaguete ao Alho e Óleo",Suco,Fruta
+2024-11-12,Jantar,Escondidinho de Charque; Soja com Azeitonas,Salada Crua; Espaguete ao Alho e Óleo; Cuscuz; Sopa de Lentilha; Sopa de Feijão com Carne,Suco; Café; Café com Leite,
+2024-11-13,Almoço,Carne de Sol Acebolada; Soja Oriental,"Salada Crua; Salada Cozida: Abobrinha, Batata e Chuchu; Arroz com Milho; Feijão Tropeiro; Purê de Batata",Suco,Fruta
+2024-11-13,Jantar,Lasanha de Carne; Risoto de Grão-de-bico,Salada Crua; Arroz Branco; Cuscuz; Creme de Cenoura; Sopa de Legumes com Frango,Suco; Café; Café com Leite,
+2024-11-14,Almoço,Suíno ao Molho de Abacaxi; Bobó de Grão-de-bico,"Salada Crua; Salada Cozida: Repolho, Batata-doce e Abóbora; Arroz com Cenoura; Feijão Macassar; Espaguete ao Alho e Óleo",Suco,Fruta
+2024-11-14,Jantar,Estrogonofe de Frango; Quiche de Cebola,Salada Crua; Arroz Branco; Banana Comprida; Sopa de Feijão Vegetariana; Sopa Creme de Macaxeira com Charque,Suco; Café; Café com Leite,
+2024-11-18,Almoço,Frango na Aveia; Moqueca de Banana com Legumes,"Salada Crua; Salada Cozida: Batata, Repolho, Vagem e Milho; Arroz Colorido; Feijão Mulatinho; Espaguete ao Alho e Óleo",Suco,Chocolate
+2024-11-18,Jantar,Frango ao Molho Pomodoro; Bacalhoada Vegetariana,Salada Crua; Arroz com Brócolis; Cará; Sopa de Feijão Vegetariana; Canjiquinha,Suco; Café; Café com Leite,
+2024-11-19,Almoço,Frango Xadrez; Bolonhesa de Lentilha,"Salada Crua; Salada Cozida: Abobrinha, Batata e Chuchu; Arroz com Brócolis; Feijão Macassar; Quibebe",Suco,Fruta
+2024-11-19,Jantar,Torta Madalena de Charque; Estrogonofe de Soja,Salada Crua; Espaguete ao Alho e Óleo; Cuscuz; Creme de Legumes; Sopa de Legumes com Carne,Suco; Café; Café com Leite,
+2024-11-21,Almoço,Isca de Carne à Brejeira; Grão-de-bico ao Molho Xadrez,"Salada Crua; Salada Cozida: Repolho, Batata-doce e Abóbora; Arroz Refogado; Feijão Preto; Batata Sautê",Suco,Fruta
+2024-11-21,Jantar,Hambúrguer; Lentilha com Cebola Caramelizada,Salada Crua; Espaguete ao Alho e Óleo; Macaxeira; Creme de Cebola; Sopa de Legumes com Frango,Suco; Café; Café com Leite,
+2024-11-22,Almoço,Cozido; Empadão de Falso Camarão,"Salada Crua; Salada Cozida: Batata, Cenoura e Chuchu; Arroz Branco; Feijão Mulatinho; Pirão",Suco,Gelatina
+2024-11-22,Jantar,Bife Acebolado; Soja ao Molho de Queijo,Salada Crua; Arroz Colorido; Cuscuz; Creme de Cenoura; Sopa de Feijão com Carne,Suco; Café; Café com Leite,
+2024-11-25,Almoço,Suíno ao Molho Agridoce; Suflê de Legumes,"Salada Crua; Salada Cozida: Cenoura, Beterraba e Chuchu; Arroz Colorido; Feijão Preto; Batata Sautê",Suco,Paçoca
+2024-11-25,Jantar,Estrogonofe de Carne; Soja com Legumes,Salada Crua; Arroz com Vagem; Cuscuz; Sopa de Feijão Vegetariana; Arroz Doce,Suco; Café; Café com Leite,
+2024-11-26,Almoço,Bife ao Molho Madeira; Estrogonofe de Soja,"Salada Crua; Salada Cozida: Abóbora, Batata-doce e Cenoura; Arroz com Vagem; Feijão Tropeiro; Espaguete ao Alho e Óleo",Suco,Fruta
+2024-11-26,Jantar,Quiche de Charque; Ratatouille,Salada Crua; Arroz Refogado; Macaxeira; Creme de Cenoura; Canja,Suco; Café; Café com Leite,
+2024-11-27,Almoço,Fígado ao Molho; Lentilha ao Molho Oriental,"Salada Crua; Salada Cozida: Batata, Abóbora e Vagem; Arroz com Cenoura; Feijão Mulatinho; Purê de Batata",Suco,Fruta
+2024-11-27,Jantar,Calabresa Acebolada; Pastelão Vegetariano,Salada Crua; Espaguete ao Alho e Óleo; Cuscuz; Sopa de Legumes; Sopa de Peixe,Suco; Café; Café com Leite,
+2024-11-28,Almoço,Frango ao Forno; Abobrinha à Parmegiana,"Salada Crua; Salada Cozida: Abobrinha, Cenoura e Chuchu; Arroz com Espinafre; Feijão Mulatinho; Espaguete ao Alho e Óleo",Suco,Bolo de Chocolate
+2024-11-28,Jantar,Suíno ao Molho de Abacaxi; Bobó de Grão-de-bico,Salada Crua; Arroz com Ervilha; Batata-doce; Caldo Verde; Sopa de Feijão com Carne,Suco; Café; Café com Leite,
+2024-11-29,Almoço,Feijoada; Bobó de Grão-de-bico,Salada Crua; Salada Cozida: Couve e Repolho; Arroz Branco; Feijão Preto; Farofa,Suco,Fruta
+2024-11-29,Jantar,Frango na Aveia; Fricassê de Soja,Salada Crua; Espaguete ao Alho e Óleo; Cará; Creme de Abóbora; Sopa de Legumes com Carne,Suco; Café; Café com Leite,
+2024-12-02,Almoço,Frango ao Forno; Risoto de Grão-de-bico,"Salada Crua; Salada Cozida: Abóbora, Batata e Chuchu; Arroz com Ervilha; Feijão Preto; Espaguete ao Alho e Óleo",Suco,Fruta
+2024-12-02,Jantar,Suíno ao Molho Barbecue; Soja ao Molho de Queijo,Salada Crua; Espaguete ao Alho e Óleo; Cuscuz; Sopa de Feijão Vegetariana; Creme de Peixe,Suco; Café; Café com Leite,
+2024-12-03,Almoço,Bife à Parmegiana; Soja Refogada,"Salada Crua; Salada Cozida: Batata, Cenoura e Vagem; Arroz Colorido; Feijão Tropeiro; Farofa com Batata Palha",Suco,Paçoca
+2024-12-03,Jantar,Toscana Acebolada; Torta de Legumes,Salada Crua; Arroz Carioca; Batata-doce; Creme de Cenoura; Sopa de Legumes com Frango,Suco; Café; Café com Leite,
+2024-12-04,Almoço,Peixe à Dorê; Lentilha com Cebola Caramelizada,"Salada Crua; Salada Cozida: Repolho, Abobrinha e Cenoura; Arroz Carioca; Feijão Mulatinho; Quibebe",Suco,Fruta
+2024-12-04,Jantar,Fricassê de Frango; Soja ao Sugo,Salada Crua; Arroz Branco; Cuscuz; Sopa de Lentilha; Sopa Creme de Macaxeira com Charque,Suco; Café; Café com Leite,
+2024-12-05,Almoço,Frango ao Molho de Queijo; Quiche de Cebola,"Salada Crua; Salada Cozida: Batata, Cenoura e Chuchu; Arroz com Brócolis; Feijão Macassar; Espaguete ao Alho e Óleo",Suco,Fruta
+2024-12-05,Jantar,Estrogonofe de Carne; Grão-de-bico com Legumes,Salada Crua; Arroz Refogado; Macaxeira; Sopa de Feijão Vegetariana; Mungunzá,Suco; Café; Café com Leite,
+2024-12-06,Almoço,Cassoulet; Empadão de Falso Camarão,Salada Crua; Salada Cozida: Batata-doce e Abóbora; Arroz Branco; Feijão Mulatinho; Farofa de Cuscuz,Suco,Pudim de Coco
+2024-12-06,Jantar,Torta Madalena de Charque; Bolonhesa de Lentilha,Salada Crua; Espaguete ao Alho e Óleo; Cará; Creme de Legumes; Sopa de Feijão com Carne,Suco; Café; Café com Leite,
+2024-12-09,Almoço,Vaca Atolada; Torta Madalena Vegetariana,"Salada Crua; Salada Cozida: Abóbora, Beterraba e Chuchu; Arroz com Vagem; Feijão Preto; Espaguete ao Alho e Óleo",Suco,Chocolate
+2024-12-09,Jantar,Frango Xadrez; Risoto de Grão-de-bico,Salada Crua; Arroz Refogado; Banana Comprida; Sopa de Feijão Vegetariana; Sopa de Peixe,Suco; Café; Café com Leite,
+2024-12-10,Almoço,Estrogonofe de Frango; Bolonhesa de Lentilha,"Salada Crua; Salada Cozida: Abóbora, Beterraba e Chuchu; Arroz com Espinafre; Feijão Mulatinho; Batata Sautê",Suco,Fruta
+2024-12-10,Jantar,Guisado com Legumes; Soja Oriental,Salada Crua; Arroz Carioca; Cuscuz; Creme de Abóbora; Sopa de Peixe,Suco; Café; Café com Leite,
+2024-12-11,Almoço,Lasanha de Frango; Soja Caipira,"Salada Crua; Salada Cozida: Repolho, Abobrinha e Cenoura; Arroz com Milho; Feijão Macassar; Espaguete ao Alho e Óleo",Suco,Fruta
+2024-12-11,Jantar,Salsicha ao Molho; Quiche de Cebola,Salada Crua; Espaguete ao Alho e Óleo; Cuscuz; Creme de Cebola; Sopa de Legumes com Frango,Suco; Café; Café com Leite,
+2024-12-12,Almoço,Isca de Fígado à Portuguesa; Abobrinha à Parmegiana,"Salada Crua; Salada Cozida: Batata-doce, Cenoura e Abóbora; Arroz com Espinafre; Feijão Mulatinho; Purê de Batata",Suco,Pé-de-moleque
+2024-12-12,Jantar,Escondidinho de Charque; Assado de Lentilha com Legumes,Salada Crua; Arroz Branco; Batata-doce; Creme de Cenoura; Arroz Doce,Suco; Café; Café com Leite,
+2024-12-13,Almoço,Dobradinha; Estrogonofe de Grão-de-bico,"Salada Crua; Salada Cozida: Abobrinha, Beterraba e Chuchu; Arroz Carioca; Feijão Preto; Farofa de Cenoura",Suco,Fruta
+2024-12-13,Jantar,Frango ao Forno; Fricassê de Soja,Salada Crua; Espaguete ao Alho e Óleo; Macaxeira; Caldo Verde; Canja,Suco; Café; Café com Leite,
+2024-12-16,Almoço,Frango ao Forno; Moqueca de Banana com Legumes,"Salada Crua; Salada Cozida: Abóbora, Batata e Chuchu; Arroz com Ervilha; Feijão Mulatinho; Quibebe",Suco,Fruta
+2024-12-16,Jantar,Hambúrguer; Lasanha de Soja,Salada Crua; Arroz Branco; Batata Frita; Creme de Abóbora; Canjiquinha,Suco; Café; Café com Leite,
+2024-12-17,Almoço,Carne Chinesa; Suflê de Legumes,"Salada Crua; Salada Cozida: Batata, Cenoura, Vagem; Arroz Colorido; Feijão Macassar; Espaguete ao Alho e Óleo",Suco,Fruta
+2024-12-17,Jantar,Quiche de Frango; Estrogonofe de Grão-de-bico,Salada Crua; Arroz Refogado; Cará; Creme de Peixe; Sopa de Feijão Vegetariana,Suco; Café; Café com Leite,
+2024-12-18,Almoço,Escondidinho de Carne de Sol; Grão-de-bico com Legumes,"Salada Crua; Salada Cozida: Beterraba, Abobrinha, Cenoura; Arroz com Milho; Feijão Preto; Espaguete ao Alho e Óleo",Suco,Picolé
+2024-12-18,Jantar,Isca de Carne ao Molho Branco; Ratatouille,Salada Crua; Arroz Carioca; Batata-doce; Creme de Abóbora; Sopa de Legumes com Frango,Suco; Café; Café com Leite,
+2024-12-19,Almoço,Cozido; Bolinho de Soja,"Salada Crua; Salada Cozida: Batata, Abobrinha e Chuchu; Arroz Branco; Feijão Mulatinho; Pirão",Suco,Fruta
+2024-12-19,Jantar,Pernil ao Molho de Abacaxi; Empadão de Falso Camarão,Salada Crua; Arroz Branco; Cuscuz; Creme de Cenoura; Arroz Doce,Suco; Café; Café com Leite,
+2024-12-20,Almoço,Bacalhoada Vegetariana; Ave Festa,"Salada Crua; Salada Cozida: Abóbora, Batata-doce e Cenoura; Arroz à Grega; Feijão Tropeiro; Farofa",Suco,Bolo de Chocolate
+2025-01-27,Almoço,Fricassê de Frango; Moqueca de Banana com Legumes,"Salada Crua; Salada Cozida: Abóbora, Batata e Chuchu; Feijão Mulatinho; Arroz Branco; Farofa",Suco,Chocolate
+2025-01-27,Jantar,Lombo Suíno ao Molho Agridoce; Torta Madalena de Soja,Salada Crua; Espaguete ao Alho e Óleo; Cuscuz; Creme de Abóbora; Sopa de Feijão com Carne,Suco; Café; Café com Leite,
+2025-01-28,Almoço,Frango ao Forno; Soja ao Sugo,"Salada Crua; Salada Cozida: Batata-doce, Repolho e Abóbora; Feijão Macassar; Arroz Carioca; Espaguete ao Alho e Óleo",Suco,Fruta
+2025-01-28,Jantar,Hambúrguer; Quiche de Cebola,Salada Crua; Arroz Carioca; Macaxeira; Caldo Verde; Canja,Suco; Café; Café com Leite,
+2025-01-29,Almoço,Guisado Bovino; Grão-de-bico com Legumes,"Salada Crua; Salada Cozida: Abobrinha, Repolho e Cenoura; Feijão Preto; Arroz Refogado; Quibebe",Suco,Doce Romeu e Julieta
+2025-01-29,Jantar,Frango Caipira; Lentilha com Cebola Caramelizada,Salada Crua; Espaguete ao Alho e Óleo; Cará; Sopa de Feijão Vegetariana; Canjiquinha,Suco; Café; Café com Leite,
+2025-01-30,Almoço,Lasanha de Frango; Assado de Lentilha com Legumes,"Salada Crua; Salada Cozida: Batata, Cenoura e Chuchu; Feijão Mulatinho; Arroz Colorido; Espaguete ao Alho e Óleo",Suco,Fruta
+2025-01-30,Jantar,Isca de Carne à Chinesa; Estrogonofe de Grão-de-bico,Salada Crua; Arroz Refogado; Cuscuz; Creme de Macaxeira com Charque; Sopa de Legumes com Frango,Suco; Café; Café com Leite,
+2025-01-31,Almoço,Feijoada; Torta de Legumes,Salada Crua; Salada Cozida: Couve e Repolho; Feijão Preto; Arroz Branco; Farofa de Banana,Suco,Fruta
+2025-01-31,Jantar,Quiche de Charque; Soja Refogada,Salada Crua; Arroz Carioca; Batata-doce; Sopa de Feijão Vegetariana; Creme de Peixe,Suco; Café; Café com Leite,
+2025-02-03,Almoço,Frango ao Forno; Soja ao Molho de Queijo,"Salada Crua; Salada Cozida: Batata, Beterraba e Chuchu; Feijão Mulatinho; Arroz com Milho; Purê de Batata",Suco,Fruta
+2025-02-03,Jantar,Isca de Carne ao Molho Madeira; Torta Madalena de Soja,Salada Crua; Espaguete ao Alho e Óleo; Cuscuz; Sopa de Feijão Vegetariana; Canja,Suco; Café; Café com Leite,
+2025-02-04,Almoço,Carne ao Molho Oriental; Risoto de Grão-de-bico,Salada Crua; Salada Cozida: Batata-doce e Abóbora; Feijão Macassar; Arroz com Vagem; Espaguete ao Alho e Óleo,Suco,Fruta
+2025-02-04,Jantar,Frango ao Forno; Abobrinha à Milanesa,Salada Crua; Arroz Refogado; Macaxeira; Creme de Batata; Sopa de Legumes com Carne,Suco; Café; Café com Leite,
+2025-02-05,Almoço,Frango ao Molho de Queijo; Lentilha com Cebola Caramelizada,"Salada Crua; Salada Cozida: Batata, Cenoura e Vagem; Feijão Preto; Arroz com Cenoura; Farofa com Batata Palha",Suco,Fruta
+2025-02-05,Jantar,Torta Salgada de Frango; Suflê de Legumes,Salada Crua; Arroz Branco; Cará; Sopa de Legumes; Sopa de Feijão com Carne,Suco; Café; Café com Leite,
+2025-02-06,Almoço,Isca de Fígado ao Molho com Legumes; Suflê de Legumes,"Salada Crua; Salada Cozida: Abobrinha, Beterraba e Chuchu; Feijão Tropeiro; Arroz Branco; Espaguete ao Alho e Óleo",Suco,Picolé
+2025-02-06,Jantar,Filé de Frango à Milanesa; Moqueca de Banana com Legumes,Salada Crua; Espaguete ao Alho e Óleo; Batata-doce; Caldo Verde; Sopa de Peixe,Suco; Café; Café com Leite,
+2025-02-07,Almoço,Cassoulet; Quiche de Cebola,"Salada Crua; Salada Cozida: Abobrinha, Cenoura e Chuchu; Feijão Tropeiro; Arroz Refogado; Farofa de Banana",Suco,Fruta
+2025-02-07,Jantar,Toscana Acebolada; Lasanha de Soja,Salada Crua; Arroz Refogado; Cuscuz; Creme de Abóbora; Sopa de Legumes com Frango,Suco; Café; Café com Leite,
+2025-02-10,Almoço,Suíno ao Molho Agridoce; Bolinho de Legumes,"Salada Crua; Salada Cozida: Abóbora, Batata-doce e Chuchu; Feijão Preto; Arroz Refogado; Batata Sautê",Suco,Fruta
+2025-02-10,Jantar,Frango à Pizzaiolo; Bobó de Grão-de-bico,Salada Crua; Arroz Branco; Batata-doce; Sopa de Legumes; Canjiquinha,Suco; Café; Café com Leite,
+2025-02-11,Almoço,Carne Acebolada; Fricassê de Soja,"Salada Crua; Salada Cozida: Beterraba, Cenoura e Chuchu; Feijão Tropeiro; Arroz com Cenoura; Purê Misto",Suco,Pé-de-moleque
+2025-02-11,Jantar,Salsicha ao Molho; Assado de Lentilha com Legumes,Salada Crua; Macarrão ao Alho e Óleo; Cuscuz; Creme de Cebola; Canja,Suco; Café; Café com Leite,
+2025-02-12,Almoço,Moqueca de Peixe; Assado de Lentilha,"Salada Crua; Salada Cozida: Batata, Cenoura, Vagem e Milho; Feijão Mulatinho; Arroz com Couve; Espaguete ao Alho e Óleo",Suco,Fruta
+2025-02-12,Jantar,Escondidinho de Charque; Soja com Azeitonas,Salada Crua; Arroz Refogado; Banana Comprida; Sopa de Lentilha; Sopa Creme de Macaxeira com Charque,Suco; Café; Café com Leite,
+2025-02-13,Almoço,Frango à Pizzaiolo; Estrogonofe de Grão-de-bico,"Salada Crua; Salada Cozida: Batata, Beterraba e Chuchu; Feijão Macassar; Arroz com Vagem; Espaguete ao Alho e Óleo",Suco,Pé-de-moleque
+2025-02-13,Jantar,Suíno ao Molho Agridoce; Torta Salgada Vegetariana,Salada Crua; Arroz Branco; Cará; Creme de Batata; Sopa de Feijão com Carne,Suco; Café; Café com Leite,
+2025-02-14,Almoço,Dobradinha; Empadão de Falso Camarão,"Salada Crua; Salada Cozida: Repolho, Batata-doce e Abóbora; Feijão Mulatinho; Arroz Refogado; Farofa",Suco,Fruta
+2025-02-14,Jantar,Isca de Carne ao Molho Oriental; Estrogonofe de Soja,Salada Crua; Espaguete ao Alho e Óleo; Macaxeira; Sopa de Legumes; Sopa de Peixe,Suco; Café; Café com Leite,
+2025-02-17,Almoço,Frango ao Forno; Grão-de-bico com Legumes,"Salada Crua; Salada Cozida: Abóbora, Batata e Chuchu; Feijão Macassar; Arroz Colorido; Espaguete ao Alho e Óleo",Suco,Fruta
+2025-02-17,Jantar,Torta Madalena de Charque; Soja Caipira,Salada Crua; Arroz Refogado; Cuscuz; Caldo Verde; Sopa de Legumes com Frango,Suco; Café; Café com Leite,
+2025-02-18,Almoço,Carne de Sol; Torta de Legumes,"Salada Crua; Salada Cozida: Vagem, Chuchu e Cenoura; Feijão Mulatinho; Arroz com Cenoura; Farofa de Cenoura",Suco,Chocolate
+2025-02-18,Jantar,Frango Grelhado com Ervas; Risoto de Grão-de-bico,Salada Crua; Espaguete ao Alho e Óleo; Macaxeira; Sopa de Feijão Vegetariana; Mungunzá,Suco; Café; Café com Leite,
+2025-02-19,Almoço,Frango ao Molho de Queijo; Bolonhesa de Lentilha com Legumes,"Salada Crua; Salada Cozida: Batata, Chuchu e Cenoura; Feijão Preto; Arroz Refogado; Purê de Batata",Suco,Doce de Goiaba
+2025-02-19,Jantar,Suíno ao Molho Oriental; Torta de Legumes,Salada Crua; Espaguete ao Alho e Óleo; Cuscuz; Creme de Cebola; Canja,Suco; Café; Café com Leite,
+2025-02-20,Almoço,Bife à Pizzaiolo; Lasanha de Soja,"Salada Crua; Salada Cozida: Batata, Beterraba e Chuchu; Feijão Macassar; Arroz Branco; Espaguete ao Alho e Óleo",Suco,Fruta
+2025-02-20,Jantar,Guisado com Legumes; Soja ao Sugo,Salada Crua; Arroz Refogado; Batata-doce; Creme de Abóbora; Sopa de Legumes com Carne,Suco; Café; Café com Leite,
+2025-02-21,Almoço,Cozido; Bacalhoada Vegetariana,"Salada Crua; Salada Cozida: Cenoura, Batata-doce e Abóbora; Feijão Mulatinho; Arroz com Vagem; Pirão",Suco,Fruta
+2025-02-21,Jantar,Hambúrguer; Lentilha com Cebola Caramelizada,Salada Crua; Arroz Branco; Batata Frita; Creme de Cenoura; Sopa de Feijão com Carne,Suco; Café; Café com Leite,
+2025-02-24,Almoço,Frango na Aveia; Moqueca de Banana com Legumes,"Salada Crua; Salada Cozida: Batata, Cenoura e Chuchu; Feijão Mulatinho; Arroz com Brócolis; Farofa",Suco,Fruta
+2025-02-24,Jantar,Suíno ao Molho de Laranja; Soja ao Molho de Queijo,Salada Crua; Arroz Colorido; Cuscuz; Creme de Batata; Sopa de Peixe,Suco; Café; Café com Leite,
+2025-02-25,Almoço,Suíno ao Molho Madeira; Bobó de Grão-de-bico,"Salada Crua; Salada Cozida: Abóbora, Abobrinha e Chuchu; Feijão Macassar; Arroz com Cenoura; Legumes Sautê",Suco,Gelatina
+2025-02-25,Jantar,Carne à Brejeira; Bacalhoada Vegetariana,Salada Crua; Espaguete ao Alho e Óleo; Macaxeira; Caldo Verde; Canja,Suco; Café; Café com Leite,
+2025-02-26,Almoço,Estrogonofe de Carne; Lentilha com Cebola Caramelizada,"Salada Crua; Salada Cozida: Batata, Cenoura e Vagem; Feijão Mulatinho; Arroz Refogado; Espaguete ao Alho e Óleo",Suco,Fruta
+2025-02-26,Jantar,Quiche de Charque; Soja Refogada,Salada Crua; Espaguete ao Alho e Óleo; Cuscuz; Creme de Cebola; Sopa de Feijão com Carne,Suco; Café; Café com Leite,
+2025-02-27,Almoço,Isca de Fígado à Portuguesa; Torta Madalena de Soja,"Salada Crua; Salada Cozida: Repolho, Batata-doce e Chuchu; Feijão Macassar; Arroz Colorido; Quibebe",Suco,Bolo de Chocolate
+2025-02-27,Jantar,Estrogonofe de Frango; Ratatouille,Salada Crua; Arroz Branco; Batata-doce; Creme de Abóbora; Sopa de Legumes com Frango,Suco; Café; Café com Leite,
+2025-02-28,Almoço,Feijoada; Abobrinha à Parmegiana,Salada Crua; Salada Cozida: Couve e Repolho; Feijão Preto; Arroz Branco; Farofa,Suco,Fruta
+2025-03-10,Almoço,Fricassê de Frango; Lentilha com Cebola Caramelizada,"Salada Crua; Salada Cozida: Abobrinha, Batata e Cenoura; Feijão Preto; Arroz Colorido; Espaguete ao Alho e Óleo",Suco,Fruta
+2025-03-10,Jantar,Toscana Acebolada; Estrogonofe de Grão-de-bico,Salada Crua; Arroz Branco; Macaxeira; Creme de Abóbora; Sopa de Legumes com Frango,Suco; Café; Café com Leite,
+2025-03-11,Almoço,Estrogonofe de Carne; Soja Oriental,"Salada Crua; Salada Cozida: Repolho, Batata-doce e Abóbora; Feijão Macassar; Arroz Refogado; Farofa com Batata Palha",Suco,Fruta
+2025-03-11,Jantar,Frango à Pizzaiolo,Salada Crua; Espaguete ao Alho e Óleo; Cará; Sopa de Feijão Vegetariana; Creme de Peixe,Suco; Café; Café com Leite,
+2025-03-12,Almoço,Moqueca de Peixe; Fricassê de Legumes,"Salada Crua; Salada Cozida: Batata, Cenoura e Chuchu; Feijão Tropeiro; Arroz com Milho; Quibebe",Suco,Picolé
+2025-03-12,Jantar,Bife de Panela; Bobó de Soja,Salada Crua; Arroz com Vagem; Cuscuz; Creme de Cebola; Sopa de Feijão com Carne,Suco; Café; Café com Leite,
+2025-03-13,Almoço,Frango à Portuguesa; Risoto de Grão-de-bico,"Salada Crua; Salada Cozida: Repolho, Abobrinha e Cenoura; Feijão Preto; Arroz com Cenoura; Espaguete ao Alho e Óleo",Suco,Fruta
+2025-03-13,Jantar,Suíno ao Molho Barbecue; Abobrinha à Milanesa,Salada Crua; Arroz com Espinafre; Cuscuz; Sopa de Legumes; Canjiquinha,Suco; Café; Café com Leite,
+2025-03-14,Almoço,Cassoulet; Bolinho de Legumes,"Salada Crua; Salada Cozida: Batata, Cenoura e Vagem; Feijão Mulatinho; Arroz Refogado; Farofa",Suco,Pudim de Chocolate
+2025-03-14,Jantar,Quiche de Charque; Fricassê de Soja,Salada Crua; Espaguete ao Alho e Óleo; Batata-doce; Creme de Peixe; Sopa de Feijão,Suco; Café; Café com Leite,
+2025-03-17,Almoço,Frango à Parmegiana; Assado de Lentilha com Legumes,"Salada Crua; Salada Cozida: Batata-doce, Cenoura e Vagem; Feijão Tropeiro; Arroz com Cenoura; Purê de Batata",Suco,Fruta
+2025-03-17,Jantar,Suíno Acebolado; Torta Madalena Vegetariana,Salada Crua; Espaguete ao Alho e Óleo; Macaxeira; Creme de Abóbora; Sopa de Macarrão com Carne,Suco; Café; Café com Leite,
+2025-03-18,Almoço,Fígado ao Molho Madeira; Quiche de Cebola,"Salada Crua; Salada Cozida: Abóbora, Batata-doce e Cenoura; Feijão Preto; Arroz Colorido; Espaguete ao Alho e Óleo",Suco,Gelatina
+2025-03-18,Jantar,Escondidinho de Charque; Soja com Azeitonas,Salada Crua; Arroz Refogado; Cuscuz; Sopa de Lentilha; Sopa de Feijão com Carne,Suco; Café; Café com Leite,
+2025-03-19,Almoço,Carne de Sol Acebolada; Lasanha de Soja,"Salada Crua; Salada Cozida: Abobrinha, Abóbora e Vagem; Feijão Mulatinho; Arroz Refogado; Legumes Gratinados",Suco,Fruta
+2025-03-19,Jantar,Salsicha ao Molho; Risoto de Grão-de-bico,Salada Crua; Espaguete ao Alho e Óleo; Banana Comprida; Creme de Cenoura; Sopa de Legumes com Frango,Suco; Café; Café com Leite,
+2025-03-20,Almoço,Frango Caipira; Bobó de Grão-de-bico,"Salada Crua; Salada Cozida: Repolho, Beterraba e Abóbora; Feijão Macassar; Arroz com Vagem; Espaguete ao Alho e Óleo",Suco,Fruta
+2025-03-20,Jantar,Estrogonofe de Frango; Quiche de Cebola,Salada Crua; Arroz com Cenoura; Cuscuz; Sopa de Feijão Vegetariana; Sopa Creme de Macaxeira com Charque,Suco; Café; Café com Leite,
+2025-03-21,Almoço,Dobradinha; Abobrinha à Milanesa,"Salada Crua; Salada Cozida: Batata, Cenoura e Chuchu; Feijão Mulatinho; Arroz Branco; Farofa de Banana",Suco,Doce de Goiaba
+2025-03-21,Jantar,Bife Acebolado; Soja Caipira,Salada Crua; Arroz Branco; Batata-doce; Sopa de Legumes; Mungunzá,Suco; Café; Café com Leite,
+2025-03-24,Almoço,Suíno ao Molho de Abacaxi; Moqueca de Banana com Legumes,"Salada Crua; Salada Cozida: Batata, Repolho, Vagem e Milho; Feijão Mulatinho; Arroz Colorido; Espaguete ao Alho e Óleo",Suco,Fruta
+2025-03-24,Jantar,Frango ao Molho Pomodoro; Estrogonofe de Soja,Salada Crua; Arroz com Brócolis; Cuscuz; Creme de Legumes; Arroz Doce,Suco; Café; Café com Leite,
+2025-03-25,Almoço,Isca de Carne à Brejeira; Bolonhesa de Lentilha,"Salada Crua; Salada Cozida: Abobrinha, Batata e Chuchu; Feijão Macassar; Arroz com Cenoura; Quibebe",Suco,Chocolate
+2025-03-25,Jantar,Suíno ao Molho Madeira; Bolinho de Soja,Salada Crua; Espaguete ao Alho e Óleo; Macaxeira; Sopa de Feijão Vegetariana; Sopa de Legumes com Carne,Suco; Café; Café com Leite,
+2025-03-26,Almoço,Frango Xadrez; Bolinho de Soja,"Salada Crua; Salada Cozida: Batata, Cenoura e Vagem; Feijão Preto; Arroz Refogado; Espaguete ao Alho e Óleo",Suco,Fruta
+2025-03-26,Jantar,Torta Madalena de Charque; Ensopado de Grão-de-bico,Salada Crua; Arroz com Ervilha; Batata-doce; Sopa de Legumes; Creme de Peixe,Suco; Café; Café com Leite,
+2025-03-27,Almoço,Isca de Fígado ao Molho Oriental; Empadão de Falso Camarão,Salada Crua; Salada Cozida: Batata-doce e Abóbora; Feijão Macassar; Arroz Carioca; Purê de Batata,Suco,Bolo de Chocolate
+2025-03-27,Jantar,Lasanha de Carne; Lentilha com Cebola Caramelizada,Salada Crua; Arroz Branco; Cuscuz; Creme de Abóbora; Sopa de Feijão com Carne,Suco; Café; Café com Leite,
+2025-03-28,Almoço,Cozido; Estrogonofe de Grão-de-bico,"Salada Crua; Salada Cozida: Batata, Cenoura e Chuchu; Feijão Mulatinho; Arroz Branco; Pirão",Suco,Fruta
+2025-03-28,Jantar,Hambúrguer; Soja ao Molho de Queijo,Salada Crua; Arroz Colorido; Batata Frita; Sopa de Legumes com Frango; Creme de Cenoura,Suco; Café; Café com Leite,
+2025-03-31,Almoço,Frango na Aveia; Suflê de Legumes,"Salada Crua; Salada Cozida: Batata, Batata-doce e Chuchu; Feijão Preto; Arroz Colorido; Espaguete ao Alho e Óleo",Suco,Paçoca
+2025-03-31,Jantar,Fricassê de Frango; Bobó de Grão-de-bico,Salada Crua; Espaguete ao Alho e Óleo; Cará; Creme de Batata; Sopa de Legumes com Carne,Suco; Café; Café com Leite,
+2025-04-01,Almoço,Lasanha de Carne; Bobó de Grão-de-bico,"Salada Crua; Salada Cozida: Abóbora, Abobrinha e Chuchu; Feijão Macassar; Arroz com Vagem; Farofa de Banana",Suco,Gelatina
+2025-04-01,Jantar,Lombo Suíno ao Molho Madeira; Bolinho de Soja,Salada Crua; Arroz Refogado; Cuscuz; Caldo Verde; Sopa de Feijão com Carne,Suco; Café; Café com Leite,
+2025-04-02,Almoço,Bife à Pizzaiolo; Assado de Lentilha com Legumes,"Salada Crua; Salada Cozida: Batata, Cenoura e Chuchu; Feijão Mulatinho; Arroz com Cenoura; Quibebe; Espaguete ao Alho e Óleo",Suco,Fruta
+2025-04-02,Jantar,Quiche de Charque; Fricassê de Soja,Salada Crua; Espaguete ao Alho e Óleo; Batata-doce; Creme de Abóbora; Sopa de Peixe,Suco; Café; Café com Leite,
+2025-04-03,Almoço,Frango Xadrez; Quiche de Repolho,"Salada Crua; Salada Cozida: Batata, Abóbora, Vagem e Milho; Feijão Mulatinho; Arroz Refogado; Espaguete ao Alho e Óleo",Suco,Fruta
+2025-04-03,Jantar,Estrogonofe de Carne; Empadão de Falso Camarão,Salada Crua; Arroz Branco; Macaxeira; Creme de Cenoura; Sopa de Legumes com Frango,Suco; Café; Café com Leite,
+2025-04-04,Almoço,Feijoada; Escondidinho de Soja,Salada Crua; Salada Cozida: Couve e Repolho; Feijão Preto; Arroz Branco; Farofa,Suco,Pudim de Coco
+2025-04-04,Jantar,Frango ao Forno; Bacalhoada Vegetariana,Salada Crua; Espaguete ao Alho e Óleo; Cará; Sopa de Feijão Vegetariana; Arroz Doce,Suco; Café; Café com Leite,
+2025-04-07,Almoço,Guisado com Legumes; Soja Caipira,"Salada Crua; Salada Cozida: Batata, Beterraba e Chuchu; Feijão Macassar; Arroz Refogado; Farofa com Batata Palha",Suco,Fruta
+2025-04-07,Jantar,Escondidinho de Charque; Moqueca de Banana com Legumes,Salada Crua; Espaguete ao Alho e Óleo; Cuscuz; Sopa de Feijão Vegetariana; Canja,Suco; Café; Café com Leite,
+2025-04-08,Almoço,Frango Caipira; Lentilha com Cebola Caramelizada,"Salada Crua; Salada Cozida: Abobrinha, Batata e Chuchu; Feijão Mulatinho; Arroz com Cenoura; Espaguete ao Alho e Óleo",Suco,Fruta
+2025-04-08,Jantar,Isca de Carne ao Molho Barbecue; Empadão Vegano,Salada Crua; Arroz com Cenoura; Macaxeira; Sopa de Legumes; Papa de Chocolate,Suco; Café; Café com Leite,
+2025-04-09,Almoço,Suíno ao Molho de Abacaxi; Grão-de-bico com Legumes,"Salada Crua; Salada Cozida: Repolho, Batata-doce e Abóbora; Feijão Macassar; Arroz com Espinafre; Espaguete ao Alho e Óleo",Suco,Fruta
+2025-04-09,Jantar,Toscana Acebolada; Berinjela à Milanesa,Salada Crua; Arroz Branco; Cuscuz; Creme de Batata; Sopa de Feijão com Carne,Suco; Café; Café com Leite,
+2025-04-10,Almoço,Isca de Fígado à Portuguesa; Quiche de Cebola,"Salada Crua; Salada Cozida: Batata, Cenoura e Vagem; Feijão Preto; Arroz Colorido; Purê de Batata",Suco,Picolé
+2025-04-10,Jantar,Filé de Frango à Milanesa; Soja com Azeitonas,Salada Crua; Arroz Colorido; Cará; Caldo Verde; Sopa de Peixe,Suco; Café; Café com Leite,
+2025-04-11,Almoço,Cassoulet; Abobrinha à Parmegiana,"Salada Crua; Salada Cozida: Abobrinha, Cenoura e Chuchu; Feijão Mulatinho; Arroz Refogado; Farofa de Banana",Suco,Doce de Banana
+2025-04-11,Jantar,Suíno ao Molho de Abacaxi; Lasanha de Soja,Salada Crua; Espaguete ao Alho e Óleo; Batata-doce; Creme de Abóbora; Sopa de Legumes com Frango,Suco; Café; Café com Leite,
+2025-04-14,Almoço,Carne de Sol Acebolada; Fricassê de Soja,"Salada Crua; Salada Cozida: Batata, Cenoura e Chuchu; Feijão Tropeiro; Arroz com Cenoura; Purê Misto",Suco,Fruta
+2025-04-14,Jantar,Salsicha ao Molho; Soja com Azeitonas,Salada Crua; Arroz Branco; Cuscuz; Sopa de Lentilha; Canjiquinha,Suco; Café; Café com Leite,
+2025-04-15,Almoço,Frango à Parmegiana; Bolonhesa de Lentilha,"Salada Crua; Salada Cozida: Batata, Cenoura, Vagem e Milho; Feijão Mulatinho; Arroz Refogado; Espaguete ao Alho e Óleo",Suco,Fruta
+2025-04-15,Jantar,Torta Madalena de Charque; Ratatouille,Salada Crua; Espaguete ao Alho e Óleo; Banana Comprida; Creme de Cenoura; Sopa de Feijão com Carne,Suco; Café; Café com Leite,
+2025-04-16,Almoço,Peixe à Dorê; Moqueca de Banana com Legumes,"Salada Crua; Salada Cozida: Batata, Banana Comprida e Chuchu; Feijão Preto; Arroz com Milho; Quibebe",Suco,Bolo de Chocolate
+2025-04-16,Jantar,Frango à Pizzaiolo; Pastelão Vegetariano,Salada Crua; Espaguete ao Alho e Óleo; Macaxeira; Creme de Batata; Canja,Suco; Café; Café com Leite,
+2025-04-22,Almoço,Fricassê de Frango; Torta de Repolho,"Salada Crua; Salada Cozida: Beterraba, Batata e Cenoura; Feijão Mulatinho; Arroz com Milho; Farofa de Cenoura",Suco,Fruta
+2025-04-22,Jantar,Suíno ao Molho de Laranja; Lentilha ao Molho Oriental,Salada Crua; Espaguete ao Alho e Óleo; Cuscuz; Sopa de Feijão Vegetariana; Mungunzá,Suco; Café; Café com Leite,
+2025-04-23,Almoço,Bife ao Molho Madeira; Assado de Lentilha com Legumes,"Salada Crua; Salada Cozida: Batata, Chuchu e Abóbora; Feijão Tropeiro; Arroz com Cenoura; Purê de Batata",Suco,Doce de Goiaba
+2025-04-23,Jantar,Frango Grelhado com Ervas; Soja ao Sugo,Salada Crua; Espaguete ao Alho e Óleo; Macaxeira; Creme de Cebola; Canja,Suco; Café; Café com Leite,
+2025-04-24,Almoço,Frango ao Forno; Grão-de-bico com Legumes,"Salada Crua; Salada Cozida: Abobrinha, Cenoura, Vagem e Milho; Feijão Preto; Arroz Colorido; Espaguete ao Alho e Óleo",Suco,Fruta
+2025-04-24,Jantar,Guisado com Legumes; Torta de Legumes,Salada Crua; Arroz Refogado; Cuscuz; Creme de Cenoura; Sopa de Legumes com Carne,Suco; Café; Café com Leite,
+2025-04-25,Almoço,Cozido; Lasanha de Berinjela,"Salada Crua; Salada Cozida: Abóbora, Batata-doce e Batata; Feijão Mulatinho; Arroz Refogado; Pirão",Suco,Chocolate
+2025-04-25,Jantar,Hambúrguer; Hambúrguer de Lentilha,Salada Crua; Arroz Branco; Batata Frita; Creme de Abóbora; Sopa de Feijão com Carne,Suco; Café; Café com Leite,
+2025-04-28,Almoço,Bife à Parmegiana; Lentilha ao Molho Oriental,"Salada Crua; Salada Cozida: Batata, Cenoura e Vagem; Feijão Preto; Arroz Refogado; Espaguete ao Alho e Óleo",Suco,Fruta
+2025-04-28,Jantar,Toscana Acebolada; Ratatouille,Salada Crua; Arroz Branco; Batata-doce; Creme de Batata; Sopa de Peixe,Suco; Café; Café com Leite,
+2025-04-29,Almoço,Suíno ao Molho Madeira; Moqueca de Banana com Legumes,"Salada Crua; Salada Cozida: Abóbora, Beterraba e Chuchu; Feijão Macassar; Arroz Colorido; Batata Sautê",Suco,Pudim de Coco
+2025-04-29,Jantar,Frango Caipira; Soja Refogada,Salada Crua; Espaguete ao Alho e Óleo; Macaxeira; Caldo Verde; Sopa de Legumes com Frango,Suco; Café; Café com Leite,
+2025-04-30,Almoço,Isca de Fígado à Portuguesa; Torta Madalena de Soja,"Salada Crua; Salada Cozida: Repolho, Batata-doce e Abóbora; Feijão Mulatinho; Arroz com Milho; Quibebe",Suco,Paçoca
+2025-04-30,Jantar,Carne ao Molho Oriental; Suflê de Legumes,Salada Crua; Arroz com Cenoura; Cuscuz; Sopa de Legumes; Arroz Doce,Suco; Café; Café com Leite,
+2025-05-05,Almoço,Fricassê de Frango; Soja Oriental,"Salada Crua; Salada Cozida: Abóbora, Batata e Chuchu; Feijão Preto; Arroz Refogado; Farofa com Batata Palha",Suco,Chocolate
+2025-05-05,Jantar,Bife de Panela; Escondidinho Vegetariano,Salada Crua; Espaguete ao Alho e Óleo; Cuscuz; Sopa de Feijão; Creme de Macaxeira com Charque,Suco; Café; Café com Leite,
+2025-05-06,Almoço,Suíno ao Molho Madeira; Moqueca de Banana com Legumes,"Salada Crua; Salada Cozida: Abóbora, Beterraba e Chuchu; Feijão Macassar; Arroz Colorido; Batata Sautê",Suco,Pudim de Coco
+2025-05-06,Jantar,Frango Caipira; Soja Refogada,Salada Crua; Espaguete ao Alho e Óleo; Macaxeira; Caldo Verde; Sopa de Legumes com Frango,Suco; Café; Café com Leite,
+2025-05-07,Almoço,Filé de Frango Acebolado; Bacalhoada Vegetariana,"Salada Crua; Salada Cozida: Cenoura, Chuchu e Beterraba; Feijão Mulatinho; Arroz com Brócolis; Quibebe",Suco,Fruta
+2025-05-07,Jantar,Suíno ao Molho Oriental; Estrogonofe de Grão-de-bico,Salada Crua; Arroz com Vagem; Cuscuz; Creme de Batata; Sopa de Feijão com Carne,Suco; Café; Café com Leite,
+2025-05-08,Almoço,Estrogonofe de Carne; Lentilha com Cebola Caramelizada,"Salada Crua; Salada Cozida: Repolho, Abobrinha e Cenoura; Feijão Preto; Arroz com Milho; Espaguete ao Alho e Óleo",Suco,Fruta
+2025-05-09,Almoço,Cassoulet; Risoto de Grão-de-bico,"Salada Crua; Salada Cozida: Batata, Cenoura, Vagem; Feijão Mulatinho; Arroz Refogado; Farofa",Suco,Gelatina
+2025-05-12,Almoço,Suíno ao Molho de Abacaxi; Assado de Lentilha com Legumes,"Salada Crua; Salada Cozida: Batata, Cenoura e Vagem; Feijão Macassar; Arroz Refogado; Espaguete ao Alho e Óleo",Suco,Fruta
+2025-05-12,Jantar,Escondidinho de Charque; Bacalhoada Vegetariana,Salada Crua; Espaguete ao Alho e Óleo; Cará; Creme de Abóbora; Sopa de Peixe,Suco; Café; Café com Leite,
+2025-05-13,Almoço,Fígado ao Molho Madeira; Quiche de Cebola,"Salada Crua; Salada Cozida: Abóbora, Batata-doce e Cenoura; Feijão Preto; Arroz com Brócolis; Espaguete ao Alho e Óleo",Suco,Picolé
+2025-05-13,Jantar,Suíno ao Molho Agridoce; Soja com Azeitonas,Salada Crua; Arroz Refogado; Cuscuz; Sopa de Lentilha; Sopa de Feijão com Carne,Suco; Café; Café com Leite,
+2025-05-14,Almoço,Frango à Parmegiana; Soja Oriental,"Salada Crua; Salada Cozida: Abobrinha, Beterraba e Chuchu; Feijão Mulatinho; Arroz com Milho; Batata Sautê",Suco,Fruta
+2025-05-14,Jantar,Salsicha ao Molho; Risoto de Grão-de-bico,Salada Crua; Espaguete ao Alho e Óleo; Banana Comprida; Creme de Cenoura; Sopa de Legumes com Frango,Suco; Café; Café com Leite,
+2025-05-15,Almoço,Carne de Sol Acebolada; Estrogonofe de Grão-de-bico,"Salada Crua; Salada Cozida: Repolho, Batata-doce e Abóbora; Feijão Macassar; Arroz com Cenoura; Espaguete ao Alho e Óleo",Suco,Fruta
+2025-05-15,Jantar,Estrogonofe de Carne; Quiche de Cebola,Salada Crua; Arroz Colorido; Cuscuz; Sopa de Feijão Vegetariana; Sopa Creme de Macaxeira com Charque,Suco; Café; Café com Leite,
+2025-05-16,Almoço,Cozido; Bobó de Grão-de-bico,"Salada Crua; Salada Cozida: Batata, Cenoura e Chuchu; Feijão Mulatinho; Arroz Branco; Pirão",Suco,Fruta
+2025-05-16,Jantar,Hambúrguer; Hambúrguer de Grão-de-bico,Salada Crua; Arroz Colorido; Batata Frita; Creme de Cenoura; Sopa de Feijão com Carne,Suco; Café; Café com Leite,
+2025-05-19,Almoço,Carne à Brejeira; Lasanha de Soja,"Salada Crua; Salada Cozida: Batata, Cenoura, Vagem e Milho; Feijão Mulatinho; Arroz Colorido; Espaguete ao Alho e Óleo",Suco,Pé-de-moleque
+2025-05-19,Jantar,Frango ao Molho Pomodoro; Bacalhoada Vegetariana,Salada Crua; Arroz com Brócolis; Macaxeira; Creme de Legumes; Canjiquinha,Suco; Café; Café com Leite,
+2025-05-20,Almoço,Suíno ao Molho Agridoce; Suflê de Legumes,"Salada Crua; Salada Cozida: Abobrinha, Abóbora e Chuchu; Feijão Mulatinho; Arroz com Brócolis; Farofa",Suco,Fruta
+2025-05-20,Jantar,Torta Madalena de Charque; Ensopado de Grão-de-bico,Salada Crua; Espaguete ao Alho e Óleo; Cuscuz; Sopa de Feijão Vegetariana; Sopa de Legumes com Carne,Suco; Café; Café com Leite,
+2025-05-21,Almoço,Frango Xadrez; Moqueca de Banana,"Salada Crua; Salada Cozida: Batata, Cenoura e Vagem; Feijão Preto; Arroz com Cenoura; Espaguete ao Alho e Óleo",Suco,Fruta
+2025-05-21,Jantar,Bife Acebolado; Estrogonofe de Soja,Salada Crua; Arroz Refogado; Batata-doce; Creme de Abóbora; Sopa de Peixe,Suco; Café; Café com Leite,
+2025-05-22,Almoço,Frango ao Molho de Queijo; Moqueca de Banana,"Salada Crua; Salada Cozida: Batata, Vagem e Cenoura; Feijão Macassar; Arroz Refogado; Farofa",Suco,Fruta
+2025-05-22,Jantar,Suíno ao Molho Madeira; Fricassê de Soja,Salada Crua; Espaguete ao Alho e Óleo; Batata-doce; Creme de Cebola; Sopa de Legumes com Frango,Suco; Café; Café com Leite,
+2025-05-26,Almoço,Carne à Brejeira; Lasanha de Soja,"Salada Crua; Salada Cozida: Batata, Cenoura, Vagem e Milho; Feijão Mulatinho; Arroz Colorido; Espaguete ao Alho e Óleo",Suco,Pé-de-moleque
+2025-05-26,Jantar,Frango ao Molho Pomodoro; Bacalhoada Vegetariana,Salada Crua; Arroz com Brócolis; Macaxeira; Creme de Legumes; Canjiquinha,Suco; Café; Café com Leite,
+2025-05-27,Almoço,Bife ao Molho Madeira; Estrogonofe de Soja,"Salada Crua; Salada Cozida: Abóbora, Batata-doce e Cenoura; Feijão Mulatinho; Arroz com Vagem; Espaguete ao Alho e Óleo",Suco,Fruta
+2025-05-27,Jantar,Calabresa Acebolada; Torta Madalena de Soja,Salada Crua; Arroz Refogado; Macaxeira; Canja; Creme de Cenoura,Suco; Café; Café com Leite,
+2025-05-28,Almoço,Frango ao Forno; Lentilha ao Molho Oriental,"Salada Crua; Salada Cozida: Batata, Abóbora e Vagem; Feijão Macassar; Arroz com Cenoura; Purê de Batata",Suco,Fruta
+2025-05-28,Jantar,Estrogonofe de Carne; Pastelão Vegetariano,Salada Crua; Arroz com Vagem; Cuscuz; Sopa de Feijão Vegetariana; Arroz Doce,Suco; Café; Café com Leite,
+2025-05-29,Almoço,Fígado à Portuguesa; Abobrinha à Parmegiana,"Salada Crua; Salada Cozida: Abobrinha, Cenoura, Chuchu; Feijão Mulatinho; Arroz com Espinafre; Espaguete ao Alho e Óleo",Suco,Bolo de Chocolate
+2025-05-29,Jantar,Frango na Aveia; Soja ao Molho Oriental,Salada Crua; Arroz com Ervilha; Batata-doce; Caldo Verde; Sopa de Feijão com Carne,Suco; Café; Café com Leite,
+2025-05-30,Almoço,Cozido; Bobó de Grão-de-bico,"Salada Crua; Salada Cozida: Batata, Cenoura e Chuchu; Feijão Mulatinho; Arroz Branco; Pirão",Suco,Fruta
+2025-05-30,Jantar,Suíno ao Molho de Abacaxi; Fricassê de Soja,Salada Crua; Espaguete ao Alho e Óleo; Cará; Creme de Abóbora; Sopa de Legumes com Carne,Suco; Café; Café com Leite,
+2025-06-02,Almoço,Estrogonofe de Carne; Soja Oriental,"Salada Crua; Salada Cozida: Abóbora, Batata e Chuchu; Feijão Macassar; Arroz com Brócolis; Espaguete ao Alho e Óleo",Suco,Fruta
+2025-06-02,Jantar,Frango à Pizzaiolo; Bolonhesa de Lentilha,Salada Crua; Espaguete ao Alho e Óleo; Cará; Sopa de Feijão Vegetariana; Creme de Batata,Suco; Café; Café com Leite,
+2025-06-03,Almoço,Fricassê de Frango; Lentilha com Cebola Caramelizada,"Salada Crua; Salada Cozida: Repolho, Batata-doce e Abóbora; Feijão Preto; Arroz Colorido; Purê de Batata",Suco,Fruta
+2025-06-03,Jantar,Toscana Acebolada; Estrogonofe de Grão-de-bico,Salada Crua; Arroz Branco; Macaxeira; Creme de Abóbora; Sopa de Legumes com Frango,Suco; Café; Café com Leite,
+2025-06-04,Almoço,Frango ao Molho Pomodoro; Risoto de Grão-de-bico,"Salada Crua; Salada Cozida: Repolho, Abobrinha e Cenoura; Feijão Macassar; Arroz com Cenoura; Espaguete ao Alho e Óleo",Suco,Fruta
+2025-06-04,Jantar,Bife de Panela; Abobrinha à Milanesa,Salada Crua; Arroz com Vagem; Cuscuz; Creme de Cebola; Sopa de Feijão com Carne,Suco; Café; Café com Leite,
+2025-06-05,Almoço,Peixe à Dorê; Moqueca de Banana,"Salada Crua; Salada Cozida: Batata, Cenoura e Chuchu; Feijão Preto; Arroz com Milho; Pirão de Peixe",Suco,Doce de Goiaba
+2025-06-05,Jantar,Suíno ao Molho Barbecue; Bobó de Soja,Salada Crua; Arroz com Espinafre; Cuscuz; Sopa de Legumes; Papa de Chocolate,Suco; Café; Café com Leite,
+2025-06-06,Almoço,Cassoulet; Bolinho de Legumes,"Salada Crua; Salada Cozida: Batata, Cenoura e Chuchu; Feijão Mulatinho; Arroz Refogado; Farofa",Suco,Pudim de Chocolate
+2025-06-06,Jantar,Quiche de Charque; Risoto de Grão-de-bico,Salada Crua; Espaguete ao Alho e Óleo; Batata-doce; Creme de Macaxeira com Charque; Sopa de Feijão,Suco; Café; Café com Leite,
+2025-06-09,Almoço,Frango à Parmegiana; Assado de Lentilha com Legumes,"Salada Crua; Salada Cozida: Chuchu, Cenoura e Vagem; Feijão Macassar; Arroz com Cenoura; Espaguete ao Alho e Óleo",Suco,Fruta
+2025-06-09,Jantar,Suíno Acebolado; Moqueca de Banana,Salada Crua; Espaguete ao Alho e Óleo; Macaxeira; Caldo Verde; Sopa de Carne com Legumes,Suco; Café; Café com Leite,
+2025-06-10,Almoço,Fígado à Portuguesa; Quiche de Cebola,"Salada Crua; Salada Cozida: Abóbora, Batata-doce e Cenoura; Feijão Preto; Arroz Colorido; Purê de Batata",Suco,Gelatina
+2025-06-10,Jantar,Escondidinho de Charque; Soja ao Sugo,Salada Crua; Arroz Refogado; Cuscuz; Sopa de Lentilha; Sopa de Feijão com Carne,Suco; Café; Café com Leite,
+2025-06-11,Almoço,Bife Acebolado; Lasanha de Soja,"Salada Crua; Salada Cozida: Abobrinha, Abóbora e Vagem; Feijão Mulatinho; Arroz Refogado; Farofa com Batata Palha",Suco,Fruta
+2025-06-11,Jantar,Salsicha ao Molho; Bobó de Grão-de-bico,Salada Crua; Espaguete ao Alho e Óleo; Cará; Creme de Cenoura; Canja,Suco; Café; Café com Leite,
+2025-06-12,Almoço,Frango ao Forno; Bobó de Grão-de-bico,"Salada Crua; Salada Cozida: Repolho, Batata-doce e Abóbora; Feijão Mulatinho; Arroz com Vagem; Espaguete ao Alho e Óleo",Suco,Chocolate
+2025-06-12,Jantar,Estrogonofe de Frango; Quiche de Cebola,Salada Crua; Arroz com Cenoura; Cuscuz; Sopa de Feijão Vegetariana; Sopa Creme de Macaxeira com Charque,Suco; Café; Café com Leite,
+2025-06-13,Almoço,Dobradinha; Abobrinha à Milanesa,"Salada Crua; Salada Cozida: Batata, Cenoura e Chuchu; Feijão Mulatinho; Arroz Branco; Farofa de Banana",Suco,Fruta
+2025-06-13,Jantar,Lasanha de Carne; Soja Caipira,Salada Crua; Arroz Branco; Batata-doce; Sopa de Lentilha; Mungunzá,Suco; Café; Café com Leite,
+2025-06-16,Almoço,Lombo ao Molho Agridoce; Estrogonofe de Grão-de-bico,"Salada Crua; Salada Cozida: Batata, Repolho, Vagem e Milho; Feijão Macassar; Arroz Colorido; Farofa",Suco,Picolé
+2025-06-16,Jantar,Frango ao Molho Pomodoro; Ratatouille,Salada Crua; Arroz com Brócolis; Macaxeira; Caldo de Legumes; Canja,Suco; Café; Café com Leite,
+2025-06-17,Almoço,Bife ao Molho Madeira; Bolonhesa de Lentilha,"Salada Crua; Salada Cozida: Abobrinha, Batata e Chuchu; Feijão Macassar; Arroz com Cenoura; Quibebe",Suco,Fruta
+2025-06-17,Jantar,Suíno ao Molho Madeira; Soja ao Molho de Queijo,Salada Crua; Espaguete ao Alho e Óleo; Cuscuz; Creme de Cenoura; Sopa de Legumes com Carne,Suco; Café; Café com Leite,
+2025-06-18,Almoço,Carne de Sol Acebolada; Empadão de Falso Camarão,"Salada Crua; Salada Cozida: Batata, Cenoura e Vagem; Feijão Preto; Arroz Refogado; Purê de Batata",Suco,Paçoca
+2025-06-18,Jantar,Torta Madalena de Charque; Ensopado de Grão-de-bico,Salada Crua; Arroz com Ervilha; Milho Cozido; Sopa de Legumes; Canjiquinha,Suco; Café; Café com Leite,
+2025-06-25,Almoço,Frango na Aveia; Lentilha ao Molho Oriental,"Salada Crua; Salada Cozida: Batata, Cenoura e Chuchu; Feijão Mulatinho; Arroz com Cenoura; Quibebe",Suco,Fruta
+2025-06-25,Jantar,Quiche de Charque; Fricassê de Soja,Salada Crua; Espaguete ao Alho e Óleo; Batata-doce; Caldo Verde; Sopa de Peixe,Suco; Café; Café com Leite,

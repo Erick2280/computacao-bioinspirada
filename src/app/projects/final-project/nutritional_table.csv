@@ -1,0 +1,355 @@
+Alimento,Proteínas,Gordura,Carboidratos,Fibra Alimentar
+Abóbora ao Forno,1.2,0.2,6.5,2.1
+Abobrinha à Milanesa,4.5,8.2,12.3,2.8
+Abobrinha à Parmegiana,8.7,12.4,9.8,2.5
+Abobrinha à Pizzaiolo,3.2,5.1,8.7,2.6
+Arroz à Grega,3.5,2.8,28.4,1.2
+Arroz Branco,2.7,0.3,28.2,0.4
+Arroz Carioca,4.2,1.8,26.5,2.1
+Arroz Colorido,3.1,1.5,27.8,1.8
+Arroz com Brócolis,3.8,1.2,26.9,2.4
+Arroz com Cenoura,3.2,0.8,27.5,1.6
+Arroz com Couve,4.1,1.4,26.2,2.8
+Arroz com Ervilha,4.5,1.1,26.8,2.2
+Arroz com Espinafre,4.2,1.3,25.9,3.1
+Arroz com Milho,3.6,1.2,29.1,2.0
+Arroz com Vagem,3.9,1.0,26.7,2.5
+Arroz Doce,3.8,2.4,35.6,0.8
+Arroz Festivo,4.1,3.2,27.3,1.9
+Arroz Refogado,3.1,2.1,27.8,0.9
+Assado de Lentilha,9.8,3.2,18.4,7.2
+Assado de Lentilha com Legumes,8.9,2.8,19.7,8.1
+Ave Festa,22.3,8.9,4.2,0.8
+Bacalhoada Vegetariana,6.7,4.1,15.2,4.9
+Banana,1.1,0.2,22.8,2.6
+Banana Comprida,1.0,0.1,21.4,2.4
+Banana Cozida,1.2,0.2,24.1,2.8
+Batata,2.0,0.1,17.5,2.2
+Batata ao Forno,2.1,0.2,18.2,2.4
+Batata Frita,3.4,15.6,29.8,2.9
+Batata Gratinada,4.8,7.3,16.9,2.1
+Batata Sautê,2.3,4.2,17.1,2.3
+Batata-doce,1.6,0.1,20.1,3.0
+Berinjela à Milanesa,3.8,9.7,11.4,3.2
+Bife à Parmegiana,28.4,18.7,8.9,1.2
+Bife à Pizzaiolo,26.8,12.3,5.7,1.8
+Bife Acebolado,25.9,8.1,3.4,0.9
+Bife ao Molho,24.7,9.8,4.2,0.7
+Bife ao Molho Madeira,26.1,11.2,3.8,0.6
+Bife de Panela,23.8,7.9,5.1,1.1
+Bobó de Grão-de-bico,7.8,8.9,15.6,4.2
+Bobó de Soja,12.4,9.7,8.9,3.8
+Bolinho de Legumes,4.2,6.8,18.9,3.1
+Bolinho de Peixe,12.8,8.4,15.7,1.4
+Bolinho de Soja,8.9,7.2,16.4,2.9
+Bolo,4.8,12.6,42.1,1.8
+Bolo de Chocolate,5.2,14.9,39.7,2.1
+Bolonhesa de Lentilha,8.7,4.1,16.9,6.8
+Bolonhesa de Lentilha com Legumes,7.9,3.8,18.2,7.4
+Bolonhesa de Soja,11.2,5.7,12.4,4.1
+Bombom,3.1,18.9,54.7,2.8
+Café,0.1,0.0,0.0,0.0
+Café com Leite,1.6,1.8,2.4,0.0
+Calabresa,14.2,28.4,2.1,0.0
+Calabresa Acebolada,13.8,26.7,4.2,0.8
+Calabresa ao Molho de Tomate,13.4,25.9,6.1,1.4
+Caldo de Legumes,1.2,0.4,2.8,0.9
+Caldo Verde,2.1,1.8,4.2,1.6
+Canja,4.8,1.2,8.9,0.7
+Canjiquinha,3.2,1.4,16.7,2.1
+Cará,1.5,0.1,27.9,4.1
+Carne à Brejeira,24.2,9.7,6.8,1.9
+Carne à Moda da Casa,25.1,10.4,4.9,1.2
+Carne Acebolada,24.8,8.9,3.7,0.8
+Carne ao Molho Oriental,23.7,7.8,7.2,1.4
+Carne Chinesa,22.9,8.4,9.1,2.1
+Carne de Sol,28.7,4.2,1.8,0.2
+Carne de Sol Acebolada,27.9,5.1,3.4,0.7
+Carré ao Forno,26.4,12.8,2.1,0.4
+Cassoulet,15.7,8.9,18.4,6.2
+Charque,32.1,3.8,0.9,0.1
+Charque à Brejeira,30.8,4.7,3.2,0.9
+Charque Acebolada,31.2,4.1,2.7,0.6
+Charque ao Vinagrete,29.7,5.8,4.1,1.2
+Chester,19.8,14.2,1.4,0.1
+Chocolate,7.8,31.2,45.9,7.0
+Coxa e Sobrecoxa ao Forno,18.6,15.7,0.8,0.1
+Cozido,12.8,6.2,14.7,3.9
+Creme de Abóbora,2.4,3.1,8.7,2.8
+Creme de Batata,2.8,4.2,12.1,1.9
+Creme de Cebola,2.1,4.7,7.9,1.4
+Creme de Cenoura,2.2,3.8,9.4,2.1
+Creme de Espinafre,3.7,4.9,6.8,3.2
+Creme de Legumes,2.9,4.1,9.7,2.8
+Creme de Macaxeira com Charque,8.9,5.2,16.8,2.4
+Creme de Peixe,9.8,6.7,7.2,1.1
+Creme Rosé,3.4,5.8,8.9,1.7
+Cuscuz,3.6,0.8,23.4,2.1
+Cuscuz Temperado,4.2,2.7,22.1,2.8
+Dobradinha,18.9,7.4,8.2,2.9
+Doce de Banana,0.8,0.1,28.4,1.9
+Doce de Goiaba,0.4,0.1,31.2,2.8
+Doce Romeu e Julieta,4.2,2.1,34.7,1.4
+Empadão de Falso Camarão,8.7,12.4,18.9,2.1
+Empadão Vegano,6.2,9.8,21.4,3.8
+Ensopado de Grão-de-bico,8.9,4.7,19.2,7.1
+Escondidinho de Carne de Sol,15.8,8.9,18.7,2.1
+Escondidinho de Charque,16.4,7.8,19.2,2.3
+Escondidinho de Jaca,4.7,6.2,22.1,4.8
+Escondidinho de Soja,12.1,8.4,17.9,3.7
+Escondidinho Vegetariano,6.8,7.1,20.4,4.2
+Espaguete ao Alho e Óleo,5.1,4.8,31.2,2.1
+Espaguete ao Sugo,5.4,2.1,32.1,2.8
+Espaguete com Ervas,5.2,3.4,31.7,2.4
+Estrogonofe de Carne,18.7,12.4,8.9,1.2
+Estrogonofe de Frango,21.2,9.8,7.4,0.9
+Estrogonofe de Grão-de-bico,7.8,8.2,14.7,4.1
+Estrogonofe de Jaca,3.2,7.9,12.4,3.8
+Estrogonofe de Soja,11.4,9.1,9.7,2.9
+Farofa,2.8,4.2,32.1,3.4
+Farofa com Batata Palha,3.1,8.7,29.8,3.1
+Farofa de Banana,2.4,3.8,35.2,4.1
+Farofa de Cenoura,2.9,3.6,31.4,3.8
+Farofa de Cuscuz,4.1,2.9,34.7,2.9
+Feijão Macassar,8.2,0.5,19.9,7.4
+Feijão Mulatinho,8.9,0.6,19.1,8.1
+Feijão Preto,8.7,0.5,14.0,8.7
+Feijão Tropeiro,12.4,8.9,18.7,6.2
+Feijoada,14.7,12.8,12.4,4.9
+Fígado à Portuguesa,20.1,4.2,6.8,1.4
+Fígado ao Molho,19.8,3.9,4.2,0.7
+Fígado ao Molho com Batatas,17.2,4.1,12.1,1.8
+Fígado ao Molho Madeira,20.4,4.7,3.8,0.6
+Filé de Frango à Milanesa,23.4,12.1,8.7,0.9
+Filé de Frango Acebolado,22.8,6.2,2.1,0.4
+Frango à Delícia,21.7,9.8,6.4,1.2
+Frango à Milanesa,22.1,11.7,9.2,1.1
+Frango à Parmegiana,24.8,14.2,7.9,1.4
+Frango à Pizzaiolo,21.9,8.4,5.7,1.8
+Frango à Portuguesa,20.4,7.8,8.9,2.1
+Frango à Primavera,19.8,6.9,7.2,2.4
+Frango Acebolado,22.1,7.4,3.1,0.7
+Frango ao Forno,25.9,8.9,1.2,0.1
+Frango ao Forno com Batatas,21.4,7.8,12.1,1.8
+Frango ao Molho Branco,20.7,9.4,4.8,0.6
+Frango ao Molho com Batatas,19.2,8.1,13.4,1.9
+Frango ao Molho Cremoso,21.8,11.2,5.7,0.8
+Frango ao Molho de Laranja,20.9,7.6,8.4,1.1
+Frango ao Molho de Queijo,23.1,12.7,4.2,0.5
+Frango ao Molho de Tomate,21.4,6.8,6.1,1.7
+Frango ao Molho Pomodoro,20.8,7.2,7.4,2.1
+Frango ao Sugo,21.2,6.4,8.1,1.9
+Frango Caipira,19.7,8.9,9.2,2.8
+Frango Grelhado com Ervas,26.4,5.1,1.8,0.9
+Frango na Aveia,20.1,7.8,12.4,2.1
+Frango Xadrez,18.9,6.2,11.7,3.2
+Fricassê de Frango,16.8,9.7,12.1,1.8
+Fricassê de Legumes,4.2,7.8,14.9,4.1
+Fricassê de Soja,10.7,8.9,11.2,3.4
+Fruta,0.8,0.2,12.4,2.1
+Gelatina,4.2,0.1,8.9,0.0
+Grão-de-bico,8.9,2.6,19.3,7.6
+Grão-de-bico ao Molho Xadrez,8.1,3.4,18.7,7.1
+Grão-de-bico com Legumes,7.8,2.9,20.1,8.2
+Guisado Bovino,22.4,8.7,6.1,1.4
+Guisado Bovino com Legumes,19.8,7.2,9.4,2.8
+Guisado com Batatas,18.7,6.9,14.2,2.1
+Guisado com Legumes,16.9,5.8,12.7,3.4
+Hambúrguer,18.2,20.1,8.4,1.2
+Hambúrguer de Grão-de-bico,9.7,8.4,18.9,6.2
+Hambúrguer de Lentilha,10.2,7.8,16.4,7.1
+Inhame,1.5,0.2,27.9,4.1
+Isca de Carne à Brejeira,24.8,9.1,5.7,1.8
+Isca de Carne à Chinesa,23.7,8.4,8.2,2.1
+Isca de Carne Acebolada,25.1,7.8,3.4,0.8
+Isca de Carne ao Molho Barbecue,24.2,8.9,6.7,1.1
+Isca de Carne ao Molho Branco,23.8,9.7,4.2,0.6
+Isca de Carne ao Molho Madeira,25.4,8.7,3.8,0.5
+Isca de Carne ao Molho Oriental,22.9,7.9,7.4,1.6
+Isca de Fígado à Portuguesa,19.7,4.1,6.2,1.2
+Isca de Fígado Acebolado,20.1,3.8,3.7,0.7
+Isca de Fígado ao Molho com Batatas,17.4,4.2,11.8,1.9
+Isca de Fígado ao Molho com Legumes,18.2,3.9,8.4,2.4
+Isca de Fígado ao Molho Oriental,19.4,4.4,5.8,1.4
+Lasanha de Berinjela,12.1,9.8,18.7,3.4
+Lasanha de Carne,15.8,11.2,19.4,2.1
+Lasanha de Frango,14.2,8.9,20.1,1.8
+Lasanha de Jaca,6.7,7.4,22.8,4.2
+Lasanha de Soja,13.4,9.1,17.9,3.1
+Legumes Gratinados,4.8,6.2,12.1,3.8
+Legumes Sautê,2.9,3.4,8.7,4.1
+Lentilha à Bolonhesa,9.1,3.8,16.4,7.9
+Lentilha ao Molho,8.7,2.4,17.2,8.2
+Lentilha ao Molho Oriental,8.4,3.1,18.1,7.8
+Lentilha Assada,9.8,3.7,15.9,8.4
+Lentilha Assada com Legumes,8.9,3.2,17.8,9.1
+Lentilha com Cebola Caramelizada,8.2,4.1,19.7,7.6
+Lentilha com Legumes,7.8,2.8,18.9,8.7
+Lombo Acebolado,24.7,9.8,3.2,0.6
+Lombo ao Molho Agridoce,23.4,8.9,7.8,1.1
+Lombo ao Molho de Abacaxi,22.8,8.1,9.4,1.4
+Lombo ao Molho Madeira,25.1,9.4,3.7,0.5
+Lombo Suíno Acebolado,24.2,10.1,3.4,0.7
+Lombo Suíno ao Molho Agridoce,23.1,9.2,8.1,1.2
+Lombo Suíno ao Molho de Abacaxi,22.4,8.7,9.7,1.5
+Lombo Suíno ao Molho Madeira,24.8,9.8,3.9,0.4
+Lombo Suíno com Cebola Caramelizada,23.7,9.1,6.2,0.9
+Macarrão ao Alho e Óleo,5.2,4.1,30.8,2.1
+Macarrão Colorido,5.8,2.4,31.4,2.8
+Macaxeira,1.4,0.1,38.1,1.8
+Melão,0.5,0.1,8.4,0.9
+Milho Cozido,3.2,1.2,19.0,2.7
+Moqueca de Banana,2.1,6.8,14.7,3.2
+Moqueca de Banana com Legumes,2.8,6.2,16.4,4.1
+Moqueca de Jaca,3.7,8.4,12.1,4.8
+Moqueca de Peixe,18.4,9.7,6.2,1.4
+Mungunzá,3.8,2.1,24.7,2.4
+Paçoca,14.2,28.7,18.9,7.8
+Papa de Chocolate,4.1,6.8,32.4,2.1
+Pastelão Vegetariano,8.7,9.4,21.8,4.2
+Pé-de-moleque,8.9,19.4,34.2,4.1
+Peixe à Dorê,20.8,8.4,6.7,0.8
+Peixe à Escabeche,19.7,6.2,4.9,1.2
+Peixe à Gomes de Sá,21.4,7.8,8.1,1.4
+Peixe à Zé do Pipo,18.9,9.1,9.7,1.8
+Peixe Empanado,19.2,10.7,12.4,1.1
+Pernil ao Molho de Abacaxi,23.8,11.2,8.4,1.2
+Pernil ao Molho Madeira,25.1,10.8,3.7,0.4
+Picolé,1.8,2.4,18.7,0.2
+Pirão,2.1,1.8,12.4,1.4
+Pirão de Peixe,8.9,3.2,11.7,1.2
+Pudim de Chocolate,4.8,8.9,28.4,1.4
+Pudim de Coco,4.2,12.1,31.7,2.1
+Purê de Abóbora,1.4,1.8,9.7,2.8
+Purê de Batata,2.4,3.2,16.8,1.9
+Purê Misto,2.1,2.8,14.2,2.4
+Quibebe,1.8,2.1,12.4,3.1
+Quiche de Carne de Sol,14.7,12.8,16.9,1.8
+Quiche de Cebola,6.8,9.4,18.7,2.1
+Quiche de Charque,15.2,11.9,17.4,1.6
+Quiche de Frango,13.4,10.7,17.8,1.4
+Quiche de Repolho,7.2,8.9,16.4,2.8
+Ratatouille,2.8,4.1,9.7,3.8
+Repolho e Cenoura,1.9,0.8,6.4,3.2
+Risoto de Grão-de-bico,7.8,4.2,28.4,4.1
+Salada,1.2,0.2,3.8,2.1
+Salada Cozida,1.8,0.4,6.2,2.8
+"Salada Cozida: Abóbora, Abobrinha e Chuchu",1.4,0.3,5.8,2.9
+"Salada Cozida: Abóbora, Batata e Chuchu",1.7,0.2,9.4,2.6
+"Salada Cozida: Abóbora, Batata e Milho",2.1,0.4,12.8,2.4
+"Salada Cozida: Abóbora, Batata e Repolho",1.9,0.3,8.7,2.8
+"Salada Cozida: Abóbora, Batata-doce e Batata",1.6,0.2,12.1,2.7
+"Salada Cozida: Abóbora, Batata-doce e Cenoura",1.4,0.2,11.8,3.1
+"Salada Cozida: Abóbora, Batata-doce e Chuchu",1.5,0.2,10.9,3.2
+"Salada Cozida: Abóbora, Batata-doce e Repolho",1.6,0.2,10.4,3.4
+"Salada Cozida: Abóbora, Beterraba e Chuchu",1.8,0.3,8.7,3.1
+"Salada Cozida: Abóbora, Chuchu e Batata",1.6,0.2,9.2,2.7
+"Salada Cozida: Abóbora, Chuchu e Beterraba",1.7,0.3,8.9,3.2
+"Salada Cozida: Abobrinha, Abóbora e Chuchu",1.3,0.3,5.7,2.8
+"Salada Cozida: Abobrinha, Abóbora e Vagem",1.9,0.3,6.4,3.1
+"Salada Cozida: Abobrinha, Batata e Cenoura",1.8,0.2,9.7,2.4
+"Salada Cozida: Abobrinha, Batata e Chuchu",1.6,0.2,8.4,2.6
+"Salada Cozida: Abobrinha, Beterraba e Chuchu",1.9,0.3,7.8,3.1
+"Salada Cozida: Abobrinha, Cenoura e Chuchu",1.7,0.3,6.9,2.9
+"Salada Cozida: Abobrinha, Cenoura, Chuchu",1.7,0.3,6.9,2.9
+"Salada Cozida: Abobrinha, Cenoura, Vagem e Milho",2.4,0.4,9.7,3.2
+"Salada Cozida: Abobrinha, Repolho e Cenoura",1.8,0.3,6.2,3.4
+"Salada Cozida: Batata-doce e Abóbora",1.4,0.2,13.8,2.9
+"Salada Cozida: Batata-doce, Cenoura e Abóbora",1.5,0.2,13.1,3.1
+"Salada Cozida: Batata-doce, Cenoura e Vagem",2.1,0.3,12.4,3.4
+"Salada Cozida: Batata-doce, Repolho e Abóbora",1.6,0.2,12.8,3.6
+"Salada Cozida: Batata, Abóbora e Vagem",2.2,0.3,11.7,2.9
+"Salada Cozida: Batata, Abóbora, Vagem e Milho",2.4,0.4,14.2,2.8
+"Salada Cozida: Batata, Abobrinha e Chuchu",1.6,0.2,8.9,2.6
+"Salada Cozida: Batata, Banana Comprida e Chuchu",1.7,0.2,12.4,2.8
+"Salada Cozida: Batata, Batata-doce e Chuchu",1.6,0.2,12.1,2.7
+"Salada Cozida: Batata, Beterraba e Chuchu",2.1,0.3,11.4,2.9
+"Salada Cozida: Batata, Cenoura e Chuchu",1.9,0.2,10.7,2.6
+"Salada Cozida: Batata, Cenoura e Chuchu com Molho Branco",2.4,2.1,11.2,2.4
+"Salada Cozida: Batata, Cenoura e Vagem",2.3,0.3,11.9,2.8
+"Salada Cozida: Batata, Cenoura, Chuchu e Ervilha",2.8,0.4,12.4,3.1
+"Salada Cozida: Batata, Cenoura, Vagem",2.2,0.3,11.8,2.7
+"Salada Cozida: Batata, Cenoura, Vagem e Ervilha",2.9,0.4,13.1,3.2
+"Salada Cozida: Batata, Cenoura, Vagem e Milho",2.6,0.4,14.7,2.9
+"Salada Cozida: Batata, Chuchu e Abóbora",1.6,0.2,9.8,2.7
+"Salada Cozida: Batata, Chuchu e Cenoura",1.8,0.2,10.4,2.6
+"Salada Cozida: Batata, Chuchu e Cenoura com Parmesão",4.2,3.1,10.7,2.4
+"Salada Cozida: Batata, Repolho e Abóbora",1.8,0.2,9.1,3.1
+"Salada Cozida: Batata, Repolho, Vagem e Milho",2.7,0.4,13.8,3.4
+"Salada Cozida: Batata, Vagem e Cenoura",2.2,0.3,11.4,2.8
+"Salada Cozida: Beterraba, Abobrinha, Cenoura",1.9,0.3,8.4,3.2
+"Salada Cozida: Beterraba, Batata e Cenoura",2.1,0.3,12.7,2.9
+"Salada Cozida: Beterraba, Cenoura e Chuchu",2.0,0.3,9.1,3.4
+"Salada Cozida: Beterraba, Cenoura, Vagem e Milho",2.8,0.4,12.4,3.6
+"Salada Cozida: Beterraba, Chuchu e Milho",2.4,0.3,11.2,3.1
+"Salada Cozida: Cenoura, Batata e Chuchu",1.8,0.2,10.7,2.6
+"Salada Cozida: Cenoura, Batata-doce e Abóbora",1.5,0.2,13.4,3.1
+"Salada Cozida: Cenoura, Beterraba e Chuchu",2.0,0.3,9.2,3.4
+"Salada Cozida: Cenoura, Chuchu e Beterraba",2.0,0.3,9.2,3.4
+"Salada Cozida: Cenoura, Repolho e Chuchu",1.9,0.3,7.8,3.6
+"Salada Cozida: Chuchu, Cenoura e Vagem",2.1,0.3,7.4,3.2
+"Salada Cozida: Couve e Repolho",2.8,0.4,4.2,4.1
+"Salada Cozida: Couve Manteiga",2.9,0.5,3.8,4.2
+"Salada Cozida: Couve Manteiga, Repolho e Cenoura",2.6,0.4,5.1,4.4
+"Salada Cozida: Couve, Cenoura e Repolho",2.7,0.4,5.2,4.3
+"Salada Cozida: Couve, Repolho e Cenoura",2.7,0.4,5.2,4.3
+"Salada Cozida: Repolho, Abóbora e Batata-doce",1.6,0.2,11.8,3.4
+"Salada Cozida: Repolho, Abobrinha e Cenoura",1.8,0.3,6.4,3.6
+"Salada Cozida: Repolho, Batata-doce e Abóbora",1.6,0.2,11.9,3.4
+"Salada Cozida: Repolho, Batata-doce e Chuchu",1.7,0.2,10.2,3.7
+"Salada Cozida: Repolho, Beterraba e Abóbora",1.9,0.3,8.7,3.8
+"Salada Cozida: Vagem, Batata e Beterraba",2.4,0.3,12.1,3.2
+"Salada Cozida: Vagem, Batata e Cenoura",2.2,0.3,11.7,2.9
+"Salada Cozida: Vagem, Cenoura e Batata",2.2,0.3,11.7,2.9
+"Salada Cozida: Vagem, Chuchu e Cenoura",2.1,0.3,7.8,3.4
+Salada Crua,1.4,0.2,2.8,2.6
+Salsicha ao Molho,12.8,24.7,4.2,0.8
+Soja ao Molho de Queijo,15.2,8.9,7.4,4.1
+Soja ao Molho Oriental,14.8,6.7,9.2,4.3
+Soja ao Sugo,14.1,5.8,8.7,4.2
+Soja Caipira,13.9,7.2,11.4,4.8
+Soja com Azeitonas,14.7,9.1,6.8,4.1
+Soja com Legumes,12.8,6.4,12.1,5.2
+Soja Oriental,14.2,6.9,8.9,4.4
+Soja Refogada,13.7,5.9,7.2,4.0
+Sopa Creme de Macaxeira com Charque,8.4,4.7,14.2,2.1
+Sopa de Carne,8.9,3.2,6.4,1.8
+Sopa de Carne com Legumes,7.8,2.9,8.7,2.4
+Sopa de Feijão,6.2,0.8,14.7,5.9
+Sopa de Feijão com Carne,9.4,2.1,13.8,5.2
+Sopa de Feijão com Macarrão,5.8,1.2,18.4,4.8
+Sopa de Feijão Vegetariana,5.9,0.9,15.2,6.1
+Sopa de Legumes,2.1,0.7,7.8,3.2
+Sopa de Legumes com Carne,6.8,2.4,8.4,2.9
+Sopa de Legumes com Frango,7.9,2.1,7.9,2.7
+Sopa de Lentilha,6.8,1.2,15.4,6.8
+Sopa de Macarrão com Carne,8.4,2.8,16.7,1.9
+Sopa de Peixe,12.4,3.8,4.7,1.2
+Suco,0.4,0.1,9.8,0.6
+Suflê de Legumes,6.2,7.8,12.4,3.1
+Suíno Acebolado,23.8,9.7,3.2,0.7
+Suíno ao Molho,22.9,8.4,4.8,0.9
+Suíno ao Molho Agridoce,22.1,8.7,7.9,1.2
+Suíno ao Molho Barbecue,23.4,9.1,6.4,1.1
+Suíno ao Molho de Abacaxi,21.8,8.2,9.1,1.4
+Suíno ao Molho de Laranja,22.6,8.9,7.8,1.2
+Suíno ao Molho Escuro,23.1,9.2,4.1,0.8
+Suíno ao Molho Madeira,24.2,9.4,3.7,0.5
+Suíno ao Molho Oriental,21.9,7.8,8.2,1.6
+Suíno com Cebola Agridoce,22.4,8.6,6.8,1.0
+Torta de Charque,12.8,9.4,18.7,2.1
+Torta de Falso Camarão,8.9,8.7,19.2,2.4
+Torta de Legumes,6.2,7.1,20.4,3.8
+Torta de Repolho,7.4,8.2,17.9,3.2
+Torta Madalena de Carne,11.7,10.2,19.8,1.9
+Torta Madalena de Charque,12.4,9.8,20.1,2.0
+Torta Madalena de Legumes,7.1,8.4,21.7,3.4
+Torta Madalena de Soja,10.8,9.1,18.9,2.8
+Torta Madalena Vegetariana,8.2,8.7,20.4,3.6
+Torta Salgada de Frango,10.9,8.9,19.4,1.7
+Torta Salgada de Legumes,6.8,7.8,20.7,3.9
+Torta Salgada de Soja,11.2,8.4,18.2,2.9
+Torta Salgada Vegetariana,7.9,8.1,19.8,3.7
+Toscana Acebolada,13.2,26.8,4.1,0.8
+Vaca Atolada,19.8,8.7,12.4,2.8
+Vatapá de Jaca,4.2,8.9,14.7,4.1

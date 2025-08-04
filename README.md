@@ -16,6 +16,11 @@ Erick Riso (<eaor@cin.ufpe.br>)
 - [Visualizar o projeto](https://bioinspirada.riso.dev/functions-optimization)
 - [Visualizar o código-fonte](src/app/projects/functions-optimization/)
 
+### Projeto final
+
+- [Visualizar o projeto no Google Colab](https://colab.research.google.com/drive/1IiqxKrby5psFvVPpaX5uSqGoNynH68mT)
+- [Visualizar os conjuntos de dados](src/app/projects/final-project/)
+
 ## Executar localmente
 
 Você precisa ter instalado o [Node.js](https://nodejs.org/) e o [Angular CLI](https://angular.dev/tools/cli) localmente.
